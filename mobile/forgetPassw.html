@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/forgetPassw.min.css"/>
+    <link rel="stylesheet" type="text/css" href="scripts/layer/skin/layer2.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.validate.min.js"></script>
+</head>
+
+<body>
+
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li>
+            <a href="login.html">
+                <i class="menu-icon1"></i>
+                <span>登录</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="hot.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+
+    <!-- login -->
+    <div class="login">
+        <div class="login-bg">
+            <div class="login-spacing">
+                <a>
+                    <img src="content/images/login/login-logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="login-animation"><p></p></div>
+
+        <!-- 忘记密码 -->
+        <div class="layui-layer-content">
+            <div style="padding:0px 74px;margin: 0 auto;">
+                <ul class="log_ul" id="revisePass">
+                    <li class="txt_input">
+                        <input class="accounts" type="text" placeholder="用户名 ( 邮箱 )">
+                    </li>
+                    <li class="but_submit">
+                        <input class="getCode" type="submit" value="点此获取手机验证码">
+                    </li>
+                    <li class="txt_input">
+                        <input class="iphoneCode" type="text" placeholder="请输入手机验证码">
+                    </li>
+                    <li class="txt_input">
+                        <input class="newPass" type="password" placeholder="设置新密码">
+                    </li>
+                    <li class="txt_input">
+                        <input class="cfPass" type="password" placeholder="确认新密码">
+                    </li>
+                    <li class="but_submit2">
+                        <input class="revisePassBut" type="submit" value="提  交">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="enrolled.html">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="http://dht.zoosnet.net/LR/Chatpre.aspx?id=DHT88027214&lng=cn" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript" src="scripts/layer/layer2.js"></script>
+<script type="text/javascript" src="scripts/forgetPassw.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    // 忘记密码
+    var repaswd = {
+        init: function() {
+            this.paswdrew();
+
+        },
+        paswdrew: function() {
+            var $revisePass = $('#revisePass'),
+                $accounts = $revisePass.find('.accounts'),
+                $getCode = $revisePass.find('.getCode'),
+                $iphoneCode = $revisePass.find('.iphoneCode'),
+                $newPass = $revisePass.find('.newPass'),
+                $cfPass = $revisePass.find('.cfPass'),
+                $revisePassBut = $revisePass.find('.revisePassBut');
+            var num = 60,
+                time = null;
+            var emailReg = /^[^\W|0]\w+@\w+(\.[a-z]{2,3}){1,2}$/;
+            // 修改密码发送验证码
+            $getCode.click(function() {
+                if (num != 60) return;
+                if (!emailReg.test($accounts.val())) {
+                    $accounts.focus();
+                    layer.msg('请填写正确的账号！', {
+                        time: 2000
+                    });
+                    return;
+                }
+                layer.load();
+                $.ajax({
+                    type: "post",
+                    url: "/getPhoneCode",
+                    data: {
+                        // user_name: $accounts.var()
+                        user_name: $(".accounts").val()
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        layer.closeAll('loading');
+                        var d = data;
+                        if (typeof data != 'object') {
+                            d = $.parseJSON(data);
+                        }
+                        if (d.status == 1) {
+                            $getCode.val(num + '秒后可重新发送');
+                            var time = setInterval(function() {
+                                num--;
+                                $getCode.val(num + '秒后可重新发送');
+                                if (num == 1) {
+                                    clearInterval(time);
+                                    num = 60;
+                                    $getCode.val('点此获取验证码');
+                                }
+
+                            }, 1000);
+                        } else {
+                            layer.msg('发送失败，请稍后再试！', {
+                                time: 1500
+                            });
+                        }
+                    }
+                });
+            });
+            // 修改密码提交
+            $revisePassBut.click(function() {
+                if (!emailReg.test($accounts.val())) {
+                    layer.msg('请填写正确的账号！', {
+                        time: 4000
+                    });
+                    $accounts.focus();
+                } else if ($iphoneCode.val() == '') {
+                    layer.msg('请填写手机验证码！', {
+                        time: 4000
+                    });
+                    $iphoneCode.focus();
+                } else if ($newPass.val() == '') {
+                    layer.msg('请填写登录密码！', {
+                        time: 4000
+                    });
+                    $newPass.focus();
+                } else if ($cfPass.val() == '') {
+                    layer.msg('请填写重复密码！', {
+                        time: 4000
+                    });
+                    $cfPass.focus();
+                } else if ($newPass.val().length < 6 || $newPass.val().length > 12) {
+                    layer.msg('新密码长度为6~12位！', {
+                        time: 4000
+                    });
+                    $newPass.focus();
+                } else if ($newPass.val() != $cfPass.val()) {
+                    layer.msg('两次输入的密码不一致！', {
+                        time: 4000
+                    });
+                    $cfPass.focus();
+                } else {
+                    layer.load();
+                    $.ajax({
+                        type: "post",
+                        url: "/find",
+                        data: {
+                            username: $accounts.val(),
+                            para: $cfPass.val(),
+                            code: $iphoneCode.val()
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            layer.closeAll('loading');
+                            var d = data;
+                            if (typeof data != 'object') {
+                                d = $.parseJSON(data);
+                            }
+                            if (d.status == 1) {
+                                layer.msg('密码修改成功！', {
+                                    time: 1500
+                                });
+                                setTimeout(function() {
+                                    layer.closeAll();
+                                    $('#topLoing').trigger('click');
+                                }, 1000);
+                                window.location.href = "login.html";
+                            } else {
+                                layer.msg(d.tips, {
+                                    time: 1500
+                                });
+                            }
+                        }
+                    });
+                }
+
+            });
+
+        }
+
+    };
+
+    repaswd.init();
+
+});
+</script>
+
+</body>
+</html>

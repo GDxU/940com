@@ -1,0 +1,21 @@
+<ion-view view-title="快递邮寄">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-compose" ng-click="open()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="padding" style="text-align: center" ng-show="items.length == 0">
+      本月最优惠快递【韵达】，点击右上角发布
+    </div>
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="refreshItems()"></ion-refresher>
+    <ion-list>
+      <ion-item collection-repeat="item in items" href="#/carry/view/{{item.id}}">
+        【{{item.get('company')}}】寄件地址：{{item.get('to')}}【<b class="assertive">{{item.get('status') | statusName}}</b>】
+        <ion-option-button class="button-assertive" ng-click="delete($index)">
+          删除
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="addItems()" ng-if="canLoading()" immediate-check="false"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

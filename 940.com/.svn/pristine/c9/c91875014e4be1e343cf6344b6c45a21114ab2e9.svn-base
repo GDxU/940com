@@ -1,0 +1,222 @@
+	<link rel="stylesheet" type="text/css" href="/style/layer.css">
+	<div class="user_message">
+	<div class="u_name" id="u_name">
+		<i>学员：</i><span>你好，欢迎进入940电商学院个人中心！</span>
+	</div>
+	<div class="acc_rank" id="acc_grade">
+		安全等级：
+		<span class="a_span">
+			<i class="yellow"></i>
+			<i class="yellow"></i>
+			<i></i>
+		</span>
+		<font>中</font>
+		<span class="a_link">
+			<a class="icon_rz" href="javascript:">手机认证</a>
+			<a class="icon_yx" href="javascript:">邮箱认证</a>
+		</span>
+	</div>
+	<div class="acc_rank" id="acc_data">
+		信息完整度：
+		<span class="a_integ">
+			<i></i>
+		</span>
+		<font>0%</font>
+		<span class="a_ws">
+			<a class="icon_ws" href="javascript:">完善资料</a>
+		</span>
+
+	</div>
+	<p class="log_time">上次登录时间：<span>2015-10-13 18:19</span></p>
+	
+</div>
+<div class="u_editor">
+	<ul class="edit_ul" id="edit_ul">
+		<li class="ti"><i>编辑个人资料</i></li>
+		<li class='li_email'>
+		    <span>登录邮箱</span>
+		    <div class="item modify_pass">
+		  	  <i class="yahei">加载中...</i>
+		  	  <a href="javascript:">（修改登录密码）</a>
+		    </div>
+		</li>
+		<li class='li_name'>
+		    <span>真实姓名</span>
+		    <div class="item"><!-- modify_name -->
+		  	  <i>加载中...</i>
+		  	  <a data-v='name' href="javascript:">（修改）</a>
+		    </div>
+		</li>
+		<li class='li_sex'>
+			<span>性别</span>
+			<div class="item sex_inp">
+				<p class="fl">
+					<i></i>
+					<font class="icon_nan">男</font>
+				</p>
+				<p class="fl">
+					<i></i>
+					<font class="icon_nv">女</font>
+				</p>
+				<input id="sexVal" type="hidden" value="0">
+			</div>
+		</li>
+		<li class='li_phone'>
+		    <span>手机</span>
+		    <div class="item un_phone">
+		  	  <i class="yahei">加载中...</i>
+		  	  <a href="javascript:">（解绑）</a>
+		    </div>
+		    <div class="item bind_phone" style="display:none;">
+		   	  <i style='color: #999;'>还未绑定手机</i>
+		  	  <a href="javascript:">（立即绑定）</a>
+		    </div>
+		</li>
+		<li class="li_qq">
+		    <span>QQ</span>
+		    <div class="item revise_inp">
+		  	  <i class="yahei">加载中...</i>
+		  	  <a data-v='qq' href="javascript:">（修改）</a>
+		    </div>
+		</li>
+		<li class='li_yy'>
+		    <span>YY</span>
+		    <div class="item revise_inp">
+		  	  <i class="yahei">加载中...</i>
+		  	  <a data-v='yy' href="javascript:">（修改）</a>
+		    </div>
+		</li>
+		<li class='li_area'>
+		    <span>所在地</span>
+		    <div class="item selectList">
+		  	 <i>加载中...</i>
+		  	  <a class='dq' href="javascript:">（修改）</a>
+		    </div>
+		</li>
+		<li class="li_url por_li">
+		    <span>头像</span>
+		    <div class="up_por">
+		   	 <form id="uploadForm" target="form" method="post" enctype="multipart/form-data">
+		  	   <p class="fl up_img">
+		  	   		<img id="imghead">
+		  	   </p>
+		  	   
+		  	   <p class="fl up_txt">
+		  	   		<i>上传支持JPG、PNG、BMP格式，不超过150KB<br> 最佳尺寸为145x145像素</i>
+		  	   		<em class="em_input">
+		  	   			<input id="fileImg" name="img" type="file">
+		  	   			点此更换图片
+		  	   		</em>
+		  	   </p>
+		  	   </form>
+		  	   <iframe id="iframe" name="form" style="display:none;"></iframe>
+		    </div>
+		</li>
+		<li class="submit_li">
+			<input id="saveUserInfo" type="button" value="保存">
+		</li>
+	</ul>
+</div>
+
+
+<div id='modify_pass' style="display:none;">
+	<ul class="wrapPass">
+		<li>
+			<i>输入旧密码：</i>
+			<span><input type="password"/></span>
+			<div class='tips'>
+				<b></b>
+				<em>请输入密码！</em>
+			</div>
+		</li>
+		<li>
+			<i>设置新密码：</i>
+			<span><input type="password" /></span>
+			<div class='tips'>
+				<b></b>
+				<em>密码格式错误！</em>
+			</div>
+			<div class="stren st1"></div>
+		</li>
+		<li>
+			<i>重复新密码：</i>
+			<span><input type="password" /></span>
+			<div class='tips'>
+				<b></b>
+				<em>密码不一致！</em>
+			</div>
+		</li>
+		<li class='pass_but'>
+			确认修改
+		</li>
+	</ul>
+</div>
+
+<div id="un_phone" style="display:none;">
+	<ul class='wrapPhone'>
+		<li class='m'>
+			<i>手&nbsp;机&nbsp;验&nbsp;证：</i>
+			<span>138****5525</span>
+			<input class='un_but' type="button" value="点此获取验证码" />
+		</li>
+		<li>
+			<i>输入验证码：</i>
+			<span><input class="un_code" type="text"/></span>
+			<div class='tips'>
+				<b></b>
+				<em>请输入验证码！</em>
+			</div>
+		</li>
+		<li class='unBut'>
+			确认解绑
+		</li>
+	</ul>
+</div>
+<div id="modify_name" style="display:none;">
+	<ul class='wrapPhone wrapName'>
+		<li>
+			<i>输入新姓名：</i>
+			<span><input class='mod_name' type="text"/></span>
+			<div class='tips'>
+				<b></b>
+				<em>请输入姓名！</em>
+			</div>
+		</li>
+		<li class='m'>
+			<i>手&nbsp;机&nbsp;验&nbsp;证：</i>
+			<span>138****5525</span>
+			<input class='name_but' type="button" value="点此获取验证码" />
+		</li>
+		<li>
+			<i>输入验证码：</i>
+			<span><input class="name_code" type="text"/></span>
+			<div class='tips'>
+				<b></b>
+				<em>请输入验证码！</em>
+			</div>
+		</li>
+		<li class='nameBut'>
+			确认修改
+		</li>
+	</ul>
+</div>
+<div id="bind_phone" style="display:none;">
+	<ul class='wrapPhone bindPhone'>
+		<li>
+			<i>输入手机号：</i>
+			<span><input class='mod_phone' type="text"/></span>
+			<input class='bind_but' type="button" value="点此获取验证码" />
+		</li>
+		<li>
+			<i>输入验证码：</i>
+			<span><input class="bind_code " type="text"/></span>
+			<div class='tips'>
+				<b></b>
+				<em>请输入验证码！</em>
+			</div>
+		</li>
+		<li class='bindBut'>
+			确认绑定
+		</li>
+	</ul>
+</div>

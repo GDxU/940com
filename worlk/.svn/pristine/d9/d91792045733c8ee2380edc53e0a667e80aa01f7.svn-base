@@ -1,0 +1,125 @@
+@media ( min-width :1em ) {
+	.centerarr {
+		height: auto;
+		width: 352px;
+		margin: 0 auto;
+	}
+	.btlogo1 {
+		min-height: 43px;
+		width: 43px;
+		background: url(../images/logo01.png) no-repeat;
+		float: left;
+		margin: 6px 8px 0 4px;
+		cursor: pointer;
+	}
+}
+
+@media ( min-width : 50em ) {
+	.centerarr {
+		margin: 0 auto;
+		height: auto;
+		width: 362px;
+	}
+	.btlogo1 {
+		min-height: 43px;
+		width: 43px;
+		background: url(../images/logo01.png) no-repeat;
+		float: left;
+		margin: 6px 8px 0 0;
+		cursor: pointer;
+	}
+}
+
+.btlogo2 {
+	min-height: 43px;
+	width: 43px;
+	background: url(../images/logo01.png) no-repeat;
+	background-position: -43px 0;
+	float: left;
+	margin: 6px 8px 0 0;
+	cursor: pointer;
+}
+
+.btlogo3 {
+	min-height: 43px;
+	width: 134px;
+	background: url(../images/license_plate_link.jpg) no-repeat;
+	float: left;
+	margin: 6px 0 0 0;
+	cursor: pointer;
+}
+
+.btdesc {
+	font-size: 0.75em;
+	height: 18px;
+	line-height: 18px;
+	color: #ffffff;
+	float: left;
+	width: auto;
+	margin-left: 5px;
+	text-decoration: underline;
+	margin-top: 30px;
+}
+
+.selected {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.l2 {
+	font-weight: normal;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.version {
+	height: 43px;
+	width: 110px;
+	float: left;
+}
+
+.h-auto {
+	height: auto;
+}
+
+.w100 {
+	width: 100%;
+	height: 50px;
+	display: block;
+	float: left;
+	margin-top: 56px;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: block;
+}
+
+#index-page {
+	min-height: 100%;
+	/*height: 100%; /*IE6²»Ê¶±ðmin-height*/
+	/*height: auto !important; */
+	position: relative;
+	padding-bottom: 45px;
+	/* padding-bottom: 96px; */
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* height: 55px; */
+	/* clear:both;*/
+}
+.ft-default .centerarr{ overflow:hidden; text-align:center; display:-webkit-box;display:box;display:-ms-box;display:inline;}
+
+
+.centerarr span{color:#fff;}
+.bootom-ft{ *float:left;padding:0px 10px; display:inline;zoom:1;}
+.bootom-ft {color:#fff; cursor:pointer;}
+

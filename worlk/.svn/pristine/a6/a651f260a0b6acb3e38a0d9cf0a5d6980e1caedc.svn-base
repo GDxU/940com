@@ -1,0 +1,37 @@
+title.portal.platform=Platform mobile Vinbet
+title.portal.lobby=Hall besar permainan
+title.portal.ssc=Lotre Warna
+title.portal.hkc=Lotre Hongkong
+title.portal.sports=Taruhan Olah raga
+title.portal.tflat=Platform Transaksi
+title.portal.casino=Live Casino
+title.portal.ltf=Lotre Internasional
+title.portal.poker=Hiburan Poker
+title.portal.pt=Vinbet Arcade
+title.portal.qx=Lotre 7 warna
+
+title.portal.mycenter=Akun saya
+title.portal.deposit=Depo
+title.portal.withdrawl=Penarikan
+title.portal.contact=Hubungi kami
+title.portal.myblance=Keadaan saldo
+title.portal.freezedAmt=Sudah dibekukan
+title.portal.history=Catatan sejarah
+title.portal.message=Surat dalam saya
+title.portal.transfer=Transfer
+title.portal.myinformation=Data saya
+
+#myblance title
+title.portal.apply=Aplikasi
+title.portal.canwithdraw=Dapat ditarik
+title.portal.activitycosts=Biaya kegiatan
+title.portal.totalbalance=Total saldo
+title.portal.operating=Operasi
+title.portal.view=Lihat
+
+#deposit
+title.portal.depositFirst=Depo-Langkah pertama
+title.portal.depositSecond=Depo-Langkah kedua
+title.portal.depositThird=Depo-Langkah ketiga
+title.portal.hbEasyPay=Transaksi Yi Vinbet
+title.portal.fastPay=Transaksi cepat Mobile

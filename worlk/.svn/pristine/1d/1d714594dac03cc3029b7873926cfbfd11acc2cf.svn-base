@@ -1,0 +1,188 @@
+#Halaman utama
+msg.portal.needLogin=Silakan lakukan setelah masuk 
+msg.portal.coming=Segera hadir
+msg.portal.opensoon=Versi mobile akan segera hadir Silakan tunggu 
+
+#Masuk
+msg.portal.ifLogout=Apakah anda yakin ingin keluar dari sistem 
+msg.portal.plsInputUserName=Silakan masukan nama pengguna!
+msg.portal.plsInputPwd=Silakan masukan sandi masuk!
+msg.portal.plsInputCheckCode=Silakan masukan kode verifikasi!
+msg.portal.plsTryLogin=Nama pengguna atau sandi salah silakan masukan ulang 
+msg.portal.userDisabled=Status pengguna tidak tersedia!
+msg.portal.loginFailMore=Jumlah masuk salah telah melewati batas dan akun sudah dikunci Silakan hubungi CS atau silakan ulangi lagi 30 menit kemudian 
+msg.portal.checkCodeError=Kode verifikasi yang dimasukan salah!
+msg.portal.passwordAppealSuccs=Permohonan sandi berhasil silakan perhatikan kota email anda 
+msg.portal.loginPwdError=Sandi masuk salah!
+msg.portal.plsWait=Silakan tunggu...
+msg.portal.cancellationUser=Pengguna sudah ditutup 
+msg.portal.noAuditUser=Status pengguna belum diperiksa 
+#Hubungi kami
+msg.portal.vinbetService=Pusat pelayanan CS {[{VmluYmV0}]} dengan tulus melayani anda
+msg.portal.24hours=Kami memberikan pelayanan Online selama 365*24 jam 
+#Informasi terbaru
+msg.portal.message.delConfirm=Apakah anda yakin untuk menghapus berita tersebut 
+msg.portal.message.delFail=Penghapusan berita gagal!
+msg.portal.message.operateFail=Pengoprasian gagal!
+#Catatan sejarah
+msg.portal.history.nodata=Maaf, saat ini tidak ada catatan yang memenuhi syarat
+
+#Depo
+msg.portal.depositPrompt1=Masukan bank yang digunakan saat transaksi, nilai depo, sandi, langkah selanjutnya.
+msg.portal.depositPrompt2=Sistem akan menetapkan nilai deposit dengan menambahkan secara acak 2 angka desimal,dan akan memberikan 1 akun bank kepada pengguna yang bersifat sekali pakai, pengguna wajib untuk melakukan dan menyelesaikan transfer berdasarkan nilai dan waktu yang telah ditetapkan(Contoh depo: 100, nilai deposit yang ditetapkan: 100.04).
+msg.portal.depositPrompt3=Setelah selesai transfer silakan melakukan alokasi dari nilai depo, menulis waktu transfer dan catatan tambahan maka anda selesai melakukan pengajuan depo 
+msg.portal.depositPrompt4=Pengguna sedang dalam proses depo jangan tutup atau refresh halaman jika tidak akan mengakibatkan depo tidak dapat dilakukan jika memiliki pertanyaan, silakan hubungi CS kami 
+msg.portal.minDeposit=Depo terendah
+msg.portal.maxDeposit=Depo tertinggi
+msg.portal.depositTips=Informasi akun bank yang diberikan oleh Kota hiburan online Vinbet,setelah memastikan silakan melakukan transfer,dan pada saat mengajukan informasi depo ini,Anggota khusus akan segera memprosesnya untuk anda.Silakan terus tingkatkan saldo anda 
+msg.portal.selectDepositType=Silakan pilih metode transaksi
+msg.portal.selectDepositBank=Sllakan pilih bank
+msg.portal.enterDepositBank=Silakan masukan nama bank 
+msg.portal.selectProvince=Silakan pilih provinsi
+msg.portal.selectCity=Silakan pilih kota
+msg.portal.selectOrg=Silakan pilih agen
+msg.portal.plsSelect=Silakan pilih
+msg.portal.branchNetworkRequired=Silakan masukan cabang bank 
+msg.portal.depositorRequired=Silakan masukan nama lengkap pendepo!
+msg.portal.depositAmtRequired=Silakan masukan nilai depo!
+msg.portal.depositAmtNumber=Silakan masukan nilai efektif 
+msg.portal.allocationAmt=Silakan alokasikan saldo ke aplikasi!
+msg.portal.allocationAmtEqualTo=Jumlah saldo yang dialokasikan ke aplikasi harus sama dengan nilai depo!
+msg.portal.depositDateRequired=Silakan atur tanggal depo 
+msg.portal.depositTimeRequired=Silakan atur waktu depo 
+msg.portal.depositSucc=Pengajuan berhasil Sesaat lagi silakan lihat jumlah saldo akun anda 
+msg.portal.sureToDeposit=Pasti ingin depo
+msg.portal.depositFailure=Depo gagal,silakan hubungin CS kami!
+msg.portal.depositLimit=Depo anda sebelumnya masih dalam proses, dalam {0} menit tidak boleh mengajukan permohonan depo lagi!
+msg.portal.depositBefore=Silakan sebelum {0} anda menyelesaikan transaksi
+msg.portal.deposti2Tips=Pelanggan yang terhormat  Agar akun Vinbet anda dapat melakukan permainan dengan cepat Silakan dalam 15 menit melakukan transfer kedalam akun bank yang tertampil dibawah ini Akun bank hanya berlaku pada penggunaan saat ini saja Kami akan mengganti akun bank secara berkala Depo berikutnya silakan melakukan pengajuan ulang Ketika sedang melakukan depo Silakan lakukan berdasarkan tahap yang tampil dibawah ini Nilai depo yang ditentukan untuk melakukan depo Harus menambahkan nilai desimal. Terima kasih atas dukungan anda 
+msg.portal.noAvailableBank=Tidak ada kartu bank yang tersedia
+msg.portal.thaiUnavailabled=Metode depo konvensional saat ini tidak mendukung pengguna Bank Kasikorn Thailand ,Silakan menggunakan versi dekstop untuk melakukan depo!
+msg.portal.gameMindepositAmt=Setiap saldo depo yang dimasukan ke permainan harus lebih besar dari{0}
+msg.portal.plsInsertFundPwd=Silakan masukan sandi keuangan 
+msg.portal.depositProcessed=Permohonan depo anda masih dalam proses,Silakan tunggu,Jika memiliki pertanyaan silakan hubungi CS kami 
+msg.portal.trueNameCHNLength=Silakan masukan nama pembuka akun 
+msg.portal.trueNameLength=Silakan masukan nama pembuka akun yang tepat
+msg.portal.cancleOrderMsg=Pemesanan sudah dibatalkan Bila ingin depo lagi silakan mengajukan ulang !
+msg.portal.orderExpired=Please kindly wait if you have already done the remittance; if not, please re-submit the request and do the remittance.
+#Daftar
+msg.portal.trueNameDesc=Silakan masukan nama lengkap sebenarnya,harus sama dengan nama yang tertera pada akun bank yang pengguna untuk depo dan penarikan!
+msg.portal.pwdDesc=Silakan mengkombinasikan 6-16 dijit dari angka dan huruf!
+msg.portal.surNameRequired=Nama depan tidak boleh kosong
+msg.portal.surNameLength=Panjangnya Nama depan Jenis mata uang saat ini terbatas dari {0}-{1} karakter!
+msg.portal.surNameCHNLength=Panjangnya Nama depan Jenis mata uang saat ini terbatas dari {0}-{1} karakter mandarin!
+msg.portal.givenNameRequired=Nama belakang tidak boleh kosong!
+msg.portal.givenNameLength=Panjangnya Nama belakang Jenis mata uang saat ini terbatas dari {0}-{1} karakter!
+msg.portal.givenNameCHNLength=Panjangnya Nama belakang Jenis mata uang saat ini terbatas dari {0}-{1} karakter mandarin!
+msg.portal.userNameRequired=Nama pengguna tidak boleh kosong!
+msg.portal.userNameRule=Nama pengguna terdiri dari 5-20 dijit angka dan huruf, hanya dapat memasukan kombinasi dari huruf alpabet dan angka !
+msg.portal.userNameUsed=Nama pengguna ini sudah digunakan!
+msg.portal.pwdRequired=Silakan masukan sandi!
+msg.portal.pwdLength=Silakan masukan 6-12 dijit sandi!
+msg.portal.pwdEqualToUsername=Nama pengguna dan sandi tidak boleh sama!
+msg.portal.pwdStrength=Sandi terlalu sederhana Silakan gunakan kombinasi dari angka dan huruf untuk membuat 6-16 dijit sandi !
+msg.portal.repeatPwdRequired=Silakan masukan pastikan sandi!
+msg.portal.repeatPwdEqualTo=2 kali sandi yang dimasukan tidak sama,silakan masukan ulang!
+msg.portal.emailRequired=Silakan masukan email!
+msg.portal.emailRule=Format email salah!
+msg.portal.mobileRequired=Silakan masukan nomor ponsel!
+msg.portal.mobileMinlength=Nomor ponsel:Silakan masukan 8-20 buah angka!
+msg.portal.mobileUsed=Nomor ponsel ini sudah pernah digunakan untuk mendaftar!
+msg.portal.agentNameLength=Kode agen terdiri dari 5-25 buah karakter!
+msg.portal.agentNameNotExist=Kode agen tidak ada!
+msg.portal.checkCodeRequired=Silakan masukan kode verifikasi!
+msg.portal.agreeRequired=Silakan ceklist setuju perjanjian buka akun!
+msg.portal.registFailed=Pendaftaran gagal silakan hubungi CS kami 
+msg.portal.registSucc=Selamat,pendaftaran berhasil!
+msg.portal.codeSended=Kode verifikasi sudah dikirim Silakan diperiksa 
+msg.portal.birthRequired=Hari lahir tidak boleh kosong!
+msg.portal.plsSetBirthDay=Silakan atur tanggal bulan dan tahun kelahiran!
+msg.portal.emailExist=Email sudah digunakan 
+msg.portal.surName=Nama depan
+msg.portal.givenName=Nama belakang
+msg.portal.sendCodeMore=Hari ini anda telah melewati ambang batas pengiriman kode verifikasi, silakan coba lagi besok 
+
+#Pusat pribadi
+msg.portal.memberInfoUpdatedSucc=Pengubahan data pengguna berhasil 
+msg.portal.currentPwdRequired=Silakan masukan sandi saat ini 
+msg.portal.newPwdRequired=Silakan masukan sandi baru 
+msg.portal.confirmNewPwdRequired=Silakan masukan pastikan sandi baru 
+msg.portal.newPwdEqualTo=Sandi masuk dan pastikan sandi baru tidak boleh sama!
+msg.portal.newPwdEqualToOld=Sandi baru dan sandi saat ini tidak boleh sama!
+msg.portal.pwdUpdatedSucc=Sandi berhasil diubah 
+msg.portal.newEmailRequired=Silakan masukan email baru 
+msg.portal.confirmNewEmailRequired=Silakan masukan pastikan email baru 
+msg.portal.newEmailEqualTo=Email baru dan email saat ini tidak boleh sama 
+msg.portal.confirmEmailNotEqualTo=Email baru dan email pastikan tidak sama!
+msg.portal.loginPwdRequired=Silakan masukan sandi masuk 
+msg.portal.emailUpdatedSucc=Alamat email berhasil diubah 
+msg.portal.authInfoSent=Kode verifikasi sudah dikirim ke email anda silakan periksa 
+msg.portal.currentPwdError=Sandi saat ini tidak tepat 
+msg.portal.mobileUpdFail=Pengubahan gagal Nomor ponsel ini sudah pernah digunakan untuk mendaftar 
+msg.portal.userNameNoExist=Pengguna ini tidak ada!
+msg.portal.applyTooMany=Jumlah pengajuan terlalu banyak,melebihi 5 kali,silakan hubungi CS kami!
+msg.portal.emailNoValidation=Alamat email salah atau email tersebut belum diverifikasi!
+msg.portal.fundpwdSameLoginpwd=Sandi keuangan tidak boleh sama dengan nama pengguna atau sandi masuk 
+msg.portal.noUser=Informasi pengguna salah!
+msg.portal.existBankNum=Kartu bank sudah ada!
+msg.portal.fundPwdSetSucc=Pengaturan sandi keuangan berhasil 
+msg.portal.nicknameRequired=Nama panggilan tidak boleh kosong!
+msg.portal.addressRequired=Alamat tidak boleh kosong
+msg.portal.maxCardLimit=Jumlah kartu bank melewati batas terbanyak 
+msg.portal.fundPwdError=Saldo keuangan salah 
+msg.portal.networkError=Keadaan jaringan tidak normal 
+msg.portal.fundPwdErrorMore=Memasukan Sandi keuangan melewati ambang batas  akun sudah dibekukan 
+
+#Saldoku
+msg.portal.timeout=Waktu habis 
+msg.portal.showMoney=Tampilkan  saldo
+msg.portal.loading=Sedang memuat...
+msg.portal.freeze=Beku
+#Transfer
+msg.portal.pwdError=Sandi salah!
+msg.portal.transferFailure=Transfer gagal silakan ulangi beberapa saat lagi !
+msg.portal.transferAmtNumber=Nilai harus merupakan angka genap 
+msg.portal.transferAppSame=Aplikasi dari transfer masuk dan transfer keluar tidak boleh sama 
+msg.portal.transferMoneyNotEnough=Aplikasi transfer tidak memiliki saldo yang cukup untuk melakukan transfer 
+msg.portal.transferFai=Transfer gagal 
+msg.portal.transferSuc=Transfer berhasil 
+msg.portal.noEndActivity=Maaf, anda memiliki kegiatan yang belum selesai 
+msg.portal.repIpPhoneEmail=IP, No telepon, Email berulang, tidak dapat mengikuti kegiatan preferensi 
+msg.portal.noFirstTrans=Maaf Bukan transfer masuk pertama kali 
+msg.portal.noPayInfo=Maaf Tidak ada catatan rekam depo 
+msg.portal.noEnableAct=Maaf Tidak ada kegiatan yang dapat diikuti 
+msg.portal.noEnoughMoney=Maaf Nilai transfer lebih besar dari saldo yang ada di dompet,transfer gagal !
+
+#Penarikan
+msg.portal.withdrawalProcessed=Pengajuan penarikan anda sedang dalam proses,silakan tunggu,jika memiliki pertanyaan silakan hubungi CS kami 
+msg.portal.moneyRequired=Silakan pilih aplikasi untuk memasukan nilai penarikan 
+msg.portal.withdrawalMoneyNotEnough=Saldo yang dapat ditarik tidak mencukupi 
+msg.portal.withdrawalMinLimit=Nilai penarikan tidak boleh lebih kecil dari
+msg.portal.withdrawalFai=Pengajuan penarikan gagal!
+msg.portal.withdrawalSuc=Pengajuan penarikan berhasil!
+msg.portal.withdrawalAmtNumber=Nilai saldo harus merupakan angka genap!
+msg.portal.selectBank=Silakan pilih bank
+msg.portal.cardLimit=Nomor kartu bank harus merupakan angka bulat dari {0}-{1} 
+msg.portal.debitCard=Kartu debit
+msg.portal.firstWithdrawal=Penarikan awal
+msg.portal.walletNoAvailMoney=Saldo dompet tidak cukup tidak dapat melakukan penarikan 
+msg.portal.DepositforNoInRules=Terlalu sering melakukan depo silakan melakukannya sesaat lagi 
+msg.portal.drawNoInRules=Terlalu sering melakukan penarikan silakan melakukannya sesaat lagi 
+msg.portal.orgAccountRequired=Nomor akun agen tidak boleh kosong
+msg.portal.moreThenEnableDraw=Nilai penarikan yang anda masukan lebih besar dari nilai yang dapat ditarik
+msg.portal.noOnlineFinancer=Pengoprasian gagal. tidak ada petugas Keuangan yang online 
+msg.portal.appCountError=Statistik taruhan anak aplikasi salah
+msg.portal.cardRequired=Nomor kartu bank tidak boleh kosong!
+msg.portal.lessThenFee=Penarikan gagal nilai penarikan lebih kecil dari biaya admin penarikan 
+msg.portal.counterFeeDesc=Pelanggan yang terhormat, sejak penarikan sebelumnya sampai penarikan saat ini, jumlah depo anda adalah {0}, harus mencapai nilai taruhan {1}, nilai taruhan yang sudah berhasil {2}. Oleh karen belum mencapai nilai taruhan maka penarikan kali ini akan dipotong biaya admin sebesar {3}.
+
+#活动相关
+msg.activity.turnoverInsufficient=Your turnover is insufficient; another {0} CNY is required…
+msg.activity.insistTransfer=If you insist on transferring, you cannot get the {0} CNY bonus.
+msg.activity.turnoverInsufficientForRebate=Your turnover is insufficient for the rebate; another {0} CNY is required.
+msg.activity.lowerWithdrawAmt=or you can lower withdrawal amount to {0} CNY.
+msg.activity.tryAgain=Try Again
+
+#验证码相关
+msg.checkcode.subject=U2VjdXJpdHkgQ29kZVtWaW5iZXRd
+msg.checkcode.body=U2VjdXJpdHkgQ29kZTp7MH1bVmluYmV0XQ==

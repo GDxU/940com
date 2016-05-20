@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>940-课程简介</title>
+	<link rel="stylesheet" type="text/css" href="/style/style.css">
+	<link rel="stylesheet" type="text/css" href="/style/shop.css">
+</head>
+<body>
+	<div id="header" class='max_head'>
+		<div class='wrap_head'>
+			<div class='j_topbar'>
+				<div class='j_wrap topBar'>
+					<div class="fl l_fx">
+						<span class='fl'> <font>欢迎光临 （www.940.com） 940电商培训</font><i>|</i>
+						<a href="">问题反馈</a><i>|</i> <a href="">立即报名</a>
+						<!-- 分享： -->
+						</span> 
+						<!-- <em clas='fl'> <a class='xl' href=""></a> <a class='wb'
+							href=""></a> <a class='qq' href=""></a> <a class='wx' href=""></a>
+						</em> -->
+					</div>
+					<div class='fr r_log'  id='logstatus'>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class='wrap_nav'>
+				<div class='j_wrap j_nav'>
+					<a class='fl logo' href="/"><img id="logo940" src="/images/logo.png"></a>
+					<ul class='fr nav_ul'>
+						<li><a href="/">首页</a></li>
+						<li class='cur'><a href="/shop">开店指南</a></li>
+						<li><a href="/video">视频教学</a></li>
+						<li><a href="/jianjie">课程简介</a></li>
+						<li><a href="/teacher">讲师团队</a></li>
+						<!-- <li><a href="javascript:">电商工具</a></li> -->
+						<li><a href="/case">成功案例</a></li>
+						<li><a href="/about">关于我们</a></li>
+					</ul>
+					<div class="phone">
+						<span title='940服务热线'></span> <a title='在线咨询'
+						href="">咨询</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id='kd_content'>
+		<div id="wrapJiqiao">
+			<ul class='j_tab_ul'>
+				<li class='cur'><a href="/shop">开店流程</a></li>
+				<li><a href="/shop/jiqiao">开店技巧</a></li>
+				<li><a href="">干货分享</a></li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">网店推广</a></li>
+			</ul>
+			<div class='j_details'>
+			     <div class='fl l_page_link wrapLink' style="background:#4BBFEC;">
+			     	 <a class="page1" href="/shop/liucheng/page1.html">
+						<em class="iconp">淘宝账号注册</em>
+					 </a>
+					 <a class="page2 cur" href="/shop/liucheng/page2.html">
+						<em class="iconp">支付宝实名认证</em>
+					 </a>
+					 <a class="page3" href="/shop/liucheng/page3.html">
+						<em class="iconp">身份证认证</em>
+					 </a>
+					 <a class="page4" href="/shop/liucheng/page4.html">
+						<em class="iconp">免费申请开店</em>
+					 </a>
+					 <a class="page5 " href="/shop/liucheng/page5.html">
+						<em class="iconp">店铺基础设置</em>
+					 </a>
+					 <a class="page6" href="/shop/liucheng/page6.html">
+						<em class="iconp">淘宝高级营销</em>
+					 </a>
+			     </div>
+			     <div class="fl r_lc_cont">
+			     	<div class="txtTitle">
+						<h1>开店第二步：支付宝实名认证</h1>
+						<div class="boot">
+							<div class="wrapfx" style="display: inline-block;">
+								<span>时间：2015-11-23 17：48</span>|
+								<span>发布：www.940.com</span>|
+								<span>分享到：</span>
+								<div class="bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1448340067411">
+									<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+									<a class="bds_qzone" data-cmd="qzone" href="#" title="分享到QQ空间"></a>
+									<a class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+									<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+									<a class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+									<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+									<a class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+									<a class="bds_more" data-cmd="more"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='show_cont'>
+					
+                    　		    <p>
+	　　第一步：注册完淘宝账号之后，会自动进入淘宝账号管理页面。点击<span style="color: #ff0000">“支付宝绑定设置”</span>。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="支付宝绑定设置" src="/images/shop/zf1.png" style="width: 650px; height: 509px"></p>
+<p>
+	<br>
+	　　第二步：点击<span style="color: #ff0000">“进入支付宝”</span>按钮，进入支付宝页面。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="点击“进入支付宝”按钮，进入支付宝页面" src="/images/shop/zf2.png" style="width: 650px; height: 314px"></p>
+<p>
+	<br>
+	　　第三步：如果这里提示不能认证或者登陆失败，请重新打开浏览器输入<a href="http://www.alipay.com">www.alipay.com</a>，输入你的淘宝账号登陆，<span style="color: #ff0000">申请认证</span>。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="输入你的淘宝账号登陆，申请认证" src="/images/shop/zf3.png" style="width: 650px; height: 198px"></p>
+<p>
+	<br>
+	　　第四步：这里以大陆用户为例，如果你是大陆用户，点击<span style="color: #ff0000">“立即认证(大陆)”</span>。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="这里以大陆用户为例，如果你是大陆用户，点击“立即认证(大陆)”。" src="/images/shop/zf4.png" style="width: 650px; height: 251px"></p>
+<p>
+	<br>
+	　　第五步：输入<span style="color: #ff0000">真实姓名、身份证号码、支付宝支付密码</span>。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="输入真实姓名、身份证号码、支付宝支付密码" src="/images/shop/zf5.png" style="width: 650px; height: 468px"></p>
+<p>
+	<br>
+	　　第六步：如果你的身份证没有通过网上公安，就需要<span style="color: #ff0000">申请人工审核</span>。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="如果你的身份证没有通过网上公安，就需要申请人工审核" src="/images/shop/zf6.png" style="width: 650px; height: 219px"></p>
+<p>
+	<br>
+	　　第七步：现在<span style="color: #ff0000">支付宝实名认证</span>（2015年），不但需要身份证信息，还需要其他证件（户口簿、集体户口、社会保障卡、户籍证明护照、驾照，<span style="color: #ff0000">其中任意选一种</span>）。<br>
+	&nbsp;</p>
+<p style="text-align: center">
+	<img alt="支付宝实名认证" src="/images/shop/zf7.png" style="width: 650px; height: 851px"></p>
+<p>
+	<br>
+	&nbsp;</p>
+
+              
+					</div>
+			     </div>
+			     <h1 style="clear: both;"></h1>
+			</div>
+	</div>
+	</div>
+	<div id="footer">
+		<div class="wrapCont">
+			<ul class="foot_con">
+				<li class="padNone">
+					<h1>合作伙伴</h1>
+					<div class="foot_link">
+						<a href="">淘宝网</a><i>|</i>
+						<a href="">天猫</a><i>|</i>
+						<a href="">腾讯QQ</a><i>|</i>
+						<a href="">京东商城</a><i>|</i>
+						<a href="">易购网</a><i>|</i>
+						<a href="">新浪</a><i>|</i>
+						<a href="">优酷网</a><i>|</i>
+						<a href="">土豆网</a><i>|</i>
+						<a href="">搜狐</a><i>|</i>
+						<a href="">支付宝</a><i>|</i>
+						<a href="">财付通</a><i>|</i>
+						<a href="">余额宝</a>
+						
+					</div>
+				</li>
+				<li>
+					<h1>联系方式</h1>
+					<div class="foot_contact">
+						<p>服务热线：400-1000-940</p>
+						<p>Q Q在线：400-1000-940 </p>
+						<p>企业邮箱：940@sdd.com</p>
+						<p>公司地址：深圳市龙岗</p>
+					</div>
+				</li>
+				<li class="follow_li">
+					<h1>关注分享</h1>
+					<div class="foot_follow">
+						<div class="ewm">
+							<img src="/images/e.png">
+							<div class="r_txt">
+								<p>分享到：</p>
+								<div class='share_link'>
+									<a class="a1" href=""></a>
+									<a class="a2" href=""></a>
+									<a class="a3" href=""></a>
+									<a class="a4" href=""></a>
+									<a class="a5" href=""></a>
+									<a class="a6" href=""></a>
+								</div>
+							</div>
+						</div>
+						<p class='wx_txt'>微信扫一扫，关注940电商培训</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<div class="b_record">
+			<p><b>深圳市九四零教育有限公司</b>&nbsp; Copyright   940jiaoyu.AII Rights Reserved  &nbsp;  粤ICP备15080486号</p>
+			<div class="b_ico">
+				<a href=""><img src="/images/b_1.png"></a>
+				<a href=""><img src="/images/b_2.png"></a>
+				<a href=""><img src="/images/b_3.png"></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='/script/jquery-1.8.3.min.js'></script>
+	<script src="/script/fengs.js?2015030"></script>
+	<script type="text/javascript" src='/script/config.js?0830'></script>
+	<script type="text/javascript">
+		Fengs.use('940/index', function(d) {d.init();});
+	</script>
+	
+	<script type="text/javascript">
+		Fengs.use('940/shop/index', function(d){d.shopInit();});
+		with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+	</script>
+</body>
+</html>

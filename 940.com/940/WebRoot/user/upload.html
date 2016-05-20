@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='/script/jquery-1.8.3.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			var r = /<[^>]*>/g
+			$('#fileImg').change(function(){
+				$('#f').submit();
+				$("#ifr").load(function(){
+					try{
+						
+						var d = $.parseJSON(this.contentWindow.document.body.innerHTML.replace(r,''));
+						console.log(d);
+					}catch(e){};
+				});
+			})
+		})
+		
+	</script>
+</head>
+<body>
+	<form id="f" target="form" action="/upload?id_good=11" method="post" enctype="multipart/form-data">
+		<input id="fileImg" name="img" type="file">
+	</form>
+	<iframe id="ifr" name="form" style="display:0none;"></iframe>
+</body>
+</html>

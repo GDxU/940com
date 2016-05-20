@@ -1,0 +1,33 @@
+#js_content{width:100%;min-width:1200px;background:#F6F6F6 url(../images/reg_bg.png) repeat-x;overflow:hidden;margin-top:-1px}
+#wrapTeacher{width:1200px;margin:30px auto;padding:0;background:#FFF}
+.ad_teacher{height:228px}
+.teacher_list{width:1144px;margin:0 auto;overflow:hidden;padding-bottom:20px}
+.teacher_list h2{width:100%;height:40px;line-height:40px;font-size:24px;font-weight:500;margin-top:15px;border-bottom:1px solid #DDD}
+.teacher_list h2 span{display:inline-block;height:39px;padding:0 5px;border-bottom:2px solid #1BB3BC;color:#FF6601}
+.teacher_list .list_ul{width:1160px}
+.teacher_list .list_ul li{width:562px;height:222px;border:1px solid #DDD;float:left;margin-right:13px;margin-top:15px}
+.list_ul li .tc_tx{width:244px;height:100%;line-height:222px;text-align:center}
+.list_ul li .tc_tx img{vertical-align:middle;border-radius:50%}
+.list_ul li .name_txt{width:278px;height:182px;background:url(/images/tc_bg.png) no-repeat;position:relative;padding:20px 0 20px 40px}
+.list_ul li .name_txt h3{font-size:20px;font-weight:700;color:#474747}
+.list_ul li .name_txt p.p1{font-size:16px;color:#474747;text-indent:-6px;margin:7px 0}
+.list_ul li .name_txt p.p2{line-height:25px;max-height: 93px;overflow: hidden;}
+.list_ul li .name_txt a{display:block;height:30px;line-height:30px;width:150px;text-align:center;background:#DEDDE5;margin-top:10px;color:#474747;cursor: pointer;}
+.list_ul li .name_txt a:hover{background:#98E9D9}
+.list_ul li .name_txt .t_r{position:absolute;width:79px;height:79px;top:-4px;right:-4px;background:url(/images/t_r.png) no-repeat}
+/*分页*/
+ .tcdPageCode{padding-top: 20px;text-align: center;*padding-top: 42px;}
+ .tcdPageCode a{padding: 5px 10px;border:1px solid #DDDDDD;color: #7F7F7F;border-radius: 2px;font-size: 12px;margin-left: 5px;display: inline-block;
+	background-image: linear-gradient(top, #FEFEFE, #F2F2F2);
+	background-image: -moz-linear-gradient(top, #FEFEFE, #F2F2F2);
+	background-image: -webkit-linear-gradient(top, #FEFEFE, #F2F2F2);
+	background-image: -ms-linear-gradient(top, #FEFEFE, #F2F2F2);
+	background-image: -o-linear-gradient(top, #FEFEFE, #F2F2F2);
+}
+.tcdPageCode a:hover{color: #FFBA00;}
+ .tcdPageCode a.nextPage{padding: 5px 20px 5px 5px;position: relative;}
+ .tcdPageCode a.nextPage b{position: absolute;display: inline-block;width: 0;height: 0;border-width: 6px;border-style: dashed;border-color: transparent;border-left-color: #7F7F7F;border-left-style: solid;top: 7px;right: 1px;}
+ .tcdPageCode a.prevPage{padding: 5px 5px 5px 20px;position: relative;}
+ .tcdPageCode a.prevPage b{position: absolute;display: inline-block;width: 0;height: 0;border-width: 6px;border-style: dashed;border-color: transparent;border-right-color: #7F7F7F;border-right-style: solid;top: 8px;left: 1px;}
+ .tcdPageCode span{margin-left: 5px;}
+ .tcdPageCode span.current{background: #FFBA00;border:0;padding: 6px 11px;color: #fff;border-radius: 2px;display: inline-block;}

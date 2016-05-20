@@ -1,0 +1,49 @@
+<ion-view view-title="快递信息">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-help-circled" ng-click="ruleAlert()">
+    </button>
+    <button class="button button-icon button-clear ion-compose" ng-click="post()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ul class="list card">
+
+      <li class="item">
+        <i>快递公司：</i>
+        {{post.get('company')}}
+      </li>
+
+      <li class="item">
+        <i>姓名：</i>
+        {{post.get('name')}}
+      </li>
+
+      <li class="item">
+        <i>取件号：</i>
+        {{post.get('code')}}
+      </li>
+
+      <li class="item">
+        <i>地址：</i>
+        {{post.get('address')}}
+      </li>
+
+      <li class="item">
+        <i>备注：</i>
+        {{post.get('note')}}
+      </li>
+
+      <li class="item">
+        <i>派送状态：</i>
+        {{post.get('status')|statusName}}
+      </li>
+    </ul>
+
+    <div class="padding">
+      <button class="button button-block button-assertive" ng-click="receive()" ng-show="post.get('status') == 3">确认收货</button>
+      <button class="button button-block button-assertive" ng-click="openGrade()" ng-show="post.get('status') == 4 && !post.get('isGrade')">评分</button>
+      <button class="button button-block button-assertive" ng-click="openGrade()" ng-show="post.get('status') == 4 && post.get('isGrade')">查看评分</button>
+    </div>
+
+  </ion-content>
+</ion-view>

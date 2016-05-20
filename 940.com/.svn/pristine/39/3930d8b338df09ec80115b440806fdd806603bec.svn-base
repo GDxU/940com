@@ -1,0 +1,382 @@
+package com.chuangdun.jsl.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Timestamp;
+import java.util.Date;
+
+import com.chuangdun.jsl.bean.Article;
+import com.chuangdun.jsl.lab.DBM;
+import com.chuangdun.jsl.lab.LAB;
+import com.chuangdun.jsl.lab.Memcached;
+import com.chuangdun.jsl.lab.Page;
+import com.chuangdun.jsl.lab.SYS;
+import com.sun.rowset.CachedRowSetImpl;
+import static com.chuangdun.jsl.lab.Constant.*;
+
+public class ArticleManagerDao {
+
+	private static final int LINE = 10;
+	private final static String INSERT_SQL = "insert into jsl_article(a_author,a_title,a_content,a_preview,a_time,a_click,a_type,a_status,a_priority,a_join_time,a_income) values(?,?,?,?,?,?,?,?,?,?,?)";
+	private final static String UPDATE_SQL = "update jsl_article set a_author=?,a_title=?,a_content=?,a_preview=?,a_time=?,a_click=?,a_type=?,a_status=?,a_priority=?,a_join_time=?,a_income=? where a_id=?";
+	private final static String UPDATE_CONTENT_SQL = "update jsl_article set a_content=? where a_id=?";
+	private final static String DELETE_SQL = "update jsl_article set a_status=? where a_id=?";
+	
+	public Page getArticlePage(String type, String searchStr, int page) {
+		System.out.println("type:" + type + " searchStr:" + searchStr + " page:" +  page);
+		Page articlePage = new Page();
+		articlePage.setCurrentPage(page);
+		articlePage.setPageSize(LINE);
+		String tips = "";
+		String error = "";
+		int all = 0;
+		// ------------------------- 以下访问数据-------------------------
+		Connection conn = null;
+		CallableStatement call = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+		try {
+			rowset = new CachedRowSetImpl();
+			conn = DBM.getInstance().getConnectionByClassForName();
+			call = conn.prepareCall("{call GET_SEARCH_COUNT(?,?,?,?)}");
+			call.setString(1, searchStr);
+			call.setString(2, type);
+			call.setInt(3, page);
+			call.registerOutParameter(4, java.sql.Types.INTEGER);
+			call.execute();
+			System.out.println("ALL1:" + call.getInt(4));
+			
+			all = call.getInt(4);
+			call = conn.prepareCall("{call SEARCH_ARTICLE_ALL(?,?,?)}");
+			call.setString(1, searchStr);
+			call.setString(2, type);
+			call.setInt(3, page);
+			rs = call.executeQuery();
+			rowset.populate(rs); // rs转成离线结果集rowset
+			rs.close();
+			// call.close();
+			conn.close();
+			conn = null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			tips = SYS.dbError;
+			error = e.getMessage();
+			LAB.logs("ARTICLE", error);
+			if (conn != null)// 避免二次try (不放在finally块，避免每次if判断)
+			{
+				try {
+					rs.close();
+					call.close();
+					conn.close();
+				} catch (Exception e2) {
+					error = error + " " + e2.getMessage();// 累加错误信息
+				}
+			}
+			articlePage.setError(error);
+		}
+		articlePage.setTotalCount(all);
+		articlePage.setTips(tips);
+		articlePage.setCachedRowSetImpl(rowset);
+		
+		return articlePage;
+	}
+	
+	
+	public Page getArticlePageByConditions( String searchStr, int page,int type,int status) {
+		System.out.println( "getArticlePageByConditions() searchStr:" + searchStr + " page:" +  page + "  type:" + type + " status: " + status);
+		Page articlePage = new Page();
+		articlePage.setCurrentPage(page);
+		articlePage.setPageSize(LINE);
+		String tips = "";
+		String error = "";
+		int all = 0;
+		// ------------------------- 以下访问数据-------------------------
+		Connection conn = null;
+		CallableStatement call = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+		try {
+			
+			rowset = new CachedRowSetImpl();
+			conn = DBM.getInstance().getConnectionByClassForName();
+			call = conn.prepareCall("{call GET_SEARCH_ARTICLE_BY_CONDITION_COUNT(?,?,?,?)}");
+			call.setString(1, searchStr);
+			call.setInt(2, type);
+			call.setInt(3, status);
+			call.registerOutParameter(4, java.sql.Types.INTEGER);
+			call.execute();
+			System.out.println("ALL COUNT:" + call.getInt(4));
+			
+			all = call.getInt(4);
+			call = conn.prepareCall("{call SEARCH_ARTICLE_BY_CONDITIONS(?,?,?,?,?)}");
+			call.setString(1, searchStr);
+			call.setInt(2, type);
+			call.setInt(3, page);
+			call.setInt(4, status);
+			call.setInt(5, 8);
+			rs = call.executeQuery();
+			rowset.populate(rs); // rs转成离线结果集rowset
+			rs.close();
+			// call.close();
+			conn.close();
+			conn = null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			tips = SYS.dbError;
+			error = e.getMessage();
+			LAB.logs("ARTICLE", error);
+			if (conn != null)// 避免二次try (不放在finally块，避免每次if判断)
+			{
+				try {
+					rs.close();
+					call.close();
+					conn.close();
+				} catch (Exception e2) {
+					error = error + " " + e2.getMessage();// 累加错误信息
+				}
+			}
+			articlePage.setError(error);
+		}
+		articlePage.setTotalCount(all);
+		articlePage.setTips(tips);
+		articlePage.setCachedRowSetImpl(rowset);
+		
+		return articlePage;
+	}
+	
+	
+
+	public Page getAllArticlePage( String searchStr, int page,int status) {
+		System.out.println( "getAllArticlePage() searchStr:" + searchStr + " page:" +  page);
+		Page articlePage = new Page();
+		articlePage.setCurrentPage(page);
+		articlePage.setPageSize(LINE);
+		String tips = "";
+		String error = "";
+		int all = 0;
+		// ------------------------- 以下访问数据-------------------------
+		Connection conn = null;
+		CallableStatement call = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+		try {
+			
+			rowset = new CachedRowSetImpl();
+			conn = DBM.getInstance().getConnectionByClassForName();
+			call = conn.prepareCall("{call GET_SEARCH_ALL_COUNT(?,?,?)}");
+			call.setString(1, searchStr);
+			call.setInt(2, page);
+			call.registerOutParameter(3, java.sql.Types.INTEGER);
+			call.execute();
+			System.out.println("ALL COUNT:" + call.getInt(3));
+			
+			all = call.getInt(3);
+			call = conn.prepareCall("{call SEARCH_ARTICLE_ALL(?,?,?)}");
+			call.setString(1, searchStr);
+			call.setInt(2, page);
+			call.setInt(3, 8);
+			rs = call.executeQuery();
+			rowset.populate(rs); // rs转成离线结果集rowset
+			rs.close();
+			// call.close();
+			conn.close();
+			conn = null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			tips = SYS.dbError;
+			error = e.getMessage();
+			LAB.logs("ARTICLE", error);
+			if (conn != null)// 避免二次try (不放在finally块，避免每次if判断)
+			{
+				try {
+					rs.close();
+					call.close();
+					conn.close();
+				} catch (Exception e2) {
+					error = error + " " + e2.getMessage();// 累加错误信息
+				}
+			}
+			articlePage.setError(error);
+		}
+		articlePage.setTotalCount(all);
+		articlePage.setTips(tips);
+		articlePage.setCachedRowSetImpl(rowset);
+		
+		return articlePage;
+	}
+	
+	
+	
+
+	public String getArticleCached() throws SQLException {
+		String str = (String) Memcached.get("ARTICLEPAGE");
+		if (str == null || "".equals(str)) {
+			StringBuffer sb = new StringBuffer(100);
+			Page articlePage = getArticlePage("", "", 1);
+			CachedRowSetImpl rs = articlePage.getCachedRowSetImpl();
+			while (rs.next()) {
+				sb.append("<a href='x/" + LAB.NumberToABC(rs.getString("a_id"))
+						+ ".html'>" + rs.getString("a_TITLE") + "</a>");
+			}
+			rs.close();
+			str = sb.toString();
+			Memcached.put("ARTICLEPAGE", str, new Date(43200000));
+		}
+
+		return str;
+	}
+
+	public void insertTestArticle() {
+		String sql = "insert into jsl_article";
+	}
+
+	public CachedRowSetImpl getArticleRowSet(int id) {
+		String tips = "";
+		String error = "";
+		int all = 0;
+		// ------------------------- 以下访问数据-------------------------
+		Connection conn = null;
+		CallableStatement call = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+		try {
+			rowset = new CachedRowSetImpl();
+			conn = DBM.getInstance().getConnectionByClassForName();
+
+			String query = "select * from jsl_article where a_id=" + id;// 创建表SQL语句
+			Statement stmt = conn.createStatement();// 创建SQL命令对象
+			rs = stmt.executeQuery(query);
+
+			rowset.populate(rs); // rs转成离线结果集rowset
+			rs.close();
+			// call.close();
+			conn.close();
+			conn = null;
+		} catch (Exception e) {
+			e.printStackTrace();
+			tips = SYS.dbError;
+			error = e.getMessage();
+			LAB.logs("ARTICLE", error);
+			if (conn != null)// 避免二次try (不放在finally块，避免每次if判断)
+			{
+				try {
+					rs.close();
+					call.close();
+					conn.close();
+				} catch (Exception e2) {
+					error = error + " " + e2.getMessage();// 累加错误信息
+				}
+			}
+
+		}
+
+		return rowset;
+	}
+
+	public boolean insertOrUpdateArticle(Article article, String doStr) {
+		Connection conn = null;
+		CallableStatement call = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+
+		try {
+			conn = DBM.getInstance().getConnectionByClassForName();
+			String exeSql;
+			if (doStr.equals(ADD))
+				exeSql = INSERT_SQL;
+			else
+				exeSql = UPDATE_SQL;
+			ps = conn.prepareStatement(exeSql);
+			ps.setString(1, article.getAuthor());
+			ps.setString(2, article.getTitle());
+			ps.setString(3, article.getContent());
+			ps.setString(4, article.getPreview());
+			java.sql.Timestamp ts = new Timestamp(article.getTime());// 用Date生成一个时间戳
+			ps.setTimestamp(5, ts);
+			ps.setInt(6, article.getClickNum());
+			ps.setString(7, article.getType());
+			ps.setString(8, article.getStatus());
+			ps.setInt(9, article.getPriority());
+			java.sql.Timestamp jTs = new Timestamp(article.getJoinTime());// 用Date生成一个时间戳
+			ps.setTimestamp(10, jTs);
+			ps.setInt(11, article.getInCome());
+			
+			System.out.println("doStr:" + doStr + " " + article.getType());
+			if (doStr.equals("edit")){
+				ps.setInt(12, article.getId());
+			}
+			int i = ps.executeUpdate();
+			System.out.println(i);
+		} catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+			return false;
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+	
+	
+	public boolean updateContent(Article article) {
+		Connection conn = null;
+		CallableStatement call = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+
+		try {
+			conn = DBM.getInstance().getConnectionByClassForName();
+			String exeSql = UPDATE_CONTENT_SQL;
+			
+			ps = conn.prepareStatement(exeSql);
+			ps.setString(1, article.getContent());
+			ps.setInt(2, article.getId());
+			int i = ps.executeUpdate();
+			
+		} catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+			return false;
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	public boolean deleteArticle(int id) {
+		Connection conn = null;
+		CallableStatement call = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		CachedRowSetImpl rowset = null;
+		System.out.println("deleteArticle() id:" + id);
+
+		try {
+			
+			conn = DBM.getInstance().getConnectionByClassForName();
+			ps = conn.prepareStatement(DELETE_SQL);
+			ps.setInt(1, -1);
+			ps.setInt(2, id);
+			int i = ps.executeUpdate();
+		} catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+			return false;
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+}

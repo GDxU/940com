@@ -1,0 +1,13 @@
+<dl ng-repeat="videos in arr" class="{{videos.className}}">
+<a href="videoDemo.html?videoId={{videos.url}}" videoId='{{videos.url}}'>
+<dt><img class="video-icon1" src="content/images/index/video-icon{{videos.id}}.jpg"></dt>
+<dd class="video-topic">{{videos.title}}</dd>
+<dd class="video-play">
+    <i class="play-icon1"></i>
+    <span>时长：05:30</span>
+    <span class="line">|</span>
+    <i class="play-icon2"></i>
+    <span>播放：1564</span>
+</dd>
+</a>
+</dl>

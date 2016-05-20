@@ -1,0 +1,407 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者1</title>
+<link rel="stylesheet" type="text/css" href="/style/style.css?02">
+<link rel="stylesheet" type="text/css" href="content/themes/style.css">
+<script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="scripts/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="scripts/shengs.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+            <div class='j_topbar'>
+                <div class='j_wrap topBar'>
+                    <div class="fl l_fx">
+                        <span class='fl'> <font>欢迎光临（www.940.com）940电商培训</font><i>|</i>
+                            <a href="javascript:" id="feedback">问题反馈</a><i>|</i> <a class='enroll' href="javascript:">立即报名</a>
+                            <!-- 分享： -->
+                        </span>
+                        <!-- <em clas='fl'> <a class='xl' href=""></a> <a class='wb'
+                            href=""></a> <a class='qq' href=""></a> <a class='wx' href=""></a>
+                        </em> -->
+                    </div>
+                    <div class='fr r_log' id='logstatus'></div>
+                </div>
+            </div>
+
+            <div class='wrap_nav'>
+                <div class='j_wrap j_nav'>
+                    <a class='fl logo' href="/"><img class="logo940"
+                        src="/images/logo.png"></a>
+                    <ul class='fr nav_ul'>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/shop">开店指南</a></li>
+                        <li><a href="/video">视频教学</a></li>
+                        <li><a href="/jianjie">课程简介</a></li>
+                        <li><a href="/teacher">讲师团队</a></li>
+                        <li><a href="###">电商工具</a></li>
+                        <li><a href="/case" class="header-cases">成功案例</a></li>
+                        <li><a href="/about">关于我们</a></li>
+                    </ul>
+                    <div class="phone">
+                        <span title='940服务热线'></span> <a title='在线咨询' href="">咨 询</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+        !function(){
+            var _header = document.getElementById('header')
+                ,aLi = _header.getElementsByTagName('li')
+                ,arr = window.location.href.match(/[^\/]\/([a-zA-Z]+)\//)||'home';
+                if (arr[1]=='about') {
+                    aLi[6].children[0].style.width = '90px'
+                }else{
+                    aLi[6].children[0].style.cssText = 'width:auto;margin-left:15px;'
+                }
+            for (var i = 1; i < aLi.length; i++) {
+                var _h = aLi[i].children[0].getAttribute('href').replace('/','');
+                if (arr[1].indexOf(_h)>=0) {
+                    aLi[i].className = 'cur';
+                    return;
+                }
+            };
+            aLi[0].className = 'cur';
+        }();
+    </script>
+
+    <!-- flexslider -->
+    <div class="flexslider-bg">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background: url(content/images/shengs/flexslider1.jpg) no-repeat 50% 0;">
+                    <div class="slides-layer1">
+                        <div class="slides-cont1">
+                            <a href="###" class="slides-link1 enroll"><i class="slides-text1"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li style="background: url(content/images/shengs/flexslider2.jpg) no-repeat 50% 0;">
+                    <div class="slides-layer2">
+                        <div class="slides-cont2">
+                            <a href="###" class="slides-link2 enroll"><i class="slides-text2"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li style="background: url(content/images/shengs/flexslider3.jpg) no-repeat 50% 0;">
+                    <div class="slides-layer3">
+                        <div class="slides-cont3">
+                            <a href="###" class="slides-link3 enroll"><i class="slides-text3"></i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- contents -->
+    <div class="contents">
+        <!-- 选择 -->
+        <div class="choice">
+            <div class="choice-title choice-rotate"><a class="choice-hover"></a></div>
+            <div class="choice-cont">
+                <dl>
+                    <dt>
+                        <a href="###">
+                            <div class="spinner"></div>
+                            <div class="icon choice-icon1 choice-shadow"></div>
+                            <div class="choice-line"></div>
+                        </a>
+                    </dt>
+                    <dd class="choice-text1"></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="###">
+                            <div class="spinner"></div>
+                            <div class="icon choice-icon2 choice-shadow"></div>
+                            <div class="choice-line"></div>
+                        </a>
+                    </dt>
+                    <dd class="choice-text2"></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="###">
+                            <div class="spinner"></div>
+                            <div class="icon choice-icon3 choice-shadow"></div>
+                            <div class="choice-line"></div>
+                        </a>
+                    </dt>
+                    <dd class="choice-text3"></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="###">
+                            <div class="spinner"></div>
+                            <div class="icon choice-icon4 choice-shadow"></div>
+                            <div class="choice-line"></div>
+                        </a>
+                    </dt>
+                    <dd class="choice-text4"></dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 赚钱 -->
+        <div class="lucrative">
+            <img src="content/images/shengs/lucrative.png">
+            <div class="lucrative-layout">
+                <div class="lucrative-ctr lucrative-hvr">
+                    <a href="###" class="enroll">
+                        <div class="btn btn-2 btn-2c">
+                            <div class="hvr"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 难题 -->
+        <div class="problems">
+            <div class="problems-topic"></div>
+            <div class="problems-title problems-rotate"><a class="problems-hover"></a></div>
+            <div class="problems-cont">
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn1"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text1"></a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn2"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text2"></a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn3"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text3"></a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn4"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text4"></a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn5"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text5"></a></dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <div class="problems-7 problems-7b">
+                            <a href="###" class="hi-icon hi-icon-cog"><i class="problems-icpn6"></i></a>
+                        </div>
+                    </dt>
+                    <dd><a href="###" class="problems-text6"></a></dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 报名 -->
+        <div class="enrolled">
+            <div class="enrolled-cont">
+                <div class="enrolled-ctr">
+                    <div class="enrolled-arrow enrolled-shadow"></div>
+                </div>
+                <div class="enrolled-ctr2">
+                    <a href="###" class="enrolled-btn enroll"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 学习 -->
+        <div class="learning">
+            <div class="learning-heading">
+                <img src="content/images/shengs/learning-service.png">
+                <div class="learning-layer">
+                    <div class="learning-title">
+                        <a class="learning-hover"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="learning-fit">
+                <img src="content/images/shengs/learning-fit.png">
+            </div>
+            <div class="learning-h2">
+                <div class="learning-h4"><i></i></div>
+            </div>
+        </div>
+        <!-- 课程 -->
+        <div class="curriculum">
+            <div class="curriculum-layer">
+                <div class="curriculum-logo">
+                    <a href="http://www.940.com/"><img src="content/images/shengs/curriculum-logo.png"></a>
+                </div>
+                <div class="curriculum-cont">
+                    <dl class="curriculum-cls1">
+                        <dt>
+                            <a href="###">
+                                <img src="content/images/shengs/curriculum-cls1.png">
+                            </a>
+                        </dt>
+                        <dd><a href="###" class="enroll"><i></i></a></dd>
+                    </dl>
+                    <dl class="curriculum-cls2">
+                        <dt>
+                            <a href="###">
+                                <img src="content/images/shengs/curriculum-cls2.png">
+                            </a>
+                        </dt>
+                        <dd><a href="###" class="enroll"><i></i></a></dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a href="###">
+                                <img src="content/images/shengs/curriculum-cls3.png">
+                            </a>
+                        </dt>
+                        <dd><a href="###" class="enroll"><i></i></a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!-- 销量 -->
+        <div class="sales">
+            <div class="sales-layer">
+                <div class="sales-logo"></div>
+                <div class="sales-cont">
+                    <div class="sales-number">
+                        <a href="###" class="sales-mgn">
+                            <div class="sales-banner">
+                                <img src="content/images/shengs/sales-nbr1.png">
+                                <p class="piece1"></p>
+                            </div>
+                        </a>
+                        <a href="###">
+                            <div class="sales-banner">
+                                <img src="content/images/shengs/sales-nbr2.png">
+                                <p class="piece2"></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sales-number sales-nbr">
+                        <a href="###" class="sales-mgn">
+                            <div class="sales-banner">
+                                <img src="content/images/shengs/sales-nbr3.png">
+                                <p class="piece3"></p>
+                                <div class="cornerTL corner"></div>
+                                <div class="cornerTR corner"></div>
+                                <div class="cornerBL corner"></div>
+                                <div class="cornerBR corner"></div>
+                            </div>
+                        </a>
+                        <a href="###">
+                            <div class="sales-banner">
+                                <img src="content/images/shengs/sales-nbr4.png">
+                                <p class="piece4"></p>
+                                <div class="cornerTL corner"></div>
+                                <div class="cornerTR corner"></div>
+                                <div class="cornerBL corner"></div>
+                                <div class="cornerBR corner"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 证书 -->
+        <div class="certificate">
+            <img src="content/images/shengs/certificate-bg.png">
+            <!--  -->
+            <div class="wrap_6f">
+                <a class="enroll" href="javascript:">
+                    <span>立即<br>报名</span>
+                </a>
+                <p><img src="content/images/shengs/certificate-txt.png"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="wrapCont">
+            <ul class="foot_con">
+                <li class="padNone">
+                    <h1>合作伙伴</h1>
+                    <div class="foot_link">
+                        <span><a >淘宝网</a><i>|</i> <a >天猫</a><i>|</i> <a >腾讯QQ</a></span>
+                        <span><a >京东商城</a><i>|</i> <a >易购网</a><i>|</i> <a >新浪</a></span>
+                        <span><a >优酷网</a><i>|</i> <a >土豆网</a><i>|</i> <a >搜狐</a></span>
+                        <span><a >支付宝</a><i>|</i> <a >财付通</a><i>|</i> <a >余额宝</a></span>
+                    </div>
+                </li>
+                <li class="footer-line"></li>
+                <li>
+                    <h1>联系我们</h1>
+                    <div class="foot_contact">
+                        <p>服务热线：400-1000-940</p>
+                        <p>QQ在线：400-1000-940</p>
+                        <p>企业邮箱：940@sdd.com</p>
+                        <p>公司地址：深圳市龙岗区</p>
+                    </div>
+                </li>
+                <li class="footer-line"></li>
+                <li class="follow_li">
+                    <h1>关注分享</h1>
+                    <div class="foot_follow">
+                        <div class="ewm">
+                            <img src="/images/e.png">
+                            <div class="r_txt">
+                                <div class='share_link'>
+                                    <div style="position: static;" class="bdsharebuttonbox" data-tag="share_1">
+                                        <a class="footer-icon1" href="javascript:"></a>
+                                        <a class="footer-icon2" href="javascript:"></a>
+                                        <a class="footer-icon3" data-cmd="weixin" href="javascript:"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-weixin">
+                                <a href="javascript:"></a>
+                                <div class="footer-text">
+                                    <span>扫一扫微信二维码</span>
+                                    <span>关注940电商培训</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="footer-logo">
+                <a href="http://www.940.com/"></a>
+            </div>
+        </div>
+        <div class="b_record">
+            <div class="footer-public">
+                <span class="comp">深圳市九四零教育有限公司</span>
+                <span>Copyright © 940jiaoyu.AII Rights Reserved</span>
+                <span>粤公网安备:00000000/粤ICP证:00000000</span>
+            </div>
+            <div class="footer-brand">
+                <i class="icon1"></i>
+                <i class="icon2"></i>
+                <i class="icon3"></i>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="/style/layer.css">
+    <script type="text/javascript" src="/script/fengs.js?2015030"></script>
+    <script type="text/javascript" src='/script/config.js?0830'></script>
+    <script type="text/javascript">Fengs.use('940/index');</script>
+</body>
+</html>

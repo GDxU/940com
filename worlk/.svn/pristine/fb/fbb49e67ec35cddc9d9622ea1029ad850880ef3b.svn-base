@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">书签</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item ui-content-pd">
+                <p class="ui-bm5">书签：www.xxx.com</p>
+                <p class="ui-bm5">书签：www.xxx.com</p>
+                <p>书签：www.xxx.com</p>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+</body>
+</html>

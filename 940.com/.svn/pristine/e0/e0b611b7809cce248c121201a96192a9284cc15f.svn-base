@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+	<div id="loging">
+		<div class='log_center'>
+			<form action="">
+				<div class='logo'>
+					<img src="images/log_logo.png">
+				</div>
+				<div class='inputBox'>
+					<input class='acc_input' type="txt" placeholder="帐号"/>
+					<input class='pass_input' type="password" placeholder="密码"/>
+				</div>
+				<div class='log_but'>
+					<input type="submit" value="登 录" />
+				</div>
+			</form>
+			<p class='foot'>深圳市九四零教育有限公司&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备15080486号</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/free.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/publick/comm.js"></script>
+    <script type="text/javascript" src="scripts/free.js"></script>
+    <script src="scripts/js/h5connect.js"></script>
+    <script type="text/javascript">
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        var url = location.href;
+        var id = getQueryString("id");
+        $(function() {
+            $.ajax({
+                async: false,
+                type: "get",
+                url: "http://www.940.com/videoList?page=1&line=10000",
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                processData: false,
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function(data) {
+                if(data && data.count>0){
+                    for(var i=0;i<data.list.length;i++){
+                        var item=data.list[i];
+                        if(item.id==id){
+                            var option = {
+                                "auto_play": "0",
+                                "file_id": item.videoId,
+                                "app_id": "1251672867",
+                                "width": 640,
+                                "height": 360,
+                                'remember' : '1',
+                                "VMode" : 'opaque',
+                                "stretch_patch" : true
+                            };
+                            new qcVideo.Player("id_video_container", option);
+                            break;
+                        }
+                    }
+                }
+                    //console.log(data.list.id);
+                    //var video = new tvp.VideoInfo();
+                    //video.setVid(data.list.id);
+
+                    // for (var i = 0; i < 4; i++) {
+                    //     // var item = data[i];
+                    //     // 视频
+                    //     var video = new tvp.VideoInfo();
+                    //     // video.setVid(item.videoId);
+                    //     video.setVid("14651978969256265324"); // 向视频对象传入视频vid
+                    //     var player = new tvp.Player('100%', 340);
+                    //     player.setCurVideo(video);
+                    //     player.addParam("autoplay","0");
+                    //     player.addParam("wmode", "transparent");
+                    //     player.addParam("pic","content/images/video/mod_player.jpg");
+                    //     player.addParam('showend',0); //结束时是否有广告
+                    //     player.write("video-player");
+                    // }
+
+                }
+            });
+
+            $.ajax({
+                async: false,
+                type: "get",
+                url: 'http://www.940.com/videoList?page=1&line=4&type=2',
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                processData: false,
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function(data) {
+                    var list = $('.describe-cont');
+                    if (data.count && data.count > 0) {
+                        list.html("");
+                        var content = "";
+                        for (var i = 0; i < 1; i++) {
+                            var item = data.list[i];
+                            content = "";
+                            content += "<div class=\"describe-tilte\">" + item.title + "</div>";
+                            content += "<div class=\"describe-nbr\">";
+                            content += "<div class=\"describe-left\">";
+                            content += "<i class=\"icon1\"></i>";
+                            content += "<span>12分36秒</span>";
+                            content += "</div>";
+                            content += "<div class=\"describe-right\">";
+                            content += "<i class=\"icon2\"></i>";
+                            content += "<span>" + item.click_num + "次</span>";
+                            content += "</div>";
+                            content += "</div>";
+                            content += "<div class=\"describe-text\">";
+                            content += "<p>伴随着智能终端的进步和发展，淘宝无线端的成交占比逐渐攀升，专业专注的无线端的运营势必越来越重要，甚至必将成为一家电商企业的标配工作部门，老A电商学院做为电商界知名的电商教育培训机构，紧抓淘宝未来的趋势，开发了完整有序的无线端运营课程，从无线端的现状趋势，再到选款搜索流量，转化，数据分析等全方位解读无线端的运营。</p>";
+                            content += "</div>";
+
+                            list.append(content);
+                        }
+                    }
+
+                }
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li>
+            <a href="###">
+                <i class="menu-icon1"></i>
+                <span>907350373@qq.com</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="free.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+    <!-- free -->
+    <div class="free">
+        <div class="free-tabPanel">
+            <ul class="free-ul">
+                <li class="free-hit">
+                    <a>免费课程</a>
+                </li>
+                <li>
+                    <a>VIP课程</a>
+                </li>
+            </ul>
+            <div class="free-panes">
+                <!--内容1-->
+                <div class="free-pane" style="display: block;">
+                    <!-- free_内容区域 -->
+                    <div class="free-layout">
+                        <div class="free-spacing">
+                            <!-- ajax1 -->
+                            <div class="free-closure free-test1">
+<!--                                 <dl class="free-dl free-cont1">
+                                    <dt class="free-dt1">
+                                        <a href="###"><img src="content/images/940/free-img1.jpg"></a>
+                                    </dt>
+                                    <dd class="free-big"><span>三步——快速抠出头发丝的技巧 强少</span></dd>
+                                    <dd class="free-small">
+                                        <div class="free-date">发布：2016-02-04</div>
+                                        <div class="free-watch"><i></i><span>19845</span></div>
+                                    </dd>
+                                </dl>
+                                <dl class="free-dl free-cont2">
+                                    <dt class="free-dt2">
+                                        <a href="###"><img src="content/images/940/free-img2.jpg"></a>
+                                    </dt>
+                                    <dd class="free-big"><span>三步——快速抠出头发丝的技巧 老胡</span></dd>
+                                    <dd class="free-small">
+                                        <div class="free-date">发布：2016-02-04</div>
+                                        <div class="free-watch"><i></i><span>9845</span></div>
+                                    </dd>
+                                </dl> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--内容2-->
+                <div class="free-pane" style="display: none;">
+                    <!-- free_内容区域 -->
+                    <div class="free-layout">
+                        <div class="free-spacing">
+                            <!-- ajax2 -->
+                            <div class="free-closure free-test2">
+<!--                                 <dl class="free-dl free-cont1">
+                                    <dt class="free-dt1">
+                                        <a href="###"><img src="content/images/940/free-img5.jpg"></a>
+                                    </dt>
+                                    <dd class="free-big"><span>三步——技巧 何道</span></dd>
+                                    <dd class="free-small">
+                                        <div class="free-date">发布：2016-02-04</div>
+                                        <div class="free-watch"><i></i><span>984</span></div>
+                                    </dd>
+                                </dl>
+                                <dl class="free-dl free-cont2">
+                                    <dt class="free-dt2">
+                                        <a href="###"><img src="content/images/940/free-img6.jpg"></a>
+                                    </dt>
+                                    <dd class="free-big"><span>三步——技巧 俊生</span></dd>
+                                    <dd class="free-small">
+                                        <div class="free-date">发布：2016-02-04</div>
+                                        <div class="free-watch"><i></i><span>98</span></div>
+                                    </dd>
+                                </dl> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="#">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="#" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

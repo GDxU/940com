@@ -1,0 +1,28 @@
+
+{
+	// The mappings of source directory and output directory
+	"mappings": [
+		{	
+		 	"src": "/debug/940",
+		 	"dest": "static"
+		},
+		{	
+		 	"src": "/debug/style",
+		 	"dest": "style"
+		}
+	],
+
+	// Add the ignore rules that Koala will not search them.
+	// e.g. ["*.json", "*.txt", "test", "path/libs"]
+	"ignores": ["debug/common","debug/ui","debug/kehuda", "debug/jquery", "debug/chongzhi", "debug/zx", "debug/plus","tqeditor","css","font","/style","/static","/script"],
+
+	// Options of Compilers.
+	"options": {
+		// "key": "val",
+		// "key2": "val2"
+		// ...
+	},
+
+	// An array of filesystem paths which should be searched for js/LESS/Sass templates imported with the @import/@append/@prepend directive.
+	"includePaths": []
+}

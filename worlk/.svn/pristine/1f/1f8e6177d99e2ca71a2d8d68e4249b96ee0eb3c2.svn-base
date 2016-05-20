@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="javascript:history.go(-1)" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">存款记录</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item">
+                    <div class="ui-list-item" style="display: block;">
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">订单号</div>
+                            <div class="ui-label-content">123456</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">申请时间</div>
+                            <div class="ui-label-content">2016-01-01  14:12:00</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">处理时间</div>
+                            <div class="ui-label-content">未处理</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">操作类型</div>
+                            <div class="ui-label-content">存款</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">操作金额</div>
+                            <div class="ui-label-content">100</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">增/减金额</div>
+                            <div class="ui-label-content">10</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">实际交易金额</div>
+                            <div class="ui-label-content">100</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">状态</div>
+                            <div class="ui-label-content">支付中</div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">说款信息</div>
+                            <div class="ui-label-content"><a href="#">说款信息</a> </div>
+                        </div>
+                        <div class="ui-label-text">
+                            <div class="ui-label-title">备注</div>
+                            <div class="ui-label-content"><a href="#">———</a> </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script>
+    $(".ui-toggle").click(function(){
+        $(this).find(".ui-list-item").toggle();
+    });
+    $(".ui-list-item").click(function (e) {
+        e.stopPropagation();
+    })
+</script>
+</body>
+</html>

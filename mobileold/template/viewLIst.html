@@ -1,0 +1,10 @@
+<dl class="free-dl {{classname}}" ng-repeat="free in user track by $index">
+    <dt class="free-dt1">
+        <a href="video.html?id={{free.id}}"><img src="{{free.preview}}"><i></i></a>
+    </dt>
+    <dd class="free-big"><span>{{free.title}}</span></dd>
+    <dd class="free-small">
+        <div class="free-date">发布{{free.time}}</div>
+        <div class="free-watch"><i></i><span>{{free.click_num}}</span></div>
+    </dd>
+</dl>

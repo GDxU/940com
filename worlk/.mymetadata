@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="h5"
+  id="myeclipse.1405841225865"
+  context-root="/h5"
+  j2ee-spec="6.0"
+  archive="h5.war">
+  <attributes>
+    <attribute name="webrootdir" value="web" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="../index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">存款</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <div class="ui-prom-body">
+    <!-- 聊天室 -->
+    <div class=" ui-prom-toMoney">
+    <div class="chatroom">
+        <ul class="chatroom-ul">
+            <li class="chatroom-li">
+                <div class="chatroom-cont">
+                    <!-- 滑动删除 -->
+                    <div class="chatroom-slide">
+                        <i class="chatroom-icon1"></i>
+                        <div class="chatroom-name">
+                            <p class="h1">中国农业银行</p>
+                            <p>**** **** **** 5588(明)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatroom-edit">修改</div>
+                <div class="chatroom-delete">删除</div>
+            </li>
+        </ul>
+        <ul class="chatroom-ul">
+            <li class="chatroom-li">
+                <div class="chatroom-cont">
+                    <!-- 滑动删除 -->
+                    <div class="chatroom-slide">
+                        <i class="chatroom-icon2"></i>
+                        <div class="chatroom-name">
+                            <p class="h1">支付宝</p>
+                            <p>*000(明)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatroom-edit">修改</div>
+                <div class="chatroom-delete">删除</div>
+            </li>
+        </ul>
+        <ul class="chatroom-ul">
+            <li class="chatroom-li-add">
+                <div class="chatroom-cont">
+                    <!-- 滑动删除 -->
+                    <div class="chatroom-slide">
+                        <i class="chatroom-icon3"></i>
+                        <div class="chatroom-name">
+                            <p class="h1">添加提款方式</p>
+                            <p>快速添加</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatroom-add">添加</div>
+            </li>
+        </ul>
+    </div>
+    </div>
+        <p class="ui-tip"><span>温馨提示:</span>左右滑动可以添加、删除修改和删除支付方式！</p>
+</div>
+</div>
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script type="text/javascript" src="../js/slipEct.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+.ico_frm{
+	margin:13px auto;
+	background:#ffffff !important;
+	width:97%;
+	height:auto;
+	border:#666 1px dashed;
+	-webkit-border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px;
+	}
+.setting_title{
+	width:100%;
+	float:left;
+	}
+.iftitle{
+	/* margin:-8px 0 0 12px; */
+	margin:-8px 0 20px 12px;
+	padding:2px 4px;
+	display:inline-table;
+	/* background:#ffffff; */
+	background:#000;
+	color:#fff;
+	/* border:#666 1px solid; */
+	border:#666 1px dashed;
+	font-size:12px;
+	letter-spacing:1px;
+	float:left;
+	padding:0px 5px;
+	font-family:"microsoft yahei"; 
+	
+	}
+.ico_group{
+	width:100px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:6px;
+	cursor:pointer;
+	}
+@media ( min-width :320px ) { /*iphone 4*/
+.ico_group{
+	width:86px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:6px 8px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :375px ) { /*iphone 6*/
+.ico_frm{
+	margin:15px auto;
+	background:#ffffff;
+	width:90%;
+	height:auto;
+	border:#666 1px dashed;
+	-webkit-border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px;
+	}
+	
+.ico_group{
+	width:96px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:7px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :380px ) { /*mx4*/
+.ico_group{
+	width:82px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:6px 16px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :414px ) { /*iphone 6 +*/
+.ico_group{
+	width:82px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:6px 5px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :480px ) {
+.ico_group{
+	width:96px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:6px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :568px ) {
+.ico_group{
+	width:96px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:5px;
+	cursor:pointer;
+	}
+}
+@media ( min-width :667px ) {
+.ico_group{
+	width:94px;
+	height:100px;
+	float:left;
+	font-size:12px;
+	margin:5px;
+	cursor:pointer;
+	}
+}
+
+.icons{
+	width:76px;
+	height:76px;
+	margin:0 auto;
+	display:block;
+	background:url(../../images/lobby-icon20150526.jpg) no-repeat;
+	}
+/*----------------------------------*/
+.ico01{
+	background-position: -4px -85px;
+	}
+.ico02{
+	background-position: -4px -165px;
+	}
+.ico03{
+	background-position: -4px -245px;
+	}
+.ico04{
+	background-position: -4px -325px;
+	}
+.ico05{
+	background-position: -4px -405px;
+	}
+.ico06{
+	background-position: -4px -727px;
+	}
+.ico07{
+	background-position: -4px -3px;
+	}
+.ico08{
+	background-position: -4px -484px;
+	}
+.ico09{
+	background-position: -4px -564px;
+	}
+.ico10{
+	background-position: -4px -644px;
+	}
+.ico11{
+	background-position: -4px -807px;
+	}
+.ico12{
+	background-position: -4px -887px;
+	}
+.ico13{
+	background-position: -4px -966px;
+	}
+.hnkl10 {
+  background-position: -4px -1045px;
+}
+
+.kl10_1 {
+  background-position: -4px -1123px;
+}
+
+.kl10_2 {
+  background-position: -4px -1198px;
+}
+
+.kl10_3 {
+  background-position: -4px -1275px;
+}
+
+.bjkl8 {
+  background-position: -4px -1351px;
+}
+
+.ynssc {
+  background-position: -4px -1428px;
+}
+
+.shssc {
+  background-position: -4px -1504px;
+}
+
+.jx11x5 {
+  background-position: -4px -1580px;
+}
+
+.ln11x5 {
+  background-position: -4px -1658px;
+}
+
+.hb11x5 {
+  background-position: -4px -1734px;
+}
+
+.js11x5 {
+  background-position: -4px -1810px;
+}
+
+.awk3 {
+  background-position: -4px -1886px;
+}
+
+.gxk3 {
+  background-position: -4px -1964px;
+}
+.ico_title{
+	width:100%;
+	font-size:12px;
+	line-height:16px;
+	float:left;
+	text-align:center;
+	letter-spacing:1px;
+}
+
+
+/*时时彩收藏页面*/
+.ui-content-mycollect .ico_group{margin:0; width:85px;}
+.ui-content-mycollect .ico_frm{margin:0 auto;border:none;background:none!important;width:100%;}
+

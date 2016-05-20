@@ -1,0 +1,23 @@
+<ion-view view-title="快递免费代取">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-help-circled" ng-click="ruleAlert()">
+    </button>
+    <button class="button button-icon button-clear ion-compose" ng-click="post()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="padding" style="text-align: center" ng-show="items.length == 0">
+      还没有信息，点击右上角发布
+    </div>
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="refreshItems()"></ion-refresher>
+    <ion-list>
+      <ion-item collection-repeat="item in items" href="#/fetch/view/{{item.id}}">
+        【{{item.get('company')}}】取件号：{{item.get('code')}}【<b class="assertive">{{item.get('status') | statusName}}</b>】
+        <ion-option-button class="button-assertive" ng-click="delete($index)">
+          删除
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="addItems()" ng-if="canLoading()" immediate-check></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="../index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">存款</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div  class="ui-content-title">
+                请您选择存款方式：
+                <!-- <a href="#" class="more">更多&gt;</a>-->
+            </div>
+            <div class="ui-content-item ui-content-money">
+                <ul>
+                    <li>
+                        <a href="localBank.html">
+                            <dl class="ui-dl-list">
+                                <dt>本地银行转账</dt>
+                                <dd>浩博在线娱乐城提供的公司入款银行信息, 确认后进行转账，并于此提交入款信息, 专员将立即为您查账处理。 欢迎您多加利用。</dd>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl class="ui-dl-list">
+                                <dt>手机快捷支付</dt>
+                                <dd>快捷支付让充值变得安全、轻松、快捷。 </dd>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl class="ui-dl-list">
+                                <dt>支付宝转账</dt>
+                                <dd>浩博在线娱乐城提供最火、最方便的存款方式--支付宝账号转账存款方式。</dd>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl class="ui-dl-list">
+                                <dt>微信支付</dt>
+                                <dd>微信支付更快键</dd>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+</body>
+</html>

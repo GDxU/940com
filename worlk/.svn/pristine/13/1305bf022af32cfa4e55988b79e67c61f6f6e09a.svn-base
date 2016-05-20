@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status=debug 可以查看log4j的装配过程,monitorInterval:设置监测配置文件是否有修改的时间间隔-->  
+<configuration status="OFF" monitorInterval="60">
+	<properties>
+		<property name="LOG_PATH">c:/logs</property>
+	</properties>    
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %c [%t] %m%n"/>
+        </Console>
+        
+        <RollingRandomAccessFile name="RollingRandomAccessFile" fileName="${LOG_PATH}/mobile.log" filePattern="${LOG_PATH}/$${date:yyyy-MM-dd}/mobile-%d{yyyy-MM-dd-HH}-%i.log">
+            <PatternLayout>
+                <Pattern>%d %p %c [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+            	<!--按时间进行文件封存,interval integer 单位:小时-->
+                <TimeBasedTriggeringPolicy interval="6" modulate="true"/>
+                <!--按日志大小进行文件封存,单位:KB或MB-->
+				<!--<SizeBasedTriggeringPolicy size="50 MB" />-->
+            </Policies>
+        </RollingRandomAccessFile>
+        
+        <RollingRandomAccessFile name="sscRollingRandomAccessFile" fileName="${LOG_PATH}/ssc.log" filePattern="${LOG_PATH}/$${date:yyyy-MM-dd}/ssc-%d{yyyy-MM-dd-HH}-%i.log">
+            <PatternLayout>
+                <Pattern>%d %p %c [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+            	<!--按时间进行文件封存,interval integer 单位:小时-->
+                <TimeBasedTriggeringPolicy interval="6" modulate="true"/>
+                <!--按日志大小进行文件封存,单位:KB或MB-->
+				<!--<SizeBasedTriggeringPolicy size="50 MB" />-->
+            </Policies>
+        </RollingRandomAccessFile>        
+    </appenders>
+    <loggers>
+    	<!-- 
+		<logger name="com.vinbet.mobile.action.ssc" level="debug" additivity="false">
+			 <appender-ref ref="sscRollingRandomAccessFile"/>
+		</logger> 
+		 -->
+        <root level="info">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingRandomAccessFile"/>
+        </root>
+    </loggers>
+</configuration>

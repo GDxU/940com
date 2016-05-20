@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="scripts/js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+
+<img id="picshow" width="200" height="200" src="" />
+<form id="uploadForm" action="Upload" method="post" enctype="multipart/form-data">
+    <input id="File1" name="fileupload" accept="image/*" multiple="multiple" type="file" value="" />
+    <input id="btnImportOK" type="button" value="上传" />
+</form>
+<script src="~/Scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+    $(document).ready(function () {
+        $("#btnImportOK").click(function () {
+
+            var formData = new FormData($("#uploadForm")[0]);
+            console.log(formData);
+            $.ajax({
+                type: "POST",
+                data: formData,
+                url: "http://940.com/upload?id_good=1066063",
+                dataType:"jsonp",
+                jsonp: 'callback',
+                contentType: false,
+                processData: false
+            }).success(function (data) {
+                console.log(data);
+                if (data.status) {
+                    // 记录当前时间戳
+                    var start_time = new Date().getTime();
+
+                    // 创建对象
+                    var img = new Image();
+
+                    // 改变图片的src
+                    // img.src = data.url; 此处注释是因为上传保存是路径是本地磁盘 浏览器被阻止访问 所以用了一个远程图片
+                    img.src = "http://a0.att.hudong.com/05/23/01300000727181126443238971302.jpg";
+                    // 定时执行获取宽高
+                    var check = function () {
+                        console.log(img.width);
+                        // 只要任何一方大于0
+                        // 表示已经服务器已经返回宽高
+                        if (img.width > 0 || img.height > 0) {
+
+                            clearInterval(set);
+
+                            if (img.width > 210 || img.height > 210 || img.width < 190 || img.height < 190) {
+                                alert('建议列表图片尺寸为200*200');
+                                return;
+                            }
+                            $("#picshow").attr("src", img.src);
+                            $("#picshow").show();
+                        }
+                    };
+
+                    var set = setInterval(check, 40);
+                } else {
+                    console.log(data.msg);
+                }
+
+            }).error(function (data) {
+                alert(data);
+                console.log(data);
+            });
+
+        });
+        $("#picshow").hide();
+    });
+</script>
+
+</body>
+</html>

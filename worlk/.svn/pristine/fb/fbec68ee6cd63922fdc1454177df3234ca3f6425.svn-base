@@ -1,0 +1,4 @@
+﻿#是否启用动静分离true/false
+vinbet.static.dynamic.enabled=false
+#静态文件服务器地址
+vinbet.static.url=http://static.kutuba.cn/img/mobile

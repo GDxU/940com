@@ -1,0 +1,11 @@
+msg.common.loading=数据载入中,请稍后...
+msg.common.uploading=数据提交中,请稍后...
+msg.common.systemErr=系统异常
+msg.common.systemError=系统异常,请联系客服！
+msg.common.sessionExpired=用户会话失效或在其他终端登录被踢出，请您重新登录！
+msg.common.networkAnomaly=网络中断，请检测网络! 
+msg.common.userStsFreeze=用户状态被冻结，无法继续操作，如有问题请联系客服！
+msg.common.requestTimeOut=请求超时，请重试！
+msg.common.ifLogout=您确定要退出系统吗？
+msg.common.nodata=暂无符合条件的数据!
+msg.cp.repeatOrder=出现重复下注，请刷新下注状况，确认无误后再进行下注！

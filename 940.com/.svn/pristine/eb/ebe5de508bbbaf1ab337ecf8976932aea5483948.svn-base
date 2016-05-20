@@ -1,0 +1,140 @@
+
+					<div class="mySchool">
+						<p class="tit_p">
+							<b>我的班级</b>
+							<span>（已入学 <i>2</i>，未报名 <i>2</i>）</span>
+						</p>
+						<ul class="course_ul">
+							<li class="c_1">
+								<div class="co_pic">
+									<span class="dss_act"></span>
+									<a href="javascript:">查看学习历程</a>
+								</div>
+								<p class="co_txt">
+									<span>授课讲师：李大东</span>
+									<span>入学时间：2015-06-12  15:20:35</span>
+									<span class="xf_span"><i>18650</i> 学员/ <i>85</i> 课程</span>
+								</p>
+							</li>
+							<li class="c_2">
+								<div class="co_pic">
+									<span class="dss_act"></span>
+									<a href="javascript:">查看学习历程</a>
+								</div>
+								<p class="co_txt">
+									<span>授课讲师：李大东</span>
+									<span>入学时间：2015-06-12  15:20:35</span>
+									<span class="xf_span"><i>18650</i> 学员/ <i>85</i> 课程</span>
+								</p>
+							</li>
+							<li class="c_3">
+								<div class="co_pic">
+									<span class="not_act"></span>
+									<a href="javascript:">查看学习历程</a>
+								</div>
+								<p class="co_txt">
+									<span>授课讲师：李大东</span>
+									<span>入学时间：2015-06-12  15:20:35</span>
+									<span class="xf_span"><i>18650</i> 学员/ <i>85</i> 课程</span>
+								</p>
+							</li>
+							<li class="c_4">
+								<div class="co_pic">
+									<span class="not_act"></span>
+									<a href="javascript:">查看学习历程</a>
+								</div>
+								<p class="co_txt">
+									<span>授课讲师：李大东</span>
+									<span>入学时间：2015-06-12  15:20:35</span>
+									<span class="xf_span"><i>18650</i> 学员/ <i>85</i> 课程</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- 历程 -->
+					<div class="myProgress">
+						<p class="tit_p">
+							<b>学习历程</b>
+						</p>
+						<ul class="pro_tabul">
+							<li class="act">新手开店班</li>
+							<li>电商精英班</li>
+						</ul>
+						<div class="wrapCurr">
+							<ul class="curr_ul">
+								<li class="one">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="dss">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="dss">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="hal">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="dss">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="dss">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="not">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="not">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="not">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								<li class="not">
+									<p class="fl">6月13日</p>
+									<div class="fr v_name">
+										<span class="fl thing"><i>已学过</i>  [第一节]——电子商务特点及优势</span>
+										<a class="fr" href="">点此复习<i></i></a>
+									</div>
+								</li>
+								
+							</ul>
+							<div class="tcdPageCode"><span class="current">1</span><a href="javascript:;" class="tcdNumber">2</a><a href="javascript:;" class="tcdNumber">3</a><a href="javascript:;" class="tcdNumber">4</a><a href="javascript:;" class="tcdNumber">5</a><a href="javascript:;" class="nextPage">下一页<b></b></a></div>
+						</div>
+					</div>

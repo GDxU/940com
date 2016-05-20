@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="javascript:history.go(-1)" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">资金状况</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item">
+                <ul>
+                    <li class="ui-toggle pdNone">
+                        <a href="#">
+                            <dl class="ui-dl-list  list-height40  ui-pd-lt15">
+                                <dt>中心钱包</dt>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                        <div class="ui-list-item">
+                               <div class="ui-label-text">
+                                   <div class="ui-label-title">可提款</div>
+                                   <div class="ui-label-content">4,912.41</div>
+                               </div>
+                            <div class="ui-label-text">
+                                <div class="ui-label-title">活动费用</div>
+                                <div class="ui-label-content">4,912.41</div>
+                            </div>
+                            <div class="ui-label-text">
+                                <div class="ui-label-title">总余额</div>
+                                <div class="ui-label-content">4,912.41</div>
+                            </div>
+                            <!--<div class="ui-label-text">
+                                <div class="ui-label-title">操作</div>
+                                <div class="ui-label-content">查看</div>
+                            </div>-->
+                        </div>
+                    </li>
+                    <li class="ui-toggle pdNone">
+                        <a href="#">
+                            <dl class="ui-dl-list list-height40 ui-pd-lt15">
+                                <dt>体育投注</dt>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                        <div class="ui-list-item">
+                            <div class="ui-label-text">
+                                <div class="ui-label-title">可提款</div>
+                                <div class="ui-label-content">4,912.41</div>
+                            </div>
+                            <div class="ui-label-text">
+                                <div class="ui-label-title">活动费用</div>
+                                <div class="ui-label-content">4,912.41</div>
+                            </div>
+                            <div class="ui-label-text">
+                                <div class="ui-label-title">总余额</div>
+                                <div class="ui-label-content">4,912.41</div>
+                            </div>
+                            <!--<div class="ui-label-text">
+                                <div class="ui-label-title">操作</div>
+                                <div class="ui-label-content">查看</div>
+                            </div>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script>
+       $(".ui-toggle").click(function(){
+           $(this).find(".ui-list-item").toggle();
+       });
+        $(".ui-list-item").click(function (e) {
+            e.stopPropagation();
+        })
+</script>
+</body>
+</html>

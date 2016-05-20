@@ -1,0 +1,184 @@
+﻿#Trang chủ
+msg.portal.needLogin=Xin đăng nhập trước điều hành
+msg.portal.coming=Sắp ra mắt!
+msg.portal.opensoon=Phiên bản di động sắp ra mắt !
+#Đăng nhập
+msg.portal.ifLogout=Bạn có chắc đăng xuất hệ thống không ?
+msg.portal.plsInputUserName=Xin hãy nhập tên truy cập!
+msg.portal.plsInputPwd=Xin hãy nhập mật khẩu!
+msg.portal.plsInputCheckCode=Xin hãy nhập mã xác nhận
+msg.portal.plsTryLogin=Tên truy cập hoăc mật khẩu không đúng,xin hãy nhập lại
+msg.portal.userDisabled=Trạng thái tài khoản không khả dụng!
+msg.portal.loginFailMore=Đăng nhập thất bại quá nhiều lần ,số tài khoàn đã bị khóa,xin liên hệ với dịch vụ trực tuyến hoặc thử lại 30 phút sau.
+msg.portal.checkCodeError=Mã xác nhận không đúng
+msg.portal.passwordAppealSuccs= Đơn xin lấy lại mật khẩu đã nộp thành công,Xin lưu ý hơp thư email của bạn.
+msg.portal.loginPwdError=Mật khẩu đăng nhập không đúng!
+msg.portal.plsWait=Xin chờ...
+msg.portal.cancellationUser=Số tài khoản đã bị hủy!
+msg.portal.noAuditUser=Tài khoản chưa được kiểm tra！
+#Liện hệ 
+msg.portal.vinbetService=Trung tâm dịch vụ khách hàng {[{VmluYmV0}]} chân thành dịch vụ cho bạn
+msg.portal.24hours= 365 * 24 tiếng dịch vụ cho bạn trực tuyến
+#Tin tức mới nhất
+msg.portal.message.delConfirm=Bạn có chắc xóa tin này không ?
+msg.portal.message.delFail= Tin nhắn xóa thất bại!
+msg.portal.message.operateFail= Điều hành thất bại!
+#Kỷ lục lịch sử 
+msg.portal.history.nodata= Xin lỗi, tạm không có kỷ lục phụ hợp!
+#Gửi tiền 
+msg.portal.depositPrompt1=Điền vào ngân hàng thanh toán mà bạn sử dụng,số tiền gửi,mật khẩu, tiếp theo.
+msg.portal.depositPrompt2=Hệ thống sẽ căn cứ số tiền gửi để tạo một số tiền chỉ định gửi mà chứa hai số thập phân,đồng thời sẽ cung cấp một tài khoản ngân hàng Vinbet cho bạn để gửi tiền vào,bạn cần phải hoàn tất việc chuyển khoản trong vòng thời gian quy định (Ví dụ:Gửi tiền 100 CNY,số tiền chỉ định gửi sẽ là 100.04).
+msg.portal.depositPrompt3=Sau khi hoàn tất việc chuyển khoản,xin hãy phân bổ số tiền gửi ,điền thời gian chuyển khoản vào chỗ ghi chú !
+msg.portal.depositPrompt4=Trong quá trình gửi tiền,xin đừng đóng hoặc cập nhật trang web,nếu không thì sẽ gây ra việc gửi tiên tiến hành thất bại,nếu bạn có vấn đề gì xin vui lòng liên hệ với dịch vụ khách hàng!
+msg.portal.minDeposit=Mức gửi tối thiểu
+msg.portal.maxDeposit= Mức gửi tối đa
+msg.portal.depositTips= Sau khi bạn đã chuyển khoản ngân hàng mà Vinbet cung cấp và gửi thông tin nhận tiền,nhân viên chuyên ngành sẽ kiểm tra và xừ lý cho bạn ngay.Hoan nghênh bạn sử dụng!
+msg.portal.selectDepositType= Xin hãy chọn Phương thức thanh toán!
+msg.portal.selectDepositBank= Xin hãy chọn ngân hàng thanh toán!
+msg.portal.enterDepositBank= Xin hãy nhập ngân hàng thanh toán!
+msg.portal.selectProvince=Xin hãy chọn tỉnh
+msg.portal.selectCity=Xin hãy chọn thành phố!
+msg.portal.selectOrg= Xin hãy chọn cơ cấu
+msg.portal.plsSelect=Xin hãy chọn
+msg.portal.branchNetworkRequired= Xin hãy nhập chi ngánh ngân hàng!
+msg.portal.depositorRequired=Xin hãy nhập tên người gửi!
+msg.portal.depositAmtRequired=Xin hãy nhập số tiền gửi!
+msg.portal.depositAmtNumber=Xin nhập số tiền gửi!
+msg.portal.allocationAmt= Xin hãy phân bổ số tiền cho ứng dụng.
+msg.portal.allocationAmtEqualTo=Tổng số tiền gửi vào các ứng dụng phụ phải bằng số tiền gửi!
+msg.portal.depositDateRequired=Xin hãy cài đặt ngày gửi tiền!
+msg.portal.depositTimeRequired=Xin hãy cài đặt thời gian gửi tiền!
+msg.portal.depositSucc=Đã gửi thành công, xin bạn kiểm tra số dư tài khoản sau!
+msg.portal.sureToDeposit= Xác nhận gửi tiền
+msg.portal.depositFailure=Gửi tiền thất bại,xin liên hệ với dịch vụ khách hàng!
+msg.portal.depositLimit=Bạn còn sự gửi tiền đang xử lý, trong vòng {0} phút không thể nộp đơn xin lại!
+msg.portal.depositBefore=Xin bạn hoàn tất việc thanh toán trước {0}!
+msg.portal.deposti2Tips=Thưa quý khách:Để làm cho tài khoản của bạn thực hiện đặt cược được nhanh,xin vui lòng chuyển tiền vào tài khoản ngân hàng dưới đây trong vòng 15 phút,tài khoản ngân hàng này chỉ có hiệu lực cho lần này,vì chúng tôi sẽ đổi tài khoản ngân hàng sẵn sàng,nếu lần sau gửi tiền ,xin bạn vui lòng nộp đơn xin lại.Khi gửi tiền,xin vui lòng căn cứ dưới đây<font color=red> “Số tiền gửi chỉ định” </font> để thực hiện gửi tiền,ngoại ram,cần phải thêm vào số thập phân.Rất cảm ơn sự hỗ trợ của bạn!
+msg.portal.noAvailableBank=Không có thẻ ngân hàng khả dụng!
+msg.portal.thaiUnavailabled=Phương thức gửi tiền truyền thống tạm chưa hỗ trợ Baht Thái,xin bạn đến với phiên bản PC để gửi tiền!
+msg.portal.gameMindepositAmt=Số tiền chuyển vào các trò chơi phải cao hơn {0}
+msg.portal.plsInsertFundPwd= Xin hãy nhập mật khẩu quỹ!
+msg.portal.depositProcessed= Bạn còn sự gửi tiền đang xử lý,xin đợi một chút, nếu có thắc mắc gìxin liên hệ với dịch vụ khách hàng!
+msg.portal.trueNameCHNLength=xin nhập họ tên chính xác bằng tiếng Trung.
+msg.portal.trueNameLength=Xin nhập họ tên chính xác.
+msg.portal.cancleOrderMsg=chuyến giao dịch này đã hủy,nếu cần gửi tiền xin hãy nộp đơn xin lại!
+msg.portal.orderExpired=Please kindly wait if you have already done the remittance; if not, please re-submit the request and do the remittance.
+#Đăng ký 
+msg.portal.trueNameDesc=Xin hãy điền vào họ tên thật, phải trùng với họ tên chủ thẻ ngân hàng rút tiền!
+msg.portal.pwdDesc=Xin hãy sử dụng kết hợp giữa 6-16 chữ cái với chữ số
+msg.portal.surNameRequired=Họ không thể để trống!
+msg.portal.surNameLength= Chiều dài họ của người dùng tiền tệ này hạn từ {0}-{1} ký tự!
+msg.portal.surNameCHNLength= Chiều dài họ của người dùng tiền tệ này hạn từ {0}-{1} ký tự!
+msg.portal.givenNameRequired=Tên không thể để trống!
+
+msg.portal.givenNameLength= Chiều dài tên của người dùng tiền tệ này hạn từ {0}-{1} ký tự!
+msg.portal.givenNameCHNLength= Chiều dài tên của người dùng tiền tệ này hạn từ {0}-{1} ký tự!
+msg.portal.userNameRequired=Tên truy cập không thể để trống!
+msg.portal.userNameRule=Tên truy cập:gồm 5-20 ký tự,chỉ được là kết hợp mà chứa chữ cái và chữ số
+ msg.portal.userNameUsed= Số tài khoản này đã bị sử dụng!
+msg.portal.pwdRequired=Xin hãy nhập mật khẩu!
+msg.portal.pwdLength= Xin hãy nhập mật khẩu từ 6-12 ký tự!
+msg.portal.pwdEqualToUsername=Tên truy cập và mật khẩu không thể giống nhau
+msg.portal.pwdStrength=Mật khẩu quá đơn giản, xin sử dụng tổ hợp mà gồm 6-16 chữ cái và chữ số!
+msg.portal.repeatPwdRequired= Xin nhập mật khẩu xác nhận!
+msg.portal.repeatPwdEqualTo=Hai mật khẩu không trùng nhau,xin nhập lại!
+msg.portal.emailRequired=Xin nhập email!
+msg.portal.emailRule=Lỗi định dạng email!
+msg.portal.mobileRequired=Xin nhập số điện thoại!
+msg.portal.mobileMinlength=Số điện thoại:xin vui lòng nhập 8-20 con số!
+msg.portal.mobileUsed=Số điện thoại này đã bị đăng ký!
+msg.portal.agentNameLength=Mã đại lý là từ 5-25 ký tự
+msg.portal.agentNameNotExist=Mã đại lý không tồn tại!
+msg.portal.checkCodeRequired=Xin nhập mã xác nhận!
+msg.portal.agreeRequired=Xin vui lòng bật tùy chọn Đồng ý hiệp định đăng ký!
+msg.portal.registFailed= Đăng ký thất bại ,xin vui lòng liên hệ với dich vụ khách hàng!
+msg.portal.registSucc= Chúc mừng bạn đã đăng ký thành công!
+msg.portal.codeSended=Mã xác nhận đã gửi,Xin lưu ý tin nhắn.
+msg.portal.birthRequired=Ngày sinh nhật không thể để trống!
+msg.portal.plsSetBirthDay=Xin cài đặt ngày sinh nhật gồm:Ngày Tháng Năm!
+msg.portal.emailExist=Email này đã bị sử dụng!
+msg.portal.surName=Họ 
+msg.portal.givenName=Tên
+msg.portal.sendCodeMore=Đã hết số lần gửi mã xác thực hôm nay, xin vui lòng thử lại vào ngày mai!
+#Trung tâm cá nhân 
+msg.portal.memberInfoUpdatedSucc=Dữ liệu đã sửa lại thành công!
+msg.portal.currentPwdRequired=Xin hãy nhập mật khẩu hiện tại
+msg.portal.newPwdRequired=Xin hãy nhập mật khẩu mới
+msg.portal.confirmNewPwdRequired=Xin hãy xác nhận mật khẩu mới 
+msg.portal.newPwdEqualTo=Mật khẩu mới và mật khậu xác nhận mới không trùng nhau!
+msg.portal.newPwdEqualToOld=Mât khâu mới và mật khẩu hiện tại không thể giống nhau!
+msg.portal.pwdUpdatedSucc=Mật khẩu đã được đổi thành công!
+msg.portal.newEmailRequired=Xin hãy nhập email mới !
+msg.portal.confirmNewEmailRequired=Xin hãy xác nhận email mới!
+msg.portal.newEmailEqualTo=Email mới và email hiện tại không thể giống nhau!
+msg.portal.confirmEmailNotEqualTo=Email mới và email xác nhận mới không trùng nhau!
+msg.portal.loginPwdRequired=Xin nhập mật khẩu đăng nhập
+msg.portal.emailUpdatedSucc=Email bảo vệ đã được đổi thành công!
+msg.portal.authInfoSent=Mã xác thực đã được gửi đến email của bạn,xin vui lòng kiểm tra!
+msg.portal.currentPwdError=Mật khẩu hiện tại không đúng!
+msg.portal.mobileUpdFail=Đổi thất bại, số điện thoại này đã bị đăng ký!
+msg.portal.userNameNoExist=Tên truy cập này không tồn tại!
+msg.portal.applyTooMany=Nộp đơn xin quá nhiều lần.Hơn 5lần thì phải  liên hệ với dịch vụ khách hàng
+msg.portal.emailNoValidation=Email bảo vệ không đúng hoặc email bảo vệ này chưa được xác minh!
+msg.portal.fundpwdSameLoginpwd=Mật khẩu quỹ không thể trùng với mật khẩu đăng nhập khoặc tên truy cập 
+msg.portal.noUser=Lỗi thông tin tài khoản
+msg.portal.existBankNum=Thẻ ngân hàng đã tồn tại!
+msg.portal.fundPwdSetSucc=Mật khẩu quỹ đã được cài đặt thành công
+msg.portal.nicknameRequired=Biệt danh không thể để trống!
+msg.portal.addressRequired=Địa chỉ không thể để trống
+msg.portal.maxCardLimit=Số lượng thẻ ngân hàng vượt quá giới hạn tối đa!
+msg.portal.fundPwdError=Lỗi mật khẩu quỹ!
+msg.portal.networkError=Trạng thái mạng dị thường.
+msg.portal.fundPwdErrorMore=Nhập sai mật khẩu quỹ quá nhiều lần, số Tài khoản đã bị khóa!
+
+#Số dư của tôi 
+msg.portal.timeout=Timeout
+msg.portal.showMoney=Hiện thị số dư
+msg.portal.loading=Đang tải...
+msg.portal.freeze=Đóng băng
+#Chuyển khoản 
+msg.portal.pwdError=Mật khậu không đúng!
+msg.portal.transferFailure=Chuyển khoản thất bại,Xin thử lại sau!
+msg.portal.transferAmtNumber=Kim ngạch phải là số nguyên dương.
+msg.portal.transferAppSame=Ứng dụng chuyên vào và chuyển ra không thể giống nhau!
+msg.portal.transferMoneyNotEnough=Ứng dụng chuyển ra không đủ tiền chuyển.
+msg.portal.transferFai=Chuyển khoản thất bại!
+msg.portal.transferSuc=Chuyển khoản thàng công!
+msg.portal.noEndActivity=Xin lỗi,bạn còn khuyến mãi chưa hoàn tất!
+msg.portal.repIpPhoneEmail=IP,số điện thoại hoặc emali lặp lại đều không thể tham gia khuyến mãi.
+msg.portal.noFirstTrans=Xin lỗi, không phải là lần đầu tiên chuyển vào!
+msg.portal.noPayInfo=Xin lỗi, không có kỷ lục về sự gửi tiền!
+msg.portal.noEnableAct=Xin lỗi,không có khuyến mãi để tham gia!
+msg.portal.noEnoughMoney=Xin lỗi,số tiền chuyển cao hơn số dư ví,chuyển khoản thất bại!
+#Rút tiền 
+msg.portal.withdrawalProcessed=Đơn xin rút tiền của bạn đang được xử lý,xin chờ giây lát,nếu có nghi vấn gì,xin vui lòng liên hệ với dịch vụ khách hàng!
+msg.portal.moneyRequired=Xin hãy chọn ứng dụng phụ và điền vào số tiền rút!
+msg.portal.withdrawalMoneyNotEnough= Mức tiền rút được không đủ
+msg.portal.withdrawalMinLimit=Số tiền rút không thể thiếu hơn
+msg.portal.withdrawalFai=Nộp đơn xin rút tiền thất bại!
+msg.portal.withdrawalSuc=Nộp đơn xin rút tiền thành công!
+msg.portal.withdrawalAmtNumber=Kim ngạch phải là số nguyên dương!
+msg.portal.selectBank=Xin lựa chọn ngân hàng
+msg.portal.cardLimit=Số thẻ ngân hàng phải là từ {0}-{1} số nguyên!
+msg.portal.debitCard=Thẻ ghi nợ
+msg.portal.firstWithdrawal= Lần đầu rút tiền 
+msg.portal.walletNoAvailMoney=Số dư ví không đủ,không rút tiền được!
+msg.portal.DepositforNoInRules=Nộp đơn xin gửi tiền quá thường xuyên,xin thự lại sau!
+msg.portal.drawNoInRules=Nộp đơn xin rút tiền quá thường xuyên,xin thử lại sau!
+msg.portal.orgAccountRequired=Số tài khoản không thể để trống.
+msg.portal.moreThenEnableDraw=Bạn nhập số tiền rút cao hơn mức tiền rút được.
+msg.portal.noOnlineFinancer=Điều hành thất bại,không có người tài vụ trực tuyến.
+msg.portal.appCountError=Lỗi thống kê cược của ứng dụng phụ.
+msg.portal.cardRequired=Số thẻ ngân hàng không thể để trống.
+msg.portal.lessThenFee=Rút tiền thất bại,số tiền rút thiếu hơn phí thủ tục
+msg.portal.counterFeeDesc=Thưa bạn,tổng số tiền gửi từ lần trước rút tiền đến lần này rút tiền là {0},cần đặt cược đến mức {1},số tiền cược hiện tại đã đạt {2}.Do số tiền cược chưa đạt yêu cầu,lần này rút tiền cần khấu trừ phí thủ tục {3}
+#活动相关
+msg.activity.turnoverInsufficient=Your turnover is insufficient; another {0} CNY is required…
+msg.activity.insistTransfer=If you insist on transferring, you cannot get the {0} CNY bonus.
+msg.activity.turnoverInsufficientForRebate=Your turnover is insufficient for the rebate; another {0} CNY is required.
+msg.activity.lowerWithdrawAmt=or you can lower withdrawal amount to {0} CNY.
+msg.activity.tryAgain=Try Again
+
+#验证码相关
+msg.checkcode.subject=U2VjdXJpdHkgQ29kZVtWaW5iZXRd
+msg.checkcode.body=U2VjdXJpdHkgQ29kZTp7MH1bVmluYmV0XQ==

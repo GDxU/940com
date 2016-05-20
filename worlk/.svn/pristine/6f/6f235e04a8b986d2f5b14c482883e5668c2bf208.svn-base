@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+    <link href="../css/calendar.css" rel="stylesheet"/>
+    <style>
+        input {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: 1px #eee solid;
+            width: 100%;
+            line-height: 18px;
+            height: 28px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+<div class="nav-header">
+    <a href="historyDetail.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">历史记录</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="ui-nav" id="sliderNav">
+    <ul>
+        <li><a href="javascript:;">存款</a></li>
+        <li><a href="javascript:;">提款</a></li>
+        <li><a href="javascript:;">划账</a></li>
+        <li><a href="javascript:;">余额修正</a></li>
+    </ul>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <dl class="ui-dl-list  list-height40">
+                                <dt>今天</dt>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl class="ui-dl-list list-height40">
+                                <dt>昨天</dt>
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ui-all-title">时时彩</div>
+            <div class="ui-content-item">
+                <div class="item">
+                    <div class="ui-content-title">从：</div>
+                    <input type="text" class="calendars" shield="['2015/3/10', '2015/4/10', '2015/4/20']" placeholder="选择日期"><br>
+                </div>
+                <div class="item">
+                    <div class="ui-content-title">到：</div>
+                    <input type="text" class="calendars" shield="['2015/3/10', '2015/4/10', '2015/4/20']" placeholder="选择日期"><br>
+                </div>
+                <div class="ui-form-content">
+                    <div class="ui-btn-blue">
+                        <input type="button" name="button"  onclick="window.location.href='historyDetail.html'" class="button" value="确定">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/slider_mover.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script src="../js/lib/calendar.js"></script>
+<!--<script>
+    seajs.use('lib/calendar');
+</script>-->
+</body>
+</html>

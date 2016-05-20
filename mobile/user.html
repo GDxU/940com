@@ -1,0 +1,564 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/user.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/layer/layer.js"></script>
+    <script type="text/javascript" src="scripts/user.js"></script>
+</head>
+
+<body>
+
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li id="userLogin">
+            <a href="login.html">
+                <i class="menu-icon1"></i>
+                <span>登录</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="hot.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+    <!-- free -->
+    <div class="free">
+        <div class="free-tabPanel">
+            <ul class="free-ul">
+                <li class="free-hit">
+                    <a href="user.html" class="free-line">个人信息</a>
+                </li>
+                <li>
+                    <a href="schedule.html" class="free-line">我的课表</a>
+                </li>
+                <li>
+                    <a href="notice.html">最新公告</a>
+                </li>
+            </ul>
+            <div class="free-panes">
+                <div class="free-pane" style="display: block;">
+<!--                     <div class="users">
+                        <div class="users-personal">
+                            <dl>
+                                <dt><img src="content/images/user/nan_pic.png"></dt>
+                                <dd>
+                                    <i>学员：lijunsheng33*</i>
+                                </dd>
+                                <dd>
+                                    <span>登录邮箱：lijunsheng33@sududa.com</span>
+                                    <span class="right">编号：4164372</span>
+                                </dd>
+                                <dd>
+                                    <div class="acc_rank" id="acc_data">
+                                        <span>安全等级：</span>
+                                        <span class="a_integ b_integ">
+                                            <i class="yellows" style="width: 70%;"></i>
+                                        </span>
+                                        <font>中</font>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div class="acc_rank" id="acc_data">
+                                        <span>信息完整度：</span>
+                                        <span class="a_integ">
+                                            <i style="width: 70%;"></i>
+                                        </span>
+                                        <font>70%</font>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <span>上次登录时间：2015-10-13 18:19</span>
+                                </dd>
+
+                            </dl>
+                        </div>
+                    </div> -->
+
+<!--                     <div class="profile">
+                        <div class="users-edit">
+                            <div class="title">
+                                <span>编辑个人资料</span>
+                                <i></i>
+                            </div>
+                        </div>
+
+                        <div class="users-cont">
+                            <ul>
+                                <li>
+                                    <span>登录邮箱：</span>
+                                    <div class="item modify_pass">
+                                        <i class="yahei">907350373@qq.com</i>
+                                        <a href="###" class="reg">（修改登录密码）</a>
+                                    </div>
+                                </li>
+
+                                <li class="li_name">
+                                    <span>真实姓名：</span>
+                                    <div class="item">
+                                        <i class="modify-name">lijunsheng33*</i>
+                                        <a data-v="name" href="javascript:" id="txtiname">（修改）</a>
+                                        <input id="txtIname" type="text" class="xg_txt" style="display: none;"></input>
+                                    </div>
+                                </li>
+
+                                <li class="li_sex">
+                                    <span>性&nbsp&nbsp别：</span>
+                                    <div class="item sex_inp">
+                                        <div class="fl">
+                                            <i class="selected"></i>
+                                            <strong class="icon_nan">男</strong>
+                                        </div>
+                                        <div class="fl">
+                                            <i></i>
+                                            <strong class="icon_nv">女</strong>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li_phone">
+                                    <span>手&nbsp&nbsp机：</span>
+                                    <div class="item un_phone" style="display: none;">
+                                      <i class="yahei">加载中...</i>
+                                      <a href="javascript:">（解绑）</a>
+                                    </div>
+                                    <div class="item bind_phone" style="">
+                                      <i style="color: #999;">还未绑定手机</i>
+                                      <a href="user/bind.html" >（立即绑定）</a>
+                                    </div>
+                                </li>
+
+                                <li class="li_qq">
+                                    <span>QQ：</span>
+                                    <div class="item revise_inp">
+                                      <i class="modify-qq">907350373</i>
+                                      <a data-v="qq" href="javascript:" id="txtiqq">（修改）</a>
+                                      <input id="txtIqq" type="text" class="xg_txt" style="display: none;"></input>
+                                    </div>
+                                </li>
+
+                                <li class="li_yy">
+                                    <span>YY：</span>
+                                    <div class="item revise_inp">
+                                      <i class="modify-yy">还未填写yy</i>
+                                      <a data-v="yy" href="javascript:" id="txtiyy">（修改）</a>
+                                      <input id="txtIyy" type="text" class="xg_txt" style="display: none;"></input>
+                                    </div>
+                                </li>
+
+                                <li class="li_area">
+                                    <span>所在地：</span>
+                                    <div class="item selectList">
+                                        <i class="modify-city">广东-深圳</i>
+                                        <a data-v="szd" href="javascript:" id="txticity">（修改）</a>
+                                        <div id="txtIcity" class="city-layer">
+                                            <div class="select_ui">
+                                                <div class="select_arrow"></div>
+                                                <div class="select_text_ui" style="min-width: 2.5em;">北京</div>
+                                                <select class="province" required="true" name="birthday_year">
+                                                </select>
+                                            </div>
+                                            <div class="select_ui">
+                                                <div class="select_arrow"></div>
+                                                <div class="select_text_ui" style="min-width: 2.5em;">西城</div>
+                                                <select class="city" required="true" name="birthday_year">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="li_url por_li">
+                                    <div class="upload">
+                                        <dl>
+                                            <dt id="fileList">
+                                                <img src="content/images/user/up_give_nan.png">
+                                            </dt>
+                                            <dd>
+                                                <p>上传支持JPG、PNG、BMP格式，</p>
+                                                <p>不超过150KB最佳尺寸为145x145像素。</p>
+                                            </dd>
+                                            <dd class="ipt">
+                                                <a href="###">点此更换图片</a>
+                                                <input type="file" id="fileElem" multiple accept="image/*"  onchange="handleFiles(this)">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+<!--                     <div class="preserved">
+                        <button type="submit" class="btn-long btn-purple" id="submit">保<i></i>存</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="enrolled.html">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="http://dht.zoosnet.net/LR/Chatpre.aspx?id=DHT88027214&lng=cn" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+
+
+</div>
+
+<script type="text/javascript">
+    ;window.onload = function(){
+        // 性别
+        $(".li_sex").on('click', '.fl', function() {
+            var $this = $(this),
+                _index = $this.index();
+            if (_index == 0) {
+                $this.find('i').addClass('selected');
+                $this.siblings('.fl').find('i').removeClass('selected');
+            } else {
+                $this.find('i').addClass('selected');
+                $this.siblings('.fl').find('i').removeClass('selected');
+            }
+            $('#sexVal').val(_index);
+        });
+        //弹出'申请职位框'按钮弹窗
+        $('.reg').on('click', function() {
+            layer.open({
+                type: 2,
+                move: false,
+                area: ['6rem', '6rem'],
+                shadeClose: false,
+                title: '修改登录密码',
+                content: 'user/passw.html'
+            });
+        });
+        //弹出'申请职位框'按钮弹窗
+        $('.bind').on('click', function() {
+            layer.open({
+                type: 2,
+                move: false,
+                area: ['6rem', '5.3rem'],
+                shadeClose: false,
+                title: '绑定手机',
+                content: 'user/bind.html'
+            });
+        });
+        // HTML5 LocalStorage 本地存储
+        member = JSON.parse(localStorage.getItem("member"));
+        var a = '';
+        //真实姓名
+        $("a[data-v='name']").click(function(){
+            $("#txtIname").show().focus().siblings().hide();
+        });
+        //QQ
+        $("a[data-v='qq']").click(function(){
+            $("#txtIqq").show().focus().siblings().hide();
+        });
+        //yy
+        $("a[data-v='yy']").click(function(){
+            $("#txtIyy").show().focus().siblings().hide();
+        });
+        //所在地
+        $("a[data-v='szd']").click(function(){
+            $("#txtIcity").show().focus().siblings().hide();
+            var selectHtml = '<span>所在地：</span><div class="select_ui"><div class="select_arrow"></div><div class="select_text_ui slect-sf" style="min-width: 2.5em;">北京</div><select class="province" required="true" name="birthday_year"></select></div><div class="select_ui"><div class="select_arrow"></div><div class="select_text_ui slect-city1" style="min-width: 2.5em;">西城</div><select class="city" required="true" name="birthday_year"></select></div>';
+            var $selectList = $(".selectList");
+            $selectList.on('click',function(){
+                var $parent = $(this).parent();
+                var _html = $parent.html();
+                $parent.html(selectHtml);
+                var url = "json/area.json";
+                var areaJson;
+                var temp_html;
+                var oProvince = $(".province");
+                var oCity = $(".city");
+                //初始化省
+                var province = function(){
+                    $.each(areaJson, function(i, province){
+                        temp_html += "<option value='" + province.p + "'>" + province.p + "</option>";
+                    });
+                    $(".province").html(temp_html);
+                    oProvince.siblings('.select_text_ui').html(oProvince.val());
+                    city();
+                };
+                //赋值市
+                var city = function(){
+                    temp_html = "";
+                    var n = oProvince.get(0).selectedIndex;
+                    $.each(areaJson[n].c, function(i, city){
+                        temp_html += "<option value='" + city + "'>" + city + "</option>";
+                    });
+                    oCity.html(temp_html);
+                    oCity.siblings('.select_text_ui').html(oCity.val());
+                };
+                //选择省改变市
+                oProvince.change(function() {
+                    oProvince.siblings('.select_text_ui').html(oProvince.val())
+                    city();
+                    // This.uesrData.address = oProvince.val() + '-' + oCity.val();
+                    $thisdress = oProvince.val() + '-' + oCity.val();
+                });
+                oCity.change(function() {
+                    oCity.siblings('.select_text_ui').html(oCity.val());
+                    // This.uesrData.address = oProvince.val() + '-' + oCity.val();
+                    $thisdress = oProvince.val() + '-' + oCity.val();
+                });
+                //获取json数据
+                $.getJSON(url, function(data){
+                    areaJson = data;
+                    province();
+                    console.log(areaJson);
+                });
+            });
+
+        });
+        // 苹果点击问题
+        // document.onclick = function(event)
+        $(document).click(function(event)
+        {
+            var e = event || window.event;
+            var elem = e.srcElement || e.target;
+
+            while(elem)
+            {
+                if (elem.id == "txtiname" || elem.id == "saveUserInfo" || elem.id == "txtIname" || elem.id == "txtiqq" || elem.id == "txtIqq" || elem.id == "txtiyy" || elem.id == "txtIyy" || elem.id == "txticity" || elem.id == "txtIcity")
+                {
+                    return;
+                }
+                elem = elem.parentNode;
+            }
+            // 真实姓名
+            var nameoldnum = $(".modify-name").text();
+            var namenum = $("#txtIname").val();
+            if (namenum == null || namenum == "") {
+                namenum = nameoldnum;
+            }
+            $(".modify-name").text(namenum);
+            $("#txtIname").val("");
+            $("#txtIname").hide().siblings().show();
+            // qq
+            var qqoldnum = $(".modify-qq").text();
+            var qqnum = $("#txtIqq").val();
+            if (qqnum == null || qqnum == "") {
+                qqnum = qqoldnum;
+            }
+            $(".modify-qq").text(qqnum);
+            $("#txtIqq").val("");
+            $("#txtIqq").hide().siblings().show();
+            // yy
+            var yyoldnum = $(".modify-yy").text();
+            var yynum = $("#txtIyy").val();
+            if (yynum == null || yynum == "") {
+                yynum = yyoldnum;
+            }
+            $(".modify-yy").text(yynum);
+            $("#txtIyy").val("");
+            $("#txtIyy").hide().siblings().show();
+            // 所在地
+            var cityoldnum = $(".modify-city").text();
+            var citynum = $("#txtIcity").val();
+            if (citynum == null || citynum == "") {
+                citynum = cityoldnum;
+            }
+            $(".modify-city").text(citynum);
+            $("#txtIcity").val("");
+            $("#txtIcity").hide().siblings().show();
+        });
+
+        // 修改-提交
+        $("#saveUserInfo").click(function() {
+            if ((typeof($thisdress)) == "undefined") {
+                $thisdress = $(".modify-city").text();
+            }
+            console.log($thisdress);
+            /*document.domain = 'm.940.com';*/
+            //var frame = document.getElementById('iframe');
+            var forprofile = $(window.frames['form'].document.body).html();
+            /*var forprofile=frame.contentWindow.postMessage(forprofile, 'http://www.940.com');*/
+            var jsonimg = $.parseJSON(forprofile);
+            // 0
+            if (jsonimg == null) {
+                var fileImageSrc = $("#fileList img").attr("src");
+            } else {
+                var fileImageSrc = jsonimg.file_url;
+            }
+            // 1
+            if (($("#txtIqq").val())) {
+                var qqVlue = $("#txtIqq").val();
+            } else {
+                var qqVlue = $(".modify-qq").text();
+            }
+            // 2
+            if (($("#txtIyy").val())) {
+                var yyVlue = $("#txtIyy").val();
+            } else {
+                var yyVlue = $(".modify-yy").text();
+            }
+            console.log(fileImageSrc);
+            console.log(qqVlue);
+            console.log(yyVlue);
+
+            var modify = $.param({
+                user_name: json_data.u,
+                qq: qqVlue,
+                yy: yyVlue,
+                gender: $("i.selected").attr("data-s"),
+                profile: fileImageSrc,
+                address: $thisdress,
+                realname: function() {
+                    return $(".modify-name").val() ? 0 : $(".modify-name").val();
+                },
+                password: json_data.password
+            });
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: 'http://www.940.com/saveUserInfo',
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                data: modify,
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function(data) {
+                    data = formatData(data);
+                    console.log(modify);
+                    var item = data.sududa;
+                    console.log(item.tips);
+                    if (item.status == 1) {
+                        alert(item.tips);
+                        // 4G网络
+                        window.location.href = "user.html";
+                    } else if (item.status == -9) {
+                        alert(item.tips);
+                    } else {
+                        alert("item.tips");
+                    }
+                }
+            });
+        });
+
+
+    };
+</script>
+
+<script>
+    // 更换头像图片
+    window.URL = window.URL || window.webkitURL;
+/*    var fileElem = document.getElementById("fileElem");*/
+    var  fileList = document.getElementById("fileList");
+
+    function handleFiles(obj) {
+        var files = obj.files,
+                img = new Image();
+        if (window.URL) {
+            img.src = window.URL.createObjectURL(files[0]);
+            img.width = 160;
+            img.onload = function (e) {
+                window.URL.revokeObjectURL(this.src);
+            };
+            document.getElementById("fileList").innerHTML="";
+            document.getElementById("fileList").appendChild(img);
+        } else if (window.FileReader) {
+            var reader = new FileReader();
+            reader.readAsDataURL(files[0]);
+            reader.onload = function (e) {
+                img.src = this.result;
+                img.width = 160;
+                document.getElementById("fileList").innerHTML="";
+                document.getElementById("fileList").appendChild(img);
+            };
+        } else {
+            //ie
+            obj.select();
+            obj.blur();
+            var nfile = document.selection.createRange().text;
+            document.selection.empty();
+            img.src = nfile;
+            img.width = 160;
+            img.onload = function () {
+                alert(nfile + "," + img.fileSize + " bytes");
+            };
+            document.getElementById("fileList").innerHTML="";
+            document.getElementById("fileList").appendChild(img);
+
+        }
+
+        /*var imgurl=$("#filename").val();*/
+        $("#imgurlform").submit();
+
+
+    }
+</script>
+</body>
+</html>

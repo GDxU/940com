@@ -1,0 +1,101 @@
+.number {
+  display: inline-block;
+  padding: 7px!important;
+  text-align: center;
+  width: 27px;
+  height: 14px;
+  background: url("../images/portal/ball-k3.png") center top no-repeat;
+  text-indent: -999em;
+  vertical-align: middle;
+}
+.number2 {
+  background-position: 7px -27px;
+}
+.number3 {
+  background-position: 7px -55px;
+}
+.number4 {
+  background-position: 7px -84px;
+}
+.number5 {
+  background-position: 7px -111px;
+}
+.number6 {
+  background-position: 7px -139px;
+}
+/*幸运*/
+.ui-list-ball dl dt span.lucky {
+  display: inline-block;
+  padding: 7px!important;
+  text-align: center;
+  width: 27px;
+  height: 14px;
+  background: url("../../images/portal/ball-nc20130106.png") center top no-repeat;
+  text-indent: -999em;
+  vertical-align: middle;
+  border: none;
+}
+.ui-list-ball dl dt span.lucky.active {
+  border: 2px solid #365db5;
+  height: 20px;
+}
+.ui-list-ball dl dt span.lucky.lucky1 {
+  background-position: center 0;
+}
+.ui-list-ball dl dt span.lucky.lucky2 {
+  background-position: center -35px;
+}
+.ui-list-ball dl dt span.lucky.lucky3 {
+  background-position: center -70px;
+}
+.ui-list-ball dl dt span.lucky.lucky4 {
+  background-position: center -102px;
+}
+.ui-list-ball dl dt span.lucky.lucky5 {
+  background-position: center -135px;
+}
+.ui-list-ball dl dt span.lucky.lucky6 {
+  background-position: center -170px;
+}
+.ui-list-ball dl dt span.lucky.lucky7 {
+  background-position: center -202px;
+}
+.ui-list-ball dl dt span.lucky.lucky8 {
+  background-position: center -233px;
+}
+.ui-list-ball dl dt span.lucky.lucky9 {
+  background-position: center -268px;
+}
+.ui-list-ball dl dt span.lucky.lucky10 {
+  background-position: center -300px;
+}
+.ui-list-ball dl dt span.lucky.lucky11 {
+  background-position: center -333px;
+}
+.ui-list-ball dl dt span.lucky.lucky12 {
+  background-position: center -366px;
+}
+.ui-list-ball dl dt span.lucky.lucky13 {
+  background-position: center -398px;
+}
+.ui-list-ball dl dt span.lucky.lucky14 {
+  background-position: center -431px;
+}
+.ui-list-ball dl dt span.lucky.lucky15 {
+  background-position: center -464px;
+}
+.ui-list-ball dl dt span.lucky.lucky16 {
+  background-position: center -496px;
+}
+.ui-list-ball dl dt span.lucky.lucky17 {
+  background-position: center -530px;
+}
+.ui-list-ball dl dt span.lucky.lucky18 {
+  background-position: center -563px;
+}
+.ui-list-ball dl dt span.lucky.lucky19 {
+  background-position: center -598px;
+}
+.ui-list-ball dl dt span.lucky.lucky20 {
+  background-position: center -629px;
+}

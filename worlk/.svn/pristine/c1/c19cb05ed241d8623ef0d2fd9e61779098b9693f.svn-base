@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="my_massage.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">存款</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more icon-filter"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <div class="ui-all-title">信息标题</div>
+        <div class="ui-content-pd ui-bg-whiter">
+            信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内
+            容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内
+            容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信
+            息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容
+        </div>
+    </div>
+    <!--项目主体end-->
+</div>
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+</body>
+</html>

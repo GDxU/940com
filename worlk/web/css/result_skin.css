@@ -1,0 +1,1084 @@
+/* ====================广东快乐十分====================*/
+.klc .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.klc .num01 {
+    background-position: 0 0;
+}
+.klc .num02 {
+    background-position: 0 -27px;
+}
+.klc .num03 {
+    background-position: 0 -54px;
+}
+.klc .num04 {
+    background-position: 0 -81px;
+}
+.klc .num05 {
+    background-position: 0 -108px;
+}
+.klc .num06 {
+    background-position: 0 -135px;
+}
+.klc .num07 {
+    background-position: 0 -162px;
+}
+.klc .num08 {
+    background-position: 0 -189px;
+}
+.klc .num09 {
+    background-position: 0 -216px;
+}
+.klc .num10 {
+    background-position: 0 -243px;
+}
+.klc .num11 {
+    background-position: 0 -270px;
+}
+.klc .num12 {
+    background-position: 0 -297px;
+}
+.klc .num13 {
+    background-position: 0 -324px;
+}
+.klc .num14 {
+    background-position: 0 -351px;
+}
+.klc .num15 {
+    background-position: 0 -378px;
+}
+.klc .num16 {
+    background-position: 0 -405px;
+}
+.klc .num17 {
+    background-position: 0 -432px;
+}
+.klc .num18 {
+    background-position: 0 -459px;
+}
+.klc .num19 {
+    background-position: 0 -486px;
+}
+.klc .num20 {
+    background-position: 0 -513px;
+}
+/* ====================重庆时时彩====================*/
+.ssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.ssc .num0 {
+    background-position: 0 0;
+}
+.ssc .num01 {
+    background-position: 0 -27px;
+}
+.ssc .num02 {
+    background-position: 0 -54px;
+}
+.ssc .num03 {
+    background-position: 0 -81px;
+}
+.ssc .num04 {
+    background-position: 0 -108px;
+}
+.ssc .num05 {
+    background-position: -28px 0;
+}
+.ssc .num06 {
+    background-position: -28px -27px;
+}
+.ssc .num07 {
+    background-position: -28px -54px;
+}
+.ssc .num08 {
+    background-position: -28px -81px;
+}
+.ssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================北京赛车(PK10)====================*/
+.bjc .number {
+    background: url("../images/ball-pk.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 20px;
+}
+.bjc .num01 {
+    background-position: 0 0;
+}
+.bjc .num02 {
+    background-position: 0 -21px;
+}
+.bjc .num03 {
+    background-position: 0 -42px;
+}
+.bjc .num04 {
+    background-position: 0 -63px;
+}
+.bjc .num05 {
+    background-position: 0 -84px;
+}
+.bjc .num06 {
+    background-position: 0 -105px;
+}
+.bjc .num07 {
+    background-position: 0 -126px;
+}
+.bjc .num08 {
+    background-position: 0 -147px;
+}
+.bjc .num09 {
+    background-position: 0 -168px;
+}
+.bjc .num10 {
+    background-position: 0 -190px;
+}
+/* ====================快乐农场====================*/
+.xync .number {
+	width: 30px;
+	height: 30px;
+	line-height: 20px;
+	display: inline-block;
+	background: url(../images/ball-nc20130106.png) no-repeat;
+	margin: -5px 3px -4px 0; *
+	margin: 0 3px -4px 0;
+	padding: 0;
+}
+.xync .num01 {
+	background-position: 0 0;
+}
+.xync .num02 {
+	background-position: 0 -34px;
+}
+.xync .num03 {
+	background-position: 0 -66px;
+}
+.xync .num04 {
+	background-position: 0 -99px;
+}
+.xync .num05 {
+	background-position: 0 -134px;
+}
+.xync .num06 {
+	background-position: 0 -165px;
+}
+.xync .num07 {
+	background-position: 0 -198px;
+}
+.xync .num08 {
+	background-position: 0 -231px;
+}
+.xync .num09 {
+	background-position: 0 -264px;
+}
+.xync .num10 {
+	background-position: 0 -298px;
+}
+.xync .num11 {
+	background-position: 0 -331px;
+}
+.xync .num12 {
+	background-position: 0 -365px;
+}
+.xync .num13 {
+	background-position: 0 -396px;
+}
+.xync .num14 {
+	background-position: 0 -429px;
+}
+.xync .num15 {
+	background-position: 0 -462px;
+}
+.xync .num16 {
+	background-position: 0 -494px;
+}
+.xync .num17 {
+	background-position: 0 -527px;
+}
+.xync .num18 {
+	background-position: 0 -561px;
+}
+.xync .num19 {
+	background-position: 0 -594px;
+}
+.xync .num20 {
+	background-position: 0 -627px;
+}
+/* ====================江苏骰宝====================*/
+.jsks .number {
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+	background: url(../images/ball-k3.png) no-repeat;
+	margin: 0 1px;
+    vertical-align: middle;	
+	background-position: -100px 0;
+}
+.jsks .num01 {
+	background-position: 0 0;
+}
+.jsks .num02 {
+	background-position: 0 -28px;
+}
+.jsks .num03 {
+	background-position: 0 -56px;
+}
+.jsks .num04 {
+	background-position: 0 -84px;
+}
+.jsks .num05 {
+	background-position: 0 -112px;
+}
+.jsks .num06 {
+	background-position: 0 -140px;
+}
+.jsks .num1 {
+	background-position: 0 0;
+}
+.jsks .num2 {
+	background-position: 0 -28px;
+}
+.jsks .num3 {
+	background-position: 0 -56px;
+}
+.jsks .num4 {
+	background-position: 0 -84px;
+}
+.jsks .num5 {
+	background-position: 0 -112px;
+}
+.jsks .num6 {
+	background-position: 0 -140px;
+}
+/* ====================江西时时彩====================*/
+.jxssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.jxssc .num0 {
+    background-position: 0 0;
+}
+.jxssc .num01 {
+    background-position: 0 -27px;
+}
+.jxssc .num02 {
+    background-position: 0 -54px;
+}
+.jxssc .num03 {
+    background-position: 0 -81px;
+}
+.jxssc .num04 {
+    background-position: 0 -108px;
+}
+.jxssc .num05 {
+    background-position: -28px 0;
+}
+.jxssc .num06 {
+    background-position: -28px -27px;
+}
+.jxssc .num07 {
+    background-position: -28px -54px;
+}
+.jxssc .num08 {
+    background-position: -28px -81px;
+}
+.jxssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================新疆时时彩====================*/
+.xjssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.xjssc .num0 {
+    background-position: 0 0;
+}
+.xjssc .num01 {
+    background-position: 0 -27px;
+}
+.xjssc .num02 {
+    background-position: 0 -54px;
+}
+.xjssc .num03 {
+    background-position: 0 -81px;
+}
+.xjssc .num04 {
+    background-position: 0 -108px;
+}
+.xjssc .num05 {
+    background-position: -28px 0;
+}
+.xjssc .num06 {
+    background-position: -28px -27px;
+}
+.xjssc .num07 {
+    background-position: -28px -54px;
+}
+.xjssc .num08 {
+    background-position: -28px -81px;
+}
+.xjssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================广东十一选五====================*/
+.gdsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.gdsyxw .num01 {
+    background-position: 0 0;
+}
+.gdsyxw .num02 {
+    background-position: 0 -27px;
+}
+.gdsyxw .num03 {
+    background-position: 0 -54px;
+}
+.gdsyxw .num04 {
+    background-position: 0 -81px;
+}
+.gdsyxw .num05 {
+    background-position: 0 -108px;
+}
+.gdsyxw .num06 {
+    background-position: 0 -135px;
+}
+.gdsyxw .num07 {
+    background-position: 0 -162px;
+}
+.gdsyxw .num08 {
+    background-position: 0 -189px;
+}
+.gdsyxw .num09 {
+    background-position: 0 -216px;
+}
+.gdsyxw .num10 {
+    background-position: 0 -243px;
+}
+.gdsyxw .num11 {
+    background-position: 0 -270px;
+}
+/*-----------------------------------------------20150503*/
+.his_issue{
+	background: #e9e9e9 !important;
+	height:20px;	
+}
+.b_num_arr{
+	padding: 0.6em 1em !important;
+	font-size:12px;
+}
+/* ====================天津快乐十分====================*/
+.tjklc .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.tjklc .num01 {
+    background-position: 0 0;
+}
+.tjklc .num02 {
+    background-position: 0 -27px;
+}
+.tjklc .num03 {
+    background-position: 0 -54px;
+}
+.tjklc .num04 {
+    background-position: 0 -81px;
+}
+.tjklc .num05 {
+    background-position: 0 -108px;
+}
+.tjklc .num06 {
+    background-position: 0 -135px;
+}
+.tjklc .num07 {
+    background-position: 0 -162px;
+}
+.tjklc .num08 {
+    background-position: 0 -189px;
+}
+.tjklc .num09 {
+    background-position: 0 -216px;
+}
+.tjklc .num10 {
+    background-position: 0 -243px;
+}
+.tjklc .num11 {
+    background-position: 0 -270px;
+}
+.tjklc .num12 {
+    background-position: 0 -297px;
+}
+.tjklc .num13 {
+    background-position: 0 -324px;
+}
+.tjklc .num14 {
+    background-position: 0 -351px;
+}
+.tjklc .num15 {
+    background-position: 0 -378px;
+}
+.tjklc .num16 {
+    background-position: 0 -405px;
+}
+.tjklc .num17 {
+    background-position: 0 -432px;
+}
+.tjklc .num18 {
+    background-position: 0 -459px;
+}
+.tjklc .num19 {
+    background-position: 0 -486px;
+}
+.tjklc .num20 {
+    background-position: 0 -513px;
+}
+/* ====================天津时时彩====================*/
+.tjssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.tjssc .num0 {
+    background-position: 0 0;
+}
+.tjssc .num01 {
+    background-position: 0 -27px;
+}
+.tjssc .num02 {
+    background-position: 0 -54px;
+}
+.tjssc .num03 {
+    background-position: 0 -81px;
+}
+.tjssc .num04 {
+    background-position: 0 -108px;
+}
+.tjssc .num05 {
+    background-position: -28px 0;
+}
+.tjssc .num06 {
+    background-position: -28px -27px;
+}
+.tjssc .num07 {
+    background-position: -28px -54px;
+}
+.tjssc .num08 {
+    background-position: -28px -81px;
+}
+.tjssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================上海十一选五====================*/
+.shsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.shsyxw .num01 {
+    background-position: 0 0;
+}
+.shsyxw .num02 {
+    background-position: 0 -27px;
+}
+.shsyxw .num03 {
+    background-position: 0 -54px;
+}
+.shsyxw .num04 {
+    background-position: 0 -81px;
+}
+.shsyxw .num05 {
+    background-position: 0 -108px;
+}
+.shsyxw .num06 {
+    background-position: 0 -135px;
+}
+.shsyxw .num07 {
+    background-position: 0 -162px;
+}
+.shsyxw .num08 {
+    background-position: 0 -189px;
+}
+.shsyxw .num09 {
+    background-position: 0 -216px;
+}
+.shsyxw .num10 {
+    background-position: 0 -243px;
+}
+.shsyxw .num11 {
+    background-position: 0 -270px;
+}
+/* ====================山东十一选五====================*/
+.sdsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.sdsyxw .num01 {
+    background-position: 0 0;
+}
+.sdsyxw .num02 {
+    background-position: 0 -27px;
+}
+.sdsyxw .num03 {
+    background-position: 0 -54px;
+}
+.sdsyxw .num04 {
+    background-position: 0 -81px;
+}
+.sdsyxw .num05 {
+    background-position: 0 -108px;
+}
+.sdsyxw .num06 {
+    background-position: 0 -135px;
+}
+.sdsyxw .num07 {
+    background-position: 0 -162px;
+}
+.sdsyxw .num08 {
+    background-position: 0 -189px;
+}
+.sdsyxw .num09 {
+    background-position: 0 -216px;
+}
+.sdsyxw .num10 {
+    background-position: 0 -243px;
+}
+.sdsyxw .num11 {
+    background-position: 0 -270px;
+}
+
+/* ====================广西快乐十分====================*/
+.gxklc .number {
+    background: url("../images/ball-gxklc20150516.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 25px;
+    margin:1px 2px;
+    vertical-align: middle;
+    width: 25px;
+}
+.gxklc .num01 {
+    background-position: 0 0;
+}
+.gxklc .num02 {
+    background-position: -25px 0;
+}
+.gxklc .num03 {
+    background-position: -50px 0;
+}
+.gxklc .num04 {
+    background-position: 0 -25px;
+}
+.gxklc .num05 {
+    background-position: -25px -25px;
+}
+.gxklc .num06 {
+    background-position: -50px -25px;
+}
+.gxklc .num07 {
+    background-position: 0 -50px;
+}
+.gxklc .num08 {
+    background-position: -25px -50px;
+}
+.gxklc .num09 {
+    background-position: -50px -50px;
+}
+.gxklc .num10 {
+    background-position: 0 -75px;
+}
+.gxklc .num11 {
+    background-position: -25px -75px;
+}
+.gxklc .num12 {
+    background-position: -50px -75px;
+}
+.gxklc .num13 {
+    background-position: -0 -100px;
+}
+.gxklc .num14 {
+    background-position: -25px -100px;
+}
+.gxklc .num15 {
+    background-position: -50px -100px;
+}
+.gxklc .num16 {
+    background-position: -0 -125px;
+}
+.gxklc .num17 {
+    background-position: -25px -125px;
+}
+.gxklc .num18 {
+    background-position: -50px -125px;
+}
+.gxklc .num19 {
+    background-position: 0 -150px;
+}
+.gxklc .num20 {
+    background-position: -25px -150px;
+}
+.gxklc .num21 {
+    background-position: -50px -150px;
+}
+/* ====================安徽快三====================*/
+.ahks .number {
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+	background: url(../images/ball-k3.png) no-repeat;
+	margin: 0 1px;
+    vertical-align: middle;	
+	background-position: -100px 0;
+}
+.ahks .num01 {
+	background-position: 0 0;
+}
+.ahks .num02 {
+	background-position: 0 -28px;
+}
+.ahks .num03 {
+	background-position: 0 -56px;
+}
+.ahks .num04 {
+	background-position: 0 -84px;
+}
+.ahks .num05 {
+	background-position: 0 -112px;
+}
+.ahks .num06 {
+	background-position: 0 -140px;
+}
+.ahks .num1 {
+	background-position: 0 0;
+}
+.ahks .num2 {
+	background-position: 0 -28px;
+}
+.ahks .num3 {
+	background-position: 0 -56px;
+}
+.ahks .num4 {
+	background-position: 0 -84px;
+}
+.ahks .num5 {
+	background-position: 0 -112px;
+}
+.ahks .num6 {
+	background-position: 0 -140px;
+}
+/* ====================广西快三====================*/
+.gxks .number {
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+	background: url(../images/ball-k3.png) no-repeat;
+	margin: 0 1px;
+    vertical-align: middle;	
+	background-position: -100px 0;
+}
+.gxks .num01 {
+	background-position: 0 0;
+}
+.gxks .num02 {
+	background-position: 0 -28px;
+}
+.gxks .num03 {
+	background-position: 0 -56px;
+}
+.gxks .num04 {
+	background-position: 0 -84px;
+}
+.gxks .num05 {
+	background-position: 0 -112px;
+}
+.gxks .num06 {
+	background-position: 0 -140px;
+}
+.gxks .num1 {
+	background-position: 0 0;
+}
+.gxks .num2 {
+	background-position: 0 -28px;
+}
+.gxks .num3 {
+	background-position: 0 -56px;
+}
+.gxks .num4 {
+	background-position: 0 -84px;
+}
+.gxks .num5 {
+	background-position: 0 -112px;
+}
+.gxks .num6 {
+	background-position: 0 -140px;
+}
+
+/* ====================江西十一选五====================*/
+.jxsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.jxsyxw .num01 {
+    background-position: 0 0;
+}
+.jxsyxw .num02 {
+    background-position: 0 -27px;
+}
+.jxsyxw .num03 {
+    background-position: 0 -54px;
+}
+.jxsyxw .num04 {
+    background-position: 0 -81px;
+}
+.jxsyxw .num05 {
+    background-position: 0 -108px;
+}
+.jxsyxw .num06 {
+    background-position: 0 -135px;
+}
+.jxsyxw .num07 {
+    background-position: 0 -162px;
+}
+.jxsyxw .num08 {
+    background-position: 0 -189px;
+}
+.jxsyxw .num09 {
+    background-position: 0 -216px;
+}
+.jxsyxw .num10 {
+    background-position: 0 -243px;
+}
+.jxsyxw .num11 {
+    background-position: 0 -270px;
+}
+/* ====================辽宁十一选五====================*/
+.lnsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.lnsyxw .num01 {
+    background-position: 0 0;
+}
+.lnsyxw .num02 {
+    background-position: 0 -27px;
+}
+.lnsyxw .num03 {
+    background-position: 0 -54px;
+}
+.lnsyxw .num04 {
+    background-position: 0 -81px;
+}
+.lnsyxw .num05 {
+    background-position: 0 -108px;
+}
+.lnsyxw .num06 {
+    background-position: 0 -135px;
+}
+.lnsyxw .num07 {
+    background-position: 0 -162px;
+}
+.lnsyxw .num08 {
+    background-position: 0 -189px;
+}
+.lnsyxw .num09 {
+    background-position: 0 -216px;
+}
+.lnsyxw .num10 {
+    background-position: 0 -243px;
+}
+.lnsyxw .num11 {
+    background-position: 0 -270px;
+}
+/* ====================湖北十一选五====================*/
+.hbsyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.hbsyxw .num01 {
+    background-position: 0 0;
+}
+.hbsyxw .num02 {
+    background-position: 0 -27px;
+}
+.hbsyxw .num03 {
+    background-position: 0 -54px;
+}
+.hbsyxw .num04 {
+    background-position: 0 -81px;
+}
+.hbsyxw .num05 {
+    background-position: 0 -108px;
+}
+.hbsyxw .num06 {
+    background-position: 0 -135px;
+}
+.hbsyxw .num07 {
+    background-position: 0 -162px;
+}
+.hbsyxw .num08 {
+    background-position: 0 -189px;
+}
+.hbsyxw .num09 {
+    background-position: 0 -216px;
+}
+.hbsyxw .num10 {
+    background-position: 0 -243px;
+}
+.hbsyxw .num11 {
+    background-position: 0 -270px;
+}
+/* ====================江苏十一选五====================*/
+.jssyxw .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.jssyxw .num01 {
+    background-position: 0 0;
+}
+.jssyxw .num02 {
+    background-position: 0 -27px;
+}
+.jssyxw .num03 {
+    background-position: 0 -54px;
+}
+.jssyxw .num04 {
+    background-position: 0 -81px;
+}
+.jssyxw .num05 {
+    background-position: 0 -108px;
+}
+.jssyxw .num06 {
+    background-position: 0 -135px;
+}
+.jssyxw .num07 {
+    background-position: 0 -162px;
+}
+.jssyxw .num08 {
+    background-position: 0 -189px;
+}
+.jssyxw .num09 {
+    background-position: 0 -216px;
+}
+.jssyxw .num10 {
+    background-position: 0 -243px;
+}
+.jssyxw .num11 {
+    background-position: 0 -270px;
+}
+/* ====================云南时时彩====================*/
+.ynssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.ynssc .num0 {
+    background-position: 0 0;
+}
+.ynssc .num01 {
+    background-position: 0 -27px;
+}
+.ynssc .num02 {
+    background-position: 0 -54px;
+}
+.ynssc .num03 {
+    background-position: 0 -81px;
+}
+.ynssc .num04 {
+    background-position: 0 -108px;
+}
+.ynssc .num05 {
+    background-position: -28px 0;
+}
+.ynssc .num06 {
+    background-position: -28px -27px;
+}
+.ynssc .num07 {
+    background-position: -28px -54px;
+}
+.ynssc .num08 {
+    background-position: -28px -81px;
+}
+.ynssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================上海时时彩====================*/
+.shssc .number {
+    background: url("../images/ball-ssc.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px;
+    vertical-align: middle;    
+    width: 26px;
+}
+.shssc .num0 {
+    background-position: 0 0;
+}
+.shssc .num01 {
+    background-position: 0 -27px;
+}
+.shssc .num02 {
+    background-position: 0 -54px;
+}
+.shssc .num03 {
+    background-position: 0 -81px;
+}
+.shssc .num04 {
+    background-position: 0 -108px;
+}
+.shssc .num05 {
+    background-position: -28px 0;
+}
+.shssc .num06 {
+    background-position: -28px -27px;
+}
+.shssc .num07 {
+    background-position: -28px -54px;
+}
+.shssc .num08 {
+    background-position: -28px -81px;
+}
+.shssc .num09 {
+    background-position: -28px -108px;
+}
+/* ====================湖南快乐十分====================*/
+.hnklc .number {
+    background: url("../images/ball-klc20130106.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 26px;
+    margin: 0 1px 0 0;
+    vertical-align: middle;
+    width: 26px;
+}
+.hnklc .num01 {
+    background-position: 0 0;
+}
+.hnklc .num02 {
+    background-position: 0 -27px;
+}
+.hnklc .num03 {
+    background-position: 0 -54px;
+}
+.hnklc .num04 {
+    background-position: 0 -81px;
+}
+.hnklc .num05 {
+    background-position: 0 -108px;
+}
+.hnklc .num06 {
+    background-position: 0 -135px;
+}
+.hnklc .num07 {
+    background-position: 0 -162px;
+}
+.hnklc .num08 {
+    background-position: 0 -189px;
+}
+.hnklc .num09 {
+    background-position: 0 -216px;
+}
+.hnklc .num10 {
+    background-position: 0 -243px;
+}
+.hnklc .num11 {
+    background-position: 0 -270px;
+}
+.hnklc .num12 {
+    background-position: 0 -297px;
+}
+.hnklc .num13 {
+    background-position: 0 -324px;
+}
+.hnklc .num14 {
+    background-position: 0 -351px;
+}
+.hnklc .num15 {
+    background-position: 0 -378px;
+}
+.hnklc .num16 {
+    background-position: 0 -405px;
+}
+.hnklc .num17 {
+    background-position: 0 -432px;
+}
+.hnklc .num18 {
+    background-position: 0 -459px;
+}
+.hnklc .num19 {
+    background-position: 0 -486px;
+}
+.hnklc .num20 {
+    background-position: 0 -513px;
+}
+/* ====================北京快乐十分====================*/
+.bjklc {
+  background: url(../images/qipa.png);
+  width: 25px;
+  height: 24px;
+  padding-top: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}

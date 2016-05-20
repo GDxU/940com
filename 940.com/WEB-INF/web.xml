@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>CheckCodeServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.CheckCodeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckCodeServlet</servlet-name>
+		<url-pattern>/checkCode</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>PlayVideoServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.video.PlayVideoServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PlayVideoServlet</servlet-name>
+		<url-pattern>/play</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ImageServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.ImageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ImageServlet</servlet-name>
+		<url-pattern>/code.jpeg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>GetPhoneCodeServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.GetPhoneCodeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPhoneCodeServlet</servlet-name>
+		<url-pattern>/getPhoneCode</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BindingPhoneServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.BindingPhoneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BindingPhoneServlet</servlet-name>
+		<url-pattern>/bindPhone</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UnBindPhoneServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.UnBindPhoneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UnBindPhoneServlet</servlet-name>
+		<url-pattern>/unBindPhone</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UserInfoServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.UserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserInfoServlet</servlet-name>
+		<url-pattern>/userInfo</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RoomListServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.RoomListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoomListServlet</servlet-name>
+		<url-pattern>/roomList</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePassWordServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.UpdatePassWordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePassWordServlet</servlet-name>
+		<url-pattern>/updatePassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SaveUserInfoServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.SaveUserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveUserInfoServlet</servlet-name>
+		<url-pattern>/saveUserInfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VideoUploadServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.video.VideoUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VideoUploadServlet</servlet-name>
+		<url-pattern>/uploadVideo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>VideoEditSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.video.VideoEditSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VideoEditSubmitServlet</servlet-name>
+		<url-pattern>/videoEditSubmit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TeacherEditSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.teacher.TeacherEditSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TeacherEditSubmitServlet</servlet-name>
+		<url-pattern>/teacherEditSubmit</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>NoticeEditSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.notice.NoticeEditSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NoticeEditSubmitServlet</servlet-name>
+		<url-pattern>/noticeEditSubmit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateRealNameServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.user.UpdateRealNameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateRealNameServlet</servlet-name>
+		<url-pattern>/updateRealName</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ShareSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.share.ShareSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShareSubmitServlet</servlet-name>
+		<url-pattern>/shareSubmit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ShareListServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.share.ShareListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShareListServlet</servlet-name>
+		<url-pattern>/shareList</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ManagerLoginServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.manager.ManagerLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManagerLoginServlet</servlet-name>
+		<url-pattern>/managerLogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>VideoInfoServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.video.VideoInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VideoInfoServlet</servlet-name>
+		<url-pattern>/videoList</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>NoticeInfoServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.notice.NoticeInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NoticeInfoServlet</servlet-name>
+		<url-pattern>/noticeInfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ArticleListServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleListServlet</servlet-class>
+	</servlet>
+
+	
+
+
+	<servlet-mapping>
+		<servlet-name>ArticleListServlet</servlet-name>
+		<url-pattern>/articleList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateImgSrcServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.UpdateImgSrcServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateImgSrcServlet</servlet-name>
+		<url-pattern>/updateImg</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ArticleDeleteServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleDeleteServlet</servlet-name>
+		<url-pattern>/articleDelete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ArticleEditServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleEditServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleEditServlet</servlet-name>
+		<url-pattern>/articleEdit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ArticleEditSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleEditSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleEditSubmitServlet</servlet-name>
+		<url-pattern>/articleEditSubmit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ArticleManagerServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleManagerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleManagerServlet</servlet-name>
+		<url-pattern>/articleManager</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ArticleServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.article.ArticleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArticleServlet</servlet-name>
+		<url-pattern>/articles</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegInfoEditSubmitServlet</servlet-name>
+		<servlet-class>com.chuangdun.jsl.web.reginfo.RegInfoEditSubmitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegInfoEditSubmitServlet</servlet-name>
+		<url-pattern>/enroll</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>SetCharSetEncoding</filter-name>
+		<filter-class>com.chuangdun.jsl.filter.SetCharSetEncoding</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SetCharSetEncoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>

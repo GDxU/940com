@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+    <link href="../css/calendar.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="../index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">存款-本地银行转账</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <div class="ui-all-title">支付信息</div>
+        <section>
+            <!--<div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label>用户账号：</label>
+                        <input type="text" name="user_name" id="user_name" class="user_name" placeholder="请输入用户账号">
+                    </div>
+                    <div class="ui-label">
+                        <label>国籍：</label>
+                        <input type="text" name="user_country" id="user_country" class="user_country" placeholder="请输入国籍">
+                    </div>
+                    <div class="ui-btn-red">
+                        <input type="button" name="button" id="button" class="button" value="确定">
+                    </div>
+                </div>
+            </div>-->
+            <div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>支付方式：</label>
+                        <select type="text" name="user_currency" id="user_currency" class="user_currency" >
+                            <option selected="" value="">请选择</option>
+                            <option value="1">网银转账</option>
+                            <option value="2">跨行转账</option>
+                            <option value="3">ATM柜员机</option>
+                            <option value="4">银行柜台</option>
+                            <option value="5">手机银行</option>
+                            <option value="6">其他</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>本人使用：</label>
+                        <select type="text" name="myselfUser" id="myselfUser" class="myselfUser" >
+                                <option selected="" value="">请选择</option>
+                                <option value="1" rules="CNY">中国农业银行</option>
+                                <option value="2" rules="CNY">中国工商银行</option>
+                                <option value="3" rules="CNY">中国建设银行</option>
+                                <option value="4" rules="CNY">招商银行</option>
+                                <option value="6" rules="CNY">包商银行</option>
+                                <option value="7" rules="CNY">北京农商银行</option>
+                                <option value="8" rules="CNY">北京银行</option>
+                                <option value="9" rules="CNY">渤海银行</option>
+                                <option value="10" rules="CNY">赣州银行</option>
+                                <option value="11" rules="CNY">广东发展银行</option>
+                                <option value="12" rules="CNY">广东南粤银行</option>
+                                <option value="13" rules="CNY">广州银行</option>
+                                <option value="14" rules="CNY">汉口银行</option>
+                                <option value="15" rules="CNY">杭州银行</option>
+                                <option value="16" rules="CNY">河北银行</option>
+                                <option value="17" rules="CNY">恒丰银行</option>
+                                <option value="18" rules="CNY">华夏银行</option>
+                                <option value="19" rules="CNY">江苏江阴农村商业银行</option>
+                                <option value="20" rules="CNY">江苏银行</option>
+                                <option value="21" rules="CNY">交通银行</option>
+                                <option value="22" rules="CNY">南昌银行</option>
+                                <option value="23" rules="CNY">南京银行</option>
+                                <option value="24" rules="CNY">宁波银行</option>
+                                <option value="25" rules="CNY">平安银行</option>
+                                <option value="26" rules="CNY">上海农商银行</option>
+                                <option value="27" rules="CNY">上海浦东发展银行</option>
+                                <option value="28" rules="CNY">上海银行</option>
+                                <option value="29" rules="CNY">天津银行</option>
+                                <option value="30" rules="CNY">威海市商业银行</option>
+                                <option value="31" rules="CNY">微商银行</option>
+                                <option value="32" rules="CNY">温州银行</option>
+                                <option value="33" rules="CNY">乌鲁木齐市商业银行</option>
+                                <option value="34" rules="CNY">兴业银行</option>
+                                <option value="35" rules="CNY">中国民生银行</option>
+                                <option value="36" rules="CNY">中国银行</option>
+                                <option value="37" rules="CNY">中国邮政储蓄银行</option>
+                                <option value="38" rules="CNY">中信银行</option>
+                                <option value="39" rules="CNY">重庆银行</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>存到浩博：</label>
+                        <select type="text" name="deposithb" id="deposithb" class="deposithb" >
+                            <option selected="" value="">请选择</option>
+                            <option value="1">网银转账</option>
+                            <option value="2">跨行转账</option>
+                            <option value="3">ATM柜员机</option>
+                            <option value="4">银行柜台</option>
+                            <option value="5">手机银行</option>
+                            <option value="6">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>存入姓名：</label>
+                        <input type="text" name="user_first" id="user_first" class="user_first" placeholder="请输入真是的姓名">
+                        <div class="ui-tip-error ui-text-ft">✖请输入用户名</div>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>办卡网点：</label>
+                        <select type="text" name="province" id="province" class="province ui-col50 ui-disinline" >
+                            <option selected="" value="">请选择</option>
+                            <option value="1">网银转账</option>
+                            <option value="2">跨行转账</option>
+                            <option value="3">ATM柜员机</option>
+                            <option value="4">银行柜台</option>
+                            <option value="5">手机银行</option>
+                            <option value="6">其他</option>
+                        </select>
+                        <select type="text" name="city" id="city" class="city ui-col50 ui-disinline" >
+                            <option selected="" value="">请选择</option>
+                            <option value="1">网银转账</option>
+                            <option value="2">跨行转账</option>
+                            <option value="3">ATM柜员机</option>
+                            <option value="4">银行柜台</option>
+                            <option value="5">手机银行</option>
+                            <option value="6">其他</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>分行网点：</label>
+                        <input type="text" name="user_last" id="user_last" class="user_last" placeholder="请输入分行网点">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>存入金额：</label>
+                        <input type="text" name="money" id="money" class="money" placeholder="请输入存入金额">
+                    </div>
+                    <!--<div class="ui-label">
+                        <label><span class="ui-porimter">*</span>生日：</label>
+                        <input type="text" class="ui-years calendars" shield="['2015/3/10', '2015/4/10', '2015/4/20']" placeholder="选择日期">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>用户名：</label>
+                        <input type="text" name="user_username" id="user_username" class="user_username" placeholder="请输入用户名">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>密码：</label>
+                        <input type="text" name="user_pwd" id="user_pwd" class="user_pwd"  placeholder="请输入密码">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>确认密码：</label>
+                        <input type="text" name="user_repwd" id="user_repwd" class="user_repwd"  placeholder="请输入密码">
+                    </div>
+                    <div class="ui-label">
+                        <label>推广编号：</label>
+                        <input type="text" name="user_number" id="user_number" class="user_number"  placeholder="请输入推荐人账号">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>国籍：</label>
+                        <select type="text" name="user_country" id="user_country" class="user_country" >
+                            <option>中国</option>
+                            <option>泰国</option>
+                        </select>
+                    </div>
+                    <div class="ui-label ui-box-flex">
+                        <label><span class="ui-porimter">*</span>手机号码：</label>
+                        <input type="text" name="user_no" id="user_no" class="user_no"  placeholder="+86">
+                        <input type="text" name="user_mobile" id="user_mobile" class="user_mobile"  placeholder="请输入手机号码">
+                    </div>
+                    <div class="ui-label">
+                        <label>电子邮箱：</label>
+                        <input type="text" name="user_email" id="user_email" class="user_email"  placeholder="请输入推荐人账号">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>验证码：</label>
+                        <input type="text" name="user_yazm" id="user_yazm" class="user_yazm"  placeholder="请输入验证码">
+                        <img src="img/code.jpeg" class="ui-yazm"/>
+                    </div>
+                    <div class="ui-label" style="overflow:hidden;">
+                        <div class="center" style="width:0.3rem;display: block; float:left; vertical-align:text-top;">
+                            <input type="checkbox" id="checkbox-3-4"  />
+                        </div>
+                        <label style="display: inline; float:left; padding-top:0.03rem;">我已经阅读并接受<a href="#">开户协议</a></label>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <div class="ui-all-title">支付信息</div>
+        <section>
+            <div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>银行名称：</label>
+                        <input type="text" name="bankNamne" id="bankNamne" class="bankNamne" placeholder="请输入银行名称">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>分行名称：</label>
+                        <input type="text" name="branchbank" id="branchbank" class="branchbank" placeholder="请输入分行名称">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>开户名：</label>
+                        <input type="text" name="accountName" id="accountName" class="accountName" placeholder="请输入开户名">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>银行卡号：</label>
+                        <input type="text" name="bankNum" id="bankNum" class="bankNum" placeholder="请输入银行卡号">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>存入时间：</label>
+                        <input type="text" name="depositTime" id="depositTime" class="depositTime" placeholder="请输入存入时间，如2016-01-01，1:00">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>备注：</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="ui-btn-blue ui-margint10">
+                        <input type="button" name="button"  class="button" value="提交支付">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<!--<div id="top-animation">顶部</div>-->
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script src="../js/lib/calendar.js"></script>
+<script src="js/localbank.js"></script>
+<!--<script>
+    seajs.use('lib/calendar');
+</script>-->
+</body>
+</html>

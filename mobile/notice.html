@@ -1,0 +1,226 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/notice.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/page.js"></script>
+</head>
+
+<body>
+
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li>
+            <a href="login.html">
+                <i class="menu-icon1"></i>
+                <span>登录</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="hot.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+    <!-- free -->
+    <div class="free">
+        <div class="free-tabPanel">
+            <ul class="free-ul">
+                <li>
+                    <a href="user.html" class="free-line">个人信息</a>
+                </li>
+                <li>
+                    <a href="schedule.html" class="free-line">我的课表</a>
+                </li>
+                <li class="free-hit">
+                    <a href="notice.html">最新公告</a>
+                </li>
+            </ul>
+
+            <!-- 公告详情 -->
+            <div class="wrap_list" id="wrap_list">
+<!--                 <div class="gonggao">
+                    <h1>天猫国际年货节落地天津 将建O2O体验中心</h1>
+                    <strong>亲爱的互联支付用户：</strong>
+                    <p>
+                        <img src="http://d.sududa.com/zixun/2015-12/61.png" alt="天猫国际年货节落地天津 将建O2O体验中心，客户达电商资讯">
+                    </p>
+                    <div class="right">
+                        www.940.com
+                        <br>2015-12-28 17:40:54
+                    </div>
+                    <div class="left">
+                        <p>
+                            上一条：
+                            <a href="javascript:" class="last">没有了</a>
+                        </p>
+                        <p>
+                            下一条：
+                            <a href="javascript:" class="next">2016淘宝店铺运营方法解读-最新淘宝干货分享</a>
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="enrolled.html">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="http://dht.zoosnet.net/LR/Chatpre.aspx?id=DHT88027214&lng=cn" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+
+    ;function formatData(r) {
+        var a = new Array();
+        var c = Object.prototype.toString.call(r);
+        r = /String/.test(c) ? eval('(' + r + ')') : r;
+        var d = Object.prototype.toString.call(r);
+        // console.log(d);   // [object Object]
+        a = /Array/.test(d) ? r : a[0] = r;
+        return a;
+    }
+    var url = location.href + "?id=1";
+    var id = url.match(/id=.{1}/)[0].substr(3);
+    var paramid = $.param({
+        id: id
+    });
+    $.ajax({
+        async: false,
+        type: "get",
+        url: "http://940.com/noticeInfo",
+        dataType: 'jsonp',
+        jsonp: 'callback',
+         data: paramid,
+        processData: false,
+        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+        success: function(data) {
+            var wrapList = $(".wrap_list");
+            if (data.status == 1) {
+                var item = data.notice;
+                // 最大值
+                console.log(item.content.length);
+                var lastid=data.last;
+                var nextid=data.next;
+                console.log(paramid);
+                wrapList.html("");
+                   var  content = "";
+
+                   if (lastid.id==0) {
+                        var first = "<a class='last' href=\"###\">没有了</a>";
+                   }else{
+                        var first = "<a class='last' href=\"notice.html?id=" + lastid.id + "\">" + lastid.title + "</a>";
+                   }
+                   if (lastid.id==8) {
+                        var flast = "<a class='last' href=\"###\">没有了</a>";
+                   }else{
+                        var flast = "<a class='next' href=\"notice.html?id=" + nextid.id + "\">" + nextid.title + "</a>";
+                   }
+
+                        content += "<div class='gonggao'>" +
+                            "<h1>" + item.title + "</h1>" +
+                            "<strong>亲爱的互联支付用户：</strong>" +
+                            "<p>" + item.content + "</p>" +
+                            "<div class='right'>" + item.author + "<br>" + item.time.substr(0,19) + "</div>" +
+                            "<div class='left'>" +
+                            "<p>上一条：" + first + "</p>" +
+                            "<p>下一条：" + flast + "</p>" +
+                            "</div>" +
+                            "</div>";
+
+                // 000000
+                // var notice = "";
+                // notice = "";
+                // var reg = /\d+/g;
+                // notice += item.content;
+                // var str=notice.replace(/(\d+、[s\S]+)?&nbsp;/g, '');
+                // wrapList.append(str);
+
+                wrapList.append(content);
+            }
+
+        }
+    });
+
+
+});
+</script>
+
+</body>
+</html>

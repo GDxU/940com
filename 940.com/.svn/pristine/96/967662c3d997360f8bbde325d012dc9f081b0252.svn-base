@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>qqchat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">iframe{display:none;}</style>
+    </head>
+    <body>
+        <script src="http://940.com/script/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="qq.js"></script>  
+    </body>
+</html>

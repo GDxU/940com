@@ -1,0 +1,113 @@
+
+获取公告详情
+noticeInfo?id=4
+返回json
+{"tips":"cuccess","notice":{"author":"940.com","content":"444444444","id":3,"time":"2015-12-28 14:06:54.0","title":"公告3"},"next_id":"4","last_id":"2","status":1}
+备注：last_id 	上一条公告的id
+      next_id   下一条公告的id
+	  status     值为-1时 表示获取失败，可能是服务器原因。 值为1时表示获取成功 。
+	  
+	  
+学员分享
+shareSubmit
+参数：real_name   真实姓名
+	  user_name   账号
+	  content 	  内容
+	  time	      时间 格式：2015-12-12 12:12:12
+	  period      第几期学员
+
+例子：	  http://127.0.0.1:8088/shareSubmit?do=add&title=1&content=2&user_name=ss@ss.ss&real_name=是是&time=2015-12-12 12:12:12&period=001
+
+返回json
+  {"status":"1","tips":成功}  
+备注：  status 值为1时代表成功 ，-1代表失败
+  
+ 
+ 
+ 分享列表
+shareList
+参数：page  页数
+	  line  一页展示几行
+	  http://127.0.0.1:8088/shareList?page=1&line=10
+	  http://127.0.0.1:8088/shareList?page=1&line=10
+
+例子：http://127.0.0.1:8088/shareList?page=1&line=10
+返回json
+ {"count":4,"tips":"","status":1,"list":[{"content":"2","id":0,"period":"","priority":0,"profileUrl":"","realName":"鏄槸","status":0,"time":"2015-12-12 12:12:12.0","title":"","userName":"ss@ss.ss"},{"content":"2","id":0,"period":"","priority":0,"profileUrl":"http://www.940.com/images/share3.png","realName":"鏄槸","status":0,"time":"2015-12-12 12:12:12.0","title":"","userName":"ss@ss.ss"},{"content":"2","id":0,"period":"","priority":0,"profileUrl":"http://www.940.com/images/share3.png","realName":"鏄槸","status":0,"time":"2015-12-12 12:12:12.0","title":"","userName":"ss@ss.ss"},{"content":"2","id":0,"period":"","priority":0,"profileUrl":"http://www.940.com/images/share3.png","realName":"鏄槸","status":0,"time":"2015-12-12 12:12:12.0","title":"","userName":"ss@ss.ss"}]}
+ 
+ 备注：count：所有的分享数量，list：json数组.content:内容 period:第几期学员  profileUrl：头像链接 realName:真实姓名 status:前端不用理会 time:分享时间 title:标题 userName:账号
+  
+  
+获取用户信息
+userInfo
+参数:user_name 账号
+     password  密码
+	 
+例子:http://127.0.0.1:8088/userInfo?user_name=xinghai@sududa.com&password=111111
+返回json
+{"u":"xinghai@sududa.com","r":"梁兴*","i":"46000419********16","s":"1","q":"65507108","w":"","z":"*","a":"广东省深圳市","t":"2013-06-14 11:10:49","m":"0","n":"Y","k":"0","l":"0","o":"329617","e":"0","y":"514","b":"846.273","g":"0.0","h":"0","p":"10","v":"2015-09-21 15:36:00","j":"N","x":"普通会员","uc":"7650","uo":"0.0","lc":"0","dv":"0","pe":"[js]http://pc.lieliu.net:1024/static/llie40.gif[/js][showBalancepay][ServerPort]6789[/ServerPort][ServerIP]119.147.116.171[/ServerIP][take]2[/take][IntegralDefaultBrowser][/CheckItem][ExtensionUrl]http://7xoebv.com1.z0.glb.clouddn.com/tuiguang.zip[/ExtensionUrl]","tips":"获取成功！","status":"1"}
+备注：
+u:账号 r:真实姓名  i:身份证 q:qq账号 a：地址 z:手机号码  s: 1是男 2是女    o:编号
+
+{"sududa":{"u":"xinghai@sududa.com","r":"梁兴*","i":"46000419********16","s":"1","q":"65507108","w":"","z":"*","a":"广东省深圳市","t":"2013-06-14 11:10:49","m":"0","n":"Y","k":"0","l":"0","o":"329617","e":"0","y":"514","b":"846.273","g":"0.0","h":"0","p":"10","v":"2015-09-21 15:36:00","j":"N","x":"普通会员","uc":"7650","uo":"0.0","lc":"0","dv":"0","pe":"[js]http://pc.lieliu.net:1024/static/llie40.gif[/js][showBalancepay][ServerPort]6789[/ServerPort][ServerIP]119.147.116.171[/ServerIP][take]2[/take][IntegralDefaultBrowser][/CheckItem][ExtensionUrl]http://7xoebv.com1.z0.glb.clouddn.com/tuiguang.zip[/ExtensionUrl]","tips":"获取成功！","status":"1"}}
+
+
+获取验证码
+getPhoneCode
+参数:user_name 账号
+     password  密码
+	 phone     接收验证码的手机 //绑定手机后就不用传phone
+	
+http://127.0.0.1:8088/getPhoneCode?user_name=test1@sududa.com&password=111111&phone=18078818796
+返回json
+  {"status":"1","tips":发送验证码成功}  
+备注：  status 值为1时代表成功 ，-1代表失败
+
+
+绑定手机
+bindPhone
+参数:user_name 账号
+	 phone     要绑定的手机
+	 code      验证码
+	
+	
+http://127.0.0.1:8088/bindPhone?user_name=test1@sududa.com&code=842949&phone=18078818796
+返回json
+{"tips":"操作成功！","status":"1"}
+
+
+解绑手机
+unBindPhone
+参数:user_name 账号
+	 code      验证码
+	 
+	
+http://127.0.0.1:8088/unBindPhone?user_name=test1@sududa.com&code=842949
+{"tips":"操作成功！","status":"1"}
+
+
+
+保存/修改 (修改的时候)用户信息
+
+saveUserInfo
+参数：
+	 user_name 账号
+	 qq 		qq
+	 yy			yy
+	 gender     性别： 1男 2女
+	 profile    头像链接
+	 address	所在地
+	 password   密码
+	 realname   真实姓名（只有第一次提交的时候需要转，以后修改都不用）
+例子： http://127.0.0.1:8088/saveUserInfo?user_name=xinghai@sududa.com&qq=123123&yy=1985&gender=1&profile=test.png&address=%E5%B9%BF%E4%B8%9C/%E6%B7%B1%E5%9C%B3&realname=梁兴海&password=111111
+返回json:{"tips":"操作成功！","status":"1"}
+
+修改登录密码
+updatePassword
+参数：
+	 user_name 账号
+	 password  当前密码
+	 new       新密码
+例子：http://127.0.0.1:8088/updatePassword?user_name=zz@zz.zz&new=111111&password=222222
+返回
+{"tips":"修改登录密码成功！","status":"1"}

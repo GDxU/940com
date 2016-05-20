@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="../index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">我的账户</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label>划出应用：</label>
+                        <select class="ui-select">
+                            <option value="0_W_CENTER">中心钱包(余额：555)</option>
+                            <option value="1_W_TY">体育投注(余额：555)</option>
+                            <option value="0_W_YZT">娱乐场 - 亚洲厅(余额：555)</option>
+                            <option value="0_W_HJT">娱乐场 - 皇家厅(余额：555)</option>
+                            <option value="0_W_MZT">娱乐场 - 明珠厅(余额：555)</option>
+                            <option value="0_W_FCT">娱乐场 - 翡翠厅(余额：555)</option>
+                            <option value="1_W_HK">香港彩(余额：555)</option>
+                            <option value="1_W_SSC">时时彩(余额：555)</option>
+                            <option value="1_W_QXC">七星彩(余额：555)</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label>划入应用：</label>
+                        <select class="ui-select">
+                            <option value="0_W_CENTER">中心钱包(余额：555)</option>
+                            <option value="1_W_TY">体育投注(余额：555)</option>
+                            <option value="0_W_YZT">娱乐场 - 亚洲厅(余额：555)</option>
+                            <option value="0_W_HJT">娱乐场 - 皇家厅(余额：555)</option>
+                            <option value="0_W_MZT">娱乐场 - 明珠厅(余额：555)</option>
+                            <option value="0_W_FCT">娱乐场 - 翡翠厅(余额：555)</option>
+                            <option value="1_W_HK">香港彩(余额：555)</option>
+                            <option value="1_W_SSC">时时彩(余额：555)</option>
+                            <option value="1_W_QXC">七星彩(余额：555)</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label>划账金额：</label>
+                        <input type="text" name="user_country" id="user_money" class="user_country">
+                    </div>
+                    <div class="ui-btn-blue">
+                        <input type="button" name="button" id="button" class="button" value="划账">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+</body>
+</html>

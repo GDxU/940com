@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/register.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+</head>
+
+<body>
+
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li>
+            <a href="###">
+                <i class="menu-icon1"></i>
+                <span>907350373@qq.com</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="free.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+
+    <!-- register -->
+    <div class="register">
+        <div class="register-bg">
+            <div class="register-spacing">
+                <a>
+                    <img src="content/images/login/login-logo.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="login-animation"><p></p></div>
+
+        <form class="register-form" method="post">
+            <div class="register-ipt">
+                <input type="text" name="username" class="username" placeholder="用户名 ( 邮箱 )" />
+            </div>
+            <div class="register-distance"></div>
+            <div class="register-ipt">
+                <input type="password" name="password" class="password" placeholder="设置密码" />
+            </div>
+            <div class="register-distance2"></div>
+
+            <div class="register-ipt">
+                <input type="password" name="confirm_password" class="confirm_password" placeholder="确认密码" />
+            </div>
+            <div class="register-distance2"></div>
+
+            <div class="register-ipt">
+                <!-- 验证码 -->
+                <div class="change_opcity">
+                    <img src="http://940.com/code.jpeg" id="Img" onclick="reImg()">
+                    <i title="刷新" class="change_reg" onclick="reImg();"></i>
+                </div>
+
+                <input type="text" onblur = "verify(this.value);" name="captcha" class="captcha" placeholder="输入图片验证码" />
+            </div>
+            <div class="register-distance2"></div>
+
+            <div class="register-choice">
+                <div class="register-term">
+                    <a href="###" class="btnCheck">
+                        <div class="login-check checked"></div>
+                        <span class="register-fl">我已阅读并接受 <i>版权声明</i> 和 <i>隐私保护</i> 条款</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="register-controls">
+                <button type="submit" class="btn-long btn-purple" id="submit">马上注册</button>
+            </div>
+        </form>
+
+    </div>
+    <!-- 注册 -->
+    <script type="text/javascript">
+        function reImg() {
+            var img = document.getElementById("Img");
+            img.src = "http://940.com/code.jpeg?rnd=" + Math.random();
+        }
+
+        function verify(vcode) {
+            $.getJSON('http://940.com/checkCode?code=?', 'vcode=' + vcode, check_vcode_callback, 'text');
+        }
+
+        function check_vcode_callback(result) //回调函数
+        {
+            if (result == 1) {
+                alert("验证码正确");
+            } else {
+                alert("验证码不正确");
+            }
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="#">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="#" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<!-- ========================单点登录开始 ======================== -->
+	<!-- 前端集群登出功能配置 -->
+	<filter>
+		<filter-name>CasSingleLogoutClusterFilter</filter-name>
+		<filter-class>com.cep.frontface.filter.SSOSingleLogoutClusterFilter</filter-class>
+		<init-param>
+			<param-name>clientHostName</param-name>
+			<!-- 当前Web前端服务器ip地址和tomcat访问端口 -->
+			<param-value>http://127.0.0.1:8080</param-value>
+		</init-param>
+		<init-param>
+			<param-name>peersUrls</param-name>
+			<!--其他Web前端服务器ip地址和tomcat端口。如果有多个其他节点，依英文逗号间隔 -->
+			<param-value>http://127.0.0.1:8080</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CasSingleLogoutClusterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!--用于单点退出，该过滤器用于实现单点登出功能，可选配置 -->
+	<listener>
+		<listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
+	</listener> 
+	<!--该过滤器用于实现单点登出功能，可选配置。 -->
+	<filter>
+		<filter-name>CASSingle Sign OutFilter</filter-name>
+		<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CASSingle Sign OutFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+ 
+	<!--该过滤器负责对Ticket的校验工作，必须启用它 -->
+	 <filter>
+	  <filter-name>CASValidationFilter</filter-name>
+	  <filter-class>
+	   com.vinbet.mobile.sys.CASValidationFilter
+	  </filter-class>
+	   <init-param>
+	   <param-name>encoding</param-name>
+	   <param-value>utf-8</param-value>
+	  </init-param>
+	  <init-param>
+	   <param-name>sso_secondary_domain</param-name>
+	   <param-value>sso</param-value><!-- sso二級目录 -->
+	  </init-param> 
+	  <init-param>
+	   <param-name>sso_port</param-name>
+	   <param-value>80</param-value><!-- sso单点登录访问端口 -->
+	  </init-param>   
+	 </filter>
+	<filter-mapping>
+		<filter-name>CASValidationFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 
+	<!-- 该过滤器负责实现HttpServletRequest请求的包裹， 比如允许开发者通过HttpServletRequest的getRemoteUser()方法获得SSO登录用户的登录名，可选配置。 -->
+	<filter>
+		<filter-name>CASHttpServletRequest WrapperFilter</filter-name>
+		<filter-class>
+			org.jasig.cas.client.util.HttpServletRequestWrapperFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CASHttpServletRequest WrapperFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 该过滤器使得开发者可以通过org.jasig.cas.client.util.AssertionHolder来获取用户的登录名。 比如AssertionHolder.getAssertion().getPrincipal().getName()。 -->
+	<filter>
+		<filter-name>CASAssertion Thread LocalFilter</filter-name>
+		<filter-class>org.jasig.cas.client.util.AssertionThreadLocalFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CASAssertion Thread LocalFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+    <!--该过滤器用于获取用户登录信息。 -->
+ 	<filter>
+		<filter-name>SsoFilter</filter-name>
+		<filter-class>com.vinbet.mobile.sys.SsoFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SsoFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>         
+	<!-- ========================单点登录结束 ======================== -->
+	<servlet>
+		<servlet-name>Kaptcha</servlet-name>
+		<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+		<init-param>
+			<param-name>kaptcha.textproducer.char.space</param-name>
+			<param-value>10</param-value>
+		</init-param>
+		<init-param>
+			<param-name>kaptcha.textproducer.char.length</param-name>
+			<param-value>5</param-value>
+		</init-param>
+		<!-- 
+		<init-param>
+			<param-name>kaptcha.noise.impl</param-name>
+			<param-value>com.google.code.kaptcha.impl.NoNoise</param-value>
+		</init-param>
+		 -->
+		<init-param>
+			<param-name>kaptcha.textproducer.char.string</param-name>
+			<param-value>123456789</param-value>
+		</init-param>
+	</servlet>
+    <servlet-mapping>
+        <servlet-name>Kaptcha</servlet-name>
+        <url-pattern>/vcode.jpg</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>nutz</filter-name>
+        <filter-class>org.nutz.mvc.NutFilter</filter-class>
+        <init-param>
+            <param-name>modules</param-name>
+            <param-value>com.vinbet.mobile.MainModule</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignore</param-name>
+            <param-value>^(.+[.])(png|gif|jpg|js|css|jspx|jpeg|html)$</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>nutz</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    
+	<listener>
+		<listener-class>com.vinbet.mobile.sys.SessionListener</listener-class>
+	</listener>
+
+    <session-config>
+        <session-timeout>120</session-timeout>
+    </session-config>
+    
+    <error-page>
+		<error-code>400</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>408</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	
+</web-app>

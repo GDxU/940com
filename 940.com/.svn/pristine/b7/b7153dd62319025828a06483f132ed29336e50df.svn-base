@@ -1,0 +1,12 @@
+#gg_conent{width:100%;min-width:1200px;background:#F6F6F6 url(../images/reg_bg.png) repeat-x;overflow:hidden;margin-top:-1px}
+#wrapGonggao{width:1120px;margin:30px auto;background:#FFF;padding:30px 40px}
+#wrapGonggao h2{font-size:18px;color:#1CB7DA;padding-bottom:5px;border-bottom:1px solid #DEDEDE}
+.gonggao{width:100%;line-height:30px;font-size:14px;padding-top:10px;min-height:380px}
+.gonggao li{height:30px;overflow:hidden;margin-bottom:5px}
+.gonggao li .title{height:30px;cursor:pointer;background-color:#f4f9fd}
+.gonggao li .title b{font-size:15px;color:#555;height:100%;text-indent:20px;font-weight:400;background:url(http://www.sududa.com/img/icon_arrow4.gif) no-repeat 10px center}
+.gonggao li .title span{font:14px "宋体";color:#999;height:100%;line-height:30px;margin-right:10px}
+.gonggao li .content{width:98%;margin:0 auto;margin-top:10px}
+.gonggao li .content img{width:100%}
+.gonggao p{font-size:14px;padding:10px 0;padding-top:0;display:0none}
+.gonggao p i{color:red}

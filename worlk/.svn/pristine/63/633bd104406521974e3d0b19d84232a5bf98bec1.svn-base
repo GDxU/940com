@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="css/index.css" rel="stylesheet"/>
+    <link href="css/calendar.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="javascript:history.go(-1)" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">注册</div>
+    <a href="javascript:void(0);" class="ui-btn-more">
+        <i class="iocn-more"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <!--<div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label>用户账号：</label>
+                        <input type="text" name="user_name" id="user_name" class="user_name" placeholder="请输入用户账号">
+                    </div>
+                    <div class="ui-label">
+                        <label>国籍：</label>
+                        <input type="text" name="user_country" id="user_country" class="user_country" placeholder="请输入国籍">
+                    </div>
+                    <div class="ui-btn-red">
+                        <input type="button" name="button" id="button" class="button" value="确定">
+                    </div>
+                </div>
+            </div>-->
+            <div class="ui-content-item">
+                <div  class="ui-form-content">
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>姓：</label>
+                        <input type="text" name="user_first" id="user_first" class="user_first" placeholder="请如实填写姓名,必须与用户存提款银行账号姓名一致!">
+                        <div class="ui-tip-error ui-text-ft">✖请输入用户名密码</div>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>名：</label>
+                        <input type="text" name="user_last" id="user_last" class="user_last" placeholder="请输入名">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>生日：</label>
+                        <input type="text" class="ui-years calendars" shield="['2015/3/10', '2015/4/10', '2015/4/20']" placeholder="选择日期">
+                    </div>
+                    <div class="ui-label clearfix">
+                        <label><span class="ui-porimter">*</span>性别：</label>
+                        <div class="item sex_inp ui-checkbox-sex" >
+                            <div class="ui-ft-left"><i class="selected"></i><strong class="icon_nan">男</strong></div>
+                            <div class="ui-ft-left"><i></i><strong class="icon_nv">女</strong></div>
+                            <input id="sexVal" type="hidden" value="1">
+                        </div>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>用户名：</label>
+                        <input type="text" name="user_username" id="user_username" class="user_username" placeholder="请输入用户名">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>密码：</label>
+                        <input type="text" name="user_pwd" id="user_pwd" class="user_pwd"  placeholder="请输入密码">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>确认密码：</label>
+                        <input type="text" name="user_repwd" id="user_repwd" class="user_repwd"  placeholder="请输入密码">
+                    </div>
+                    <div class="ui-label">
+                        <label>推广编号：</label>
+                        <input type="text" name="user_number" id="user_number" class="user_number"  placeholder="请输入推荐人账号">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>货币类型：</label>
+                        <select type="text" name="user_currency" id="user_currency" class="user_currency" >
+                            <option>人民币</option>
+                            <option>泰铢</option>
+                        </select>
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>国籍：</label>
+                        <select type="text" name="user_country" id="user_country" class="user_country" >
+                            <option>中国</option>
+                            <option>泰国</option>
+                        </select>
+                    </div>
+                    <div class="ui-label ui-box-flex">
+                        <label><span class="ui-porimter">*</span>手机号码：</label>
+                        <input type="text" name="user_no" id="user_no" class="user_no"  placeholder="+86">
+                        <input type="text" name="user_mobile" id="user_mobile" class="user_mobile"  placeholder="请输入手机号码">
+                    </div>
+                    <div class="ui-label">
+                        <label>电子邮箱：</label>
+                        <input type="text" name="user_email" id="user_email" class="user_email"  placeholder="请输入推荐人账号">
+                    </div>
+                    <div class="ui-label">
+                        <label><span class="ui-porimter">*</span>验证码：</label>
+                        <input type="text" name="user_yazm" id="user_yazm" class="user_yazm"  placeholder="请输入验证码">
+                        <img src="img/code.jpeg" class="ui-yazm"/>
+                    </div>
+                    <div class="ui-label" style="overflow:hidden;">
+                        <div class="center" style="width:0.3rem;display: block; float:left; vertical-align:text-top;">
+                            <input type="checkbox" id="checkbox-3-4"  />
+                        </div>
+                        <label style="display: inline; float:left; padding-top:0.03rem;">我已经阅读并接受<a href="#">开户协议</a></label>
+                    </div>
+                    <div class="ui-btn-blue ui-margint10">
+                        <input type="button" name="button" onclick="window.location.href='login.html'" class="button" value="马上注册">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<!--<div id="top-animation">顶部</div>-->
+<!--公用js-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+<script src="js/lib/calendar.js"></script>
+<script src="js/register.js"></script>
+<!--<script>
+    seajs.use('lib/calendar');
+</script>-->
+</body>
+</html>

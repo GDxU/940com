@@ -1,0 +1,146 @@
+#============================================================================
+# 系统配置信息
+#============================================================================
+#系统标识 0:手机web服务器 1:手机API服务器
+vinbet.mobile.serverType=0
+#============================================================================
+# mobile server url config
+#============================================================================
+#时时彩服务端地址
+vinbet.ssc.url=http://ssc.jhjypx.cn:12308/s1/app/phone
+#与时时彩手机服务端通信秘钥
+vinbet.token.ssc=123456
+#与时时彩服务端心跳时间(单位/秒)
+vinbet.heartbeat.ssc=60
+#============================================================================
+#新香港彩服务端地址
+vinbet.hkc.url=http://hk.jhjypx.cn:12308/z3/client
+vinbet.hkc.order.url=http://order.jhjypx.cn:12308/z3/order/client/storage
+#新香港彩增量缓存版本数量
+vinbet.hkc.cache.count=10
+#与香港彩手机服务端通信秘钥
+vinbet.token.hkc=123456
+#会员盘口刷新频率
+vinbet.hkc.mkt.interval=10000
+#与香港彩服务端心跳时间(单位/秒)
+vinbet.heartbeat.hkc=600
+#============================================================================
+#七星彩服务端地址
+#vinbet.qxc.url=http://qx.en2012.com:12308/z3/client
+#vinbet.qxc.order.url=http://qxorder.en2012.com:12308/z3/order/client/storage
+vinbet.qxc.url=http://qx.jhjypx.cn:12308/z3/client
+vinbet.qxc.order.url=http://qxorder.jhjypx.cn:12308/z3/order/client/storage
+#与七星彩服务端心跳时间(单位/秒)
+vinbet.heartbeat.qxc=60
+#与七星彩手机服务端通信秘钥
+vinbet.token.qxc=123456
+#============================================================================
+#体育投注服务端地址
+vinbet.sport.url=http://sports.jhjypx.cn/betweb
+//vinbet.sport.url=http://172.17.110.135:8084/betweb
+#与体育投注服务端心跳时间(单位/秒)
+vinbet.heartbeat.sport=60
+#与体育投注手机服务端通信秘钥
+vinbet.token.sport=123456
+#============================================================================
+# JMX  Config
+#============================================================================
+#是否启用JMX管理
+jmx.agent.enable=Y
+#JMX管理登录账号
+jmx.authinfo.username=root
+#JMX管理登录密码
+jmx.authinfo.password=root
+#JMX HTML适配器端口号
+jmx.htmladaptor.port=8888
+
+#============================================================================
+# system administrator
+#============================================================================
+vinbet.sys.username=admin
+vinbet.sys.password=admin
+
+#============================================================================
+# static files config
+#============================================================================
+#是否启用动静分离true/false
+vinbet.static.dynamic.enabled=false
+#静态文件服务器地址
+vinbet.static.url=http\://static.kutuba.cn/img/mobile
+
+
+#============================================================================
+# CEP安全访问信息(获取sessionId)
+#============================================================================
+#管理中心分配的应用ID
+vinbet.sys.appid=0_PHONE
+#管理中心分配的应用密码
+vinbet.sys.pwd=5531754e-51ae-4069-af18-68f4d2bb5241
+#vinbet.sys.pwd=PHONE
+
+#============================================================================
+# email verify
+#============================================================================
+#公司邮箱发送服务器
+vinbet.email.server=smtp.163.com
+#公司邮箱发送端口
+vinbet.email.port=465
+#公司邮箱发送地址
+vinbet.email.sender=club_7@163.com
+#公司邮箱密码
+vinbet.email.passWord=cjp19890914
+#超时时间
+vinbet.email.expiredTime=180
+
+#============================================================================
+# mobile verify
+#============================================================================
+#是否发送短信开关
+vinbet.is_send_sms=true
+#发送国内短信接口地址
+vinbet.sendDomesticsms_url=http://211.151.85.133:8080/sendsms.asp
+#发送国内短信接口用户名
+vinbet.sendDomesticsms_username=HBGJH
+#发送国内短信接口密码
+vinbet.sendDomesticsms_password= foobet@2014
+#发送国内短信接口签名
+vinbet.sendDomesticsms_Signature=【浩博国际】您的验证码是
+#发送国际短信接口地址
+vinbet.sendInternationasms_url=http://www.gsmsad.com/sms/http/default.aspx
+#发送国际短信接口用户名
+vinbet.sendInternationasms_username=728318829
+#发送国际短信接口密码
+vinbet.sendInternationasms_password=728318829
+
+#============================================================================
+# SSO登录登出iframe地址配置
+#============================================================================
+#SSO地址前缀
+#vinbet.sso.prefix=http://sso
+#SSO应用端口
+#vinbet.sso.port=8080
+#管理中心分配的serviceid
+vinbet.sso.serviceid=0_PHONE
+
+#============================================================================
+# EASYPAY config
+#============================================================================
+#易支付指定用户存款尾数的长度
+vinbet.EasyPayDeposit.RandomLength=2
+vinbet.EasyPayLife.time=30000
+
+#============================================================================
+# JMS config
+#============================================================================
+#基础数据JMS配置
+vinbet.jms.baseData.brokerURL=tcp://202.66.135.182:61616
+vinbet.jms.baseData.userName=match_exch_1
+vinbet.jms.baseData.password=meimima_ya
+
+#============================================================================
+# client download
+#============================================================================
+#Android
+vinbet.apk.url=http://app.kutuba.cn/download/android/
+#iOS
+vinbet.ipa.url=itms-services\://?action\=download-manifest&url\=https\://ios.kutuba.cn/download/ios/Vinbet.plist

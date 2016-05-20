@@ -1,0 +1,39 @@
+title.portal.platform=Vinbet Mobile 
+title.portal.lobby=Game Lobby
+title.portal.ssc=ILotto
+title.portal.hkc=HK Lottery
+title.portal.sports=Sports
+title.portal.tflat=Exchange
+title.portal.casino=Casino
+title.portal.ltf=Intl Lottery
+title.portal.poker=Euro Games
+title.portal.pt=Arcade
+title.portal.qx=Star Color
+
+title.portal.mycenter=My Account
+title.portal.deposit=Deposit
+title.portal.withdrawl=Withdrawal  
+title.portal.contact=Contact Us
+title.portal.myblance=Funds Overview
+title.portal.freezedAmt=Frozen 
+title.portal.history=History   
+title.portal.message=My Messages
+title.portal.transfer=Transfer
+title.portal.myinformation=My Information 
+
+
+#myblance title
+title.portal.apply=Applications
+title.portal.canwithdraw=Available 
+title.portal.activitycosts=Bonus
+title.portal.totalbalance=Total Balance  
+title.portal.operating=Operation
+title.portal.view=View
+
+
+#deposit
+title.portal.depositFirst=Deposit - First Step
+title.portal.depositSecond=Deposit - Second Step
+title.portal.depositThird=Deposit - Third Step
+title.portal.hbEasyPay=Vinbet Easy Payment
+title.portal.fastPay=Mobile Quick Payment   

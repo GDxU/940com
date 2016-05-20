@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link href="../css/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-header">
+    <a href="../index.html" class="btn-back">
+        <i class="icon-back"></i>
+    </a>
+    <div class="all-title-contact">历史记录</div>
+    <a href="history_recod.html" class="ui-btn-more">
+        <i class="iocn-more  ui-filter icon-filter"></i>
+    </a>
+</div>
+<div class="content">
+    <!--项目主体-->
+    <div class="ui-prom-body">
+        <section>
+            <div class="ui-content-item">
+                <ul>
+                    <li class="ui-toggle pdNone ui-list-history">
+                        <a href="historyList.html">
+                            <img class="ui-img-first" src="../img/deposit.png">
+                            <dl class="ui-dl-list  ui-pd-lt15">
+
+                                <dt>
+                                    存款
+                                </dt>
+                                <dd class="ui-color-yellow">9月20日  23:00</dd>
+                                <div class="ui-money-status">
+                                    <strong>￥8888</strong>
+                                    <p class="ui-color-blue">申请中...</p>
+                                </div>
+                              <!--  <dd>2016-04-05 16:45:01</dd>-->
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="ui-toggle pdNone ui-list-history">
+                        <a href="#">
+                            <img class="ui-img-first" src="../img/huazhang.png">
+                            <dl class="ui-dl-list  ui-pd-lt15">
+
+                                <dt>
+                                    划账
+                                </dt>
+                                <dd class="ui-color-yellow">9月20日  23:00</dd>
+                                <div class="ui-money-status">
+                                    <strong>￥8888</strong>
+                                    <p class="ui-color-blue">申请中...</p>
+                                </div>
+                                <!--  <dd>2016-04-05 16:45:01</dd>-->
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="ui-toggle pdNone ui-list-history">
+                        <a href="#">
+                            <img class="ui-img-first" src="../img/withdrawal.png">
+                            <dl class="ui-dl-list  ui-pd-lt15">
+
+                                <dt>
+                                    提款
+                                </dt>
+                                <dd class="ui-color-yellow">9月20日  23:00</dd>
+                                <div class="ui-money-status">
+                                    <strong>￥8888</strong>
+                                    <p class="ui-color-blue">申请中...</p>
+                                </div>
+                                <!--  <dd>2016-04-05 16:45:01</dd>-->
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="ui-toggle pdNone ui-list-history">
+                        <a href="#">
+                            <img class="ui-img-first" src="../img/edit.png">
+                            <dl class="ui-dl-list  ui-pd-lt15">
+
+                                <dt>
+                                    余额修正
+                                </dt>
+                                <dd class="ui-color-yellow">9月20日  23:00</dd>
+                                <div class="ui-money-status">
+                                    <strong>￥8888</strong>
+                                    <p class="ui-color-blue">申请中...</p>
+                                </div>
+                                <!--  <dd>2016-04-05 16:45:01</dd>-->
+                                <div class="ui-icon-right">
+                                    <em></em>
+                                </div>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--项目主体end-->
+</div>
+
+<div id="top-animation">顶部</div>
+<!--公用js-->
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/comm.js"></script>
+<script>
+    $(".ui-toggle").click(function(){
+        $(this).find(".ui-list-item").toggle();
+    });
+    $(".ui-list-item").click(function (e) {
+        e.stopPropagation();
+    })
+</script>
+</body>
+</html>

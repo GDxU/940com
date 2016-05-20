@@ -1,0 +1,15 @@
+<ion-view view-title="个人中心">
+  <ion-content>
+    <a class="item item-avatar item-icon-right" href="#">
+      <img ng-src="{{user.get('weixinUserInfo').headimgurl}}">
+      <h2>{{user.get('username')}}</h2>
+      <p>{{user.get('weixinUserInfo').province}}</p>
+      <i class="icon ion-ios-arrow-right"></i>
+    </a>
+    <div class="item item-divider">
+    </div>
+    <a class="item item-icon-right" href="#">
+      意见反馈
+    </a>
+  </ion-content>
+</ion-view>

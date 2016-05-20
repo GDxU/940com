@@ -1,0 +1,23 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-stable bar-assertive">
+    <h1 class="title">我要评分</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeGrade()">取消</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="postGrade()">
+      <div class="list">
+        <div class="item">
+          <ion-rate maximum="5" rate="gradeForm.rating" color="color" select-star="selectedStar(rating)"></ion-rate>
+        </div>
+        <label class="item">
+          <textarea ng-model="gradeForm.note" placeholder="我要说" style="width: 100%"></textarea>
+        </label>
+        <label class="item" ng-show="!post.get('isGrade')">
+          <button class="button button-block button-assertive" type="submit">提交</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

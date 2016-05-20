@@ -1,0 +1,54 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-stable bar-assertive">
+    <h1 class="title">快递上门邮寄</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="close()">返回</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="create()">
+      <div class="list">
+        <label class="item item-select">
+          <span class="input-label">快递公司<i class="assertive">*</i></span>
+          <select ng-model="form.company">
+            <option value="韵达">韵达</option>
+            <option value="中通">中通</option>
+            <option value="顺丰">顺丰</option>
+            <option value="申通">申通</option>
+            <option value="圆通">圆通</option>
+            <option value="天天">天天</option>
+            <option value="汇通">汇通</option>
+            <option value="邮政EMS">EMS</option>
+          </select>
+        </label>
+        <div class="item item-input">
+          <span class="input-label">收件地址<i class="assertive">*</i></span>
+          <city-picker city="form.to"></city-picker>
+        </div>
+        <label class="item item-input">
+          <span class="input-label">估重<i class="assertive">*</i></span>
+          <input type="text" ng-model="form.weight">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">姓名<i class="assertive">*</i></span>
+          <input type="text" ng-model="form.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">电话<i class="assertive">*</i></span>
+          <input type="text" ng-model="form.tel">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">宿舍地址<i class="assertive">*</i></span>
+          <input type="text" ng-model="form.address">
+        </label>
+        <label class="item item-textarea">
+          <span class="input-label">备注</span>
+          <input type="text" ng-model="form.note">
+        </label>
+        <label class="item">
+          <button class="button button-block button-assertive" type="submit">提交信息</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

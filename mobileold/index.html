@@ -1,0 +1,416 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="content/themes/css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="content/themes/index.css"/>
+    <!--js-->
+    <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="scripts/js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
+    <script type="text/javascript" src="scripts/publick/comm.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+</head>
+
+<body ng-app="indexApp">
+<!-- 左侧栏菜单 -->
+<div id="menu" class="menu">
+    <ul>
+        <li>
+            <a href="###">
+                <i class="menu-icon1"></i>
+                <span>907350373@qq.com</span>
+            </a>
+        </li>
+        <li>
+            <a href="views.html">
+                <i class="menu-icon2"></i>
+                <span>电商工具</span>
+            </a>
+        </li>
+        <li>
+            <a href="shopGuide.html">
+                <i class="menu-icon3"></i>
+                <span>开店指南</span>
+            </a>
+        </li>
+        <li>
+            <a href="free.html">
+                <i class="menu-icon4"></i>
+                <span>视频教程</span>
+            </a>
+        </li>
+        <li>
+            <a href="successful.html">
+                <i class="menu-icon5"></i>
+                <span>成功案例</span>
+            </a>
+        </li>
+        <li>
+            <a href="lecturer.html">
+                <i class="menu-icon6"></i>
+                <span>讲师团队</span>
+            </a>
+        </li>
+        <li>
+            <a href="###">
+                <i class="menu-icon7"></i>
+                <span>退出登录</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- 商品面板 -->
+<div id="main" class="panel">
+    <!-- header -->
+    <header class="header">
+        <div class="header-user js-slideout-toggle"><i></i></div>
+        <a href="login.html" class="header-menu"><i></i></a>
+        <div class="header-title"><i></i></div>
+    </header>
+    <!-- swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="shopDetail-swiper.html">
+                    <img src="content/images/940/swiper-carousel0.jpg">
+                </a>
+            </div>
+            <div class="swiper-slide"><img src="content/images/940/swiper-carousel1.jpg"></div>
+            <div class="swiper-slide"><img src="content/images/940/swiper-carousel2.jpg"></div>
+            <div class="swiper-slide"><img src="content/images/940/swiper-carousel3.jpg"></div>
+            <div class="swiper-slide"><img src="content/images/940/swiper-carousel4.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- view -->
+    <div class="view">
+        <div class="view-layout">
+            <div class="view-block1 view-color">
+                <a href="views.html">
+                    <dl>
+                        <dt class="view-icon1"></dt>
+                        <dd>电商工具</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="view-block2 view-color">
+                <a href="shopGuide.html">
+                    <dl>
+                        <dt class="view-icon2"></dt>
+                        <dd>开店指南</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="view-block3 view-color">
+                <a href="free.html">
+                    <dl>
+                        <dt class="view-icon3"></dt>
+                        <dd>视频教程</dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="view-block4 view-color">
+                <a href="vip.html">
+                    <dl>
+                        <dt class="view-icon4"></dt>
+                        <dd>VIP课程</dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- free -->
+    <div class="free">
+        <div class="free-title">
+            <div class="free-left"></div>
+            <a href="free.html" class="free-right"></a>
+            <div class="free-middle"></div>
+        </div>
+        <!-- free_内容区域 -->
+        <div class="free-layout">
+            <div class="free-spacing">
+                <div class="free-closure" >
+                  <!--  {{user}}-->
+                    <free-List></free-List>
+                <!--<dl class="free-dl free-cont1">
+                  <dt class="free-dt1">
+                   <a href="javascript:;"><img src=""></a>
+                   <a href=""><img src="content/images/940/free-img1.jpg"><i></i></a>
+                  </dt>
+                    <dd class="free-big"><span></span></dd>
+                    <dd class="free-small">
+                   <div class="free-date">发布</div>
+                    <div class="free-watch"><i></i><span></span></div>
+                    </dd>
+                    </dl>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- channel -->
+    <div class="channel">
+        <div class="channel-spacing">
+            <div class="channel-flt">
+                <a href="free.html" class="channel-btn channel-shadow"></a>
+            </div>
+        </div>
+    </div>
+    <!-- processes -->
+    <div class="processes">
+        <div class="processes-title"><i></i></div>
+        <div class="processes-cont">
+            <div class="processes-wrapper">
+                <div class="processes-events">
+                    <ol>
+                        <li><a href="###" style="left: 1.06rem;"></a></li>
+                        <li><a href="###" style="left: 2.13rem;"></a></li>
+                        <li><a href="###" style="left: 3.2rem;"></a></li>
+                        <li><a href="###" style="left: 4.26rem;"></a></li>
+                        <li><a href="###" style="left: 5.33rem;"></a></li>
+                    </ol>
+                </div>
+                <div class="processes-explain">
+                    <ul>
+                        <li>
+                            <a href="page1.html" class="processes-color1">
+                                <div class="name">01</div>
+                                <div class="icon">
+                                    <i class="processes-a1"></i>
+                                </div>
+                                <div class="text">淘宝注册</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page2.html" class="processes-color2">
+                                <div class="name">02</div>
+                                <div class="icon">
+                                    <i class="processes-a2"></i>
+                                </div>
+                                <div class="text">支付宝认证</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page3.html" class="processes-color3">
+                                <div class="name">03</div>
+                                <div class="icon">
+                                    <i class="processes-a3"></i>
+                                </div>
+                                <div class="text">身份证认证</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page4.html" class="processes-color4">
+                                <div class="name">04</div>
+                                <div class="icon">
+                                    <i class="processes-a4"></i>
+                                </div>
+                                <div class="text">免费申请开店</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page5.html" class="processes-color5">
+                                <div class="name">05</div>
+                                <div class="icon">
+                                    <i class="processes-a5"></i>
+                                </div>
+                                <div class="text">店铺设置</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="page6.html" class="processes-color6">
+                                <div class="name">06</div>
+                                <div class="icon">
+                                    <i class="processes-a6"></i>
+                                </div>
+                                <div class="text">高级营销</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- shop -->
+    <div class="shop">
+        <div class="shop-title">
+            <div class="shop-left"></div>
+            <a href="shopSkills.html" class="shop-right"></a>
+            <div class="shop-middle">
+            </div>
+        </div>
+        <!-- shop_内容区域 -->
+        <div class="shop-layout">
+            <div class="shop-spacing">
+                <div class="shop-cont">
+                    <ul class="shop-list">
+                        <shop-List></shop-List>
+                    </ul>
+                    <div class="listmore" style="display:none;">
+                        <a class="s-xguide-down trans" onclick="return false;" hidefocus=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- successes -->
+    <div class="successes">
+        <div class="successes-title">
+            <div class="successes-left"></div>
+            <a href="successful.html" class="successes-right"></a>
+            <div class="successes-middle"></div>
+        </div>
+        <!-- successes_内容区域 -->
+        <div class="successes-layout">
+            <div class="successes-spacing">
+                <div class="successes-cont">
+                    <ul class="successes-list">
+                        <suc-List></suc-List>
+                    </ul>
+                    <div class="listmoru" style="display:none;">
+                        <a class="s-xguide-down2 trans" onclick="return false;" hidefocus=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lectuers -->
+    <div class="lectuers">
+        <div class="lectuers-title">
+            <div class="lectuers-left"></div>
+            <a href="lecturer.html" class="lectuers-right"></a>
+            <div class="lectuers-middle"></div>
+        </div>
+        <!-- lectuers_内容区域 -->
+        <div class="lectuers-layout">
+            <div class="teacher lectuers-teacher1">
+                <teach-List></teach-List>
+<!--                 <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers1.jpg"></dt>
+                        <dd>小雅讲师</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers2.jpg"></dt>
+                        <dd>老马讲师</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers3.jpg"></dt>
+                        <dd>树林讲师</dd>
+                    </a>
+                </dl> -->
+            </div>
+            <div class="lectuers-teacher2 teacher">
+<!--                 <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers4.jpg"></dt>
+                        <dd>清风讲师</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers5.jpg"></dt>
+                        <dd>梅西讲师</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="###">
+                        <dt><img src="content/images/940/lectuers6.jpg"></dt>
+                        <dd>帽子讲师</dd>
+                    </a>
+                </dl> -->
+            </div>
+        </div>
+    </div>
+    <!-- company -->
+    <div class="company"></div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">
+                <img src="content/images/940/footer_icon1.jpg" alt="返回首页">
+            </a>
+            <a href="aboutUs.html">
+                <img src="content/images/940/footer_icon2.jpg" alt="关于我们">
+            </a>
+            <a href="courses.html">
+                <img src="content/images/940/footer_icon3.jpg" alt="课程介绍">
+            </a>
+            <a href="#">
+                <img src="content/images/940/footer_icon4.jpg" alt="在线报名">
+            </a>
+            <a href="#" class="footer-animation">
+                <img src="content/images/940/footer_icon5.gif" class="footer-icon5" alt="在线咨询">
+            </a>
+        </div>
+    </footer>
+</div>
+
+
+<script src="scripts/agl/app.js"></script>
+<script src="scripts/agl/server.js"></script>
+<script src="scripts/agl/directive.js"></script>
+<script src="scripts/agl/controller.js"></script>
+<!--<script type="text/javascript">
+    $(function() {
+        // shop
+        var LanMu = $(".shop-list");
+        var lanMuSun = LanMu.children('li');
+        if ((lanMuSun.size()) > 5) {
+            LanMu.children("li:gt(3)").hide();
+            $(".listmore").show();
+        }
+        $(".listmore").bind("click", function() {
+            if (!$(".listmore").hasClass('ListMoreOn')) {
+                $(".listmore").addClass('ListMoreOn');
+                LanMu.children("li:gt(3)").slideDown();
+                $(".s-xguide-down").css("background-image", "url('content/images/940/s-xguide-up.png')");
+            } else {
+                $(".listmore").removeClass('ListMoreOn');
+                LanMu.children("li:gt(3)").slideUp();
+                $(".s-xguide-down").css("background-image", "url('content/images/940/s-xguide-down.png')");
+            }
+        });
+        // successes
+        var LanMt = $(".successes-list");
+        var lanMtSun = LanMt.children('li');
+        if ((lanMtSun.size()) > 5) {
+            LanMt.children("li:gt(3)").hide();
+            $(".listmoru").show();
+        }
+        $(".listmoru").bind("click", function() {
+            if (!$(".listmoru").hasClass('listmoruOn')) {
+                $(".listmoru").addClass('listmoruOn');
+                LanMt.children("li:gt(3)").slideDown();
+                $(".s-xguide-down2").css("background-image", "url('content/images/940/s-xguide-up.png')");
+
+            } else {
+                $(".listmoru").removeClass('listmoruOn');
+                LanMt.children("li:gt(3)").slideUp();
+                $(".s-xguide-down2").css("background-image", "url('content/images/940/s-xguide-down.png')");
+            }
+        });
+    });
+</script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-stable bar-assertive">
+    <h1 class="title">快递代取</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closePost()">返回</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="createPost()">
+      <div class="list">
+        <label class="item item-select">
+          <span class="input-label">快递公司<i class="assertive">*</i></span>
+          <select ng-model="postData.company">
+            <option value="顺丰">顺丰</option>
+            <option value="圆通">圆通</option>
+            <option value="韵达">韵达</option>
+            <option value="申通">申通</option>
+            <option value="中通">中通</option>
+            <option value="天天">天天</option>
+            <option value="汇通">汇通</option>
+            <option value="邮政EMS">邮政EMS</option>
+            <option value="京东">京东</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">取货号<i class="assertive">*</i></span>
+          <input type="text" ng-model="postData.code">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">姓名<i class="assertive">*</i></span>
+          <input type="text" ng-model="postData.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">手机号码<i class="assertive">*</i></span>
+          <input type="text" ng-model="postData.tel">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">宿舍地址<i class="assertive">*</i></span>
+          <input type="text" ng-model="postData.address">
+        </label>
+        <label class="item item-select">
+          <span class="input-label">快递所在地<i class="assertive">*</i></span>
+          <select ng-model="postData.location">
+            <option value="南院">南院</option>
+            <option value="北院">北院</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">抵达时间<i class="assertive">*</i></span>
+          <input type="text" ng-model="postData.arrived_at" ng-click="openDatePicker()" ng-readonly="true">
+        </label>
+        <label class="item item-textarea">
+          <span class="input-label">备注</span>
+          <input type="text" ng-model="postData.note">
+        </label>
+        <label class="item">
+          <button class="button button-block button-assertive" type="submit">提交信息</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
