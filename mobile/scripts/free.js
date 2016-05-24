@@ -154,7 +154,7 @@ $(function() {
     // user
     var storage = window.localStorage;
     var json_data = JSON.parse(storage.getItem("member"));
-    console.log(json_data.u);
+    console.log(json_data);
 
     function formatData(r) {
         var a = new Array();
