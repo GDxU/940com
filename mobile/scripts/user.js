@@ -97,6 +97,26 @@ $.ajax({
     success: function(data) {
         console.log(data.s);
         var data = formatData(data);
+        // 真实姓名
+        var names = $('.free-pane');
+        var rle = '';
+        names.html();
+        // console.log(typeof(data.r));
+        console.log(data.r.length);
+        if (data.r.length == 1) {
+            rle = "<div class='item'>" +
+                "<i class='modify-name'>" + data.r + "</i>" +
+                "<a data-v='name' href='javascript:' id='txtiname'>（修改）</a>" +
+                "<input id='txtIname' type='text' class='xg_txt' style='display: none;'>" +
+                "</div>";
+        } else {
+            rle = "<div class='item'>" +
+                "<i class='modify-name'>您还未填写姓名</i>" +
+                "<a data-v='name' href='javascript:' id='txtiname'>（修改）</a>" +
+                "<input id='txtIname' type='text' class='xg_txt' style='display: none;'>" +
+                "</div>";
+        }
+
         // 性别
         var list = $('.free-pane');
         var sex = '';
@@ -129,6 +149,25 @@ $.ajax({
                 "<strong class='icon_nv'>女</strong>" +
                 "</div>";
         }
+        
+        // 手机号码绑定 + 解绑
+        var binds = $('.free-pane');
+        var ihe = '';
+        binds.html();
+        // console.log(typeof(data.z));
+        // console.log(data.z.length);
+        if (data.z.length == 1) {
+            ihe = "<div class='item bind_phone' style=''>" +
+                "<i style='color: #999;'>还未绑定手机</i>" +
+                "<a href='javascript:' class='bind'>（立即绑定）</a>" +
+                "</div>";
+        } else {
+            ihe = "<div class='item un_phone' style=''>" +
+                "<i class='yahei'>" + data.z + "</i>" +
+                "<a href='javascript:' class='unlock'>（解绑）</a>" +
+                "</div>";
+        }
+
         // 头像+信息（登录信息）
         var pesonal = '';
         pesonal += "<div class='users'>" +
@@ -187,11 +226,7 @@ $.ajax({
             // 真实姓名
             "<li class='li_name'>" +
             "<span>真实姓名：</span>" +
-            "<div class='item'>" +
-            "<i class='modify-name'>" + data.r + "</i>" +
-            "<a data-v='name' href='javascript:' id='txtiname'>（修改）</a>" +
-            "<input id='txtIname' type='text' class='xg_txt' style='display: none;'>" +
-            "</div>" +
+            rle +
             "</li>" +
             // 性别
             "<li class='li_sex'>" +
@@ -203,7 +238,7 @@ $.ajax({
             // 手机
             "<li class='li_phone'>" +
             "<span>手&nbsp&nbsp机：</span>" +
-            "<div class='item un_phone' style='display: none;'>" +
+/*            "<div class='item un_phone' style='display: none;'>" +
             "<i class='yahei'>加载中...</i>" +
             "<a href='javascript:'>（解绑）</a>" +
             "</div>" +
@@ -211,7 +246,8 @@ $.ajax({
             "<i style='color: #999;'>" + data.z + "</i>" +
             // "<i style='color: #999;'>还未绑定手机</i>" +
             "<a href='javascript:' class='bind'>（立即绑定）</a>" +
-            "</div>" +
+            "</div>" +*/
+            ihe +
             "</li>" +
             // QQ
             "<li class='li_qq'>" +

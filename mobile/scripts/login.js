@@ -194,7 +194,7 @@ $(function() {
                 yazmbd(); //.
                 if (data.status == 1) {
                     alert(data.tips); //.
-                    // alert("注册成功！");
+                    alert("注册成功！");
                     window.location.href = "login.html";
                 } else if (data.status == -9) {
                     alert(data.tips); //.

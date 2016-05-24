@@ -8,9 +8,8 @@
 /*判断用户是否登录*/
 var storage = window.localStorage;
 var json_data = JSON.parse(storage.getItem("member"));
-console.log(json_data.u);
-if (json_data.u) {
-    // statement
+// console.log(json_data);
+if (json_data) {
     var listdata = $.param({
         user_name: json_data.u,
         password: json_data.password
@@ -27,6 +26,16 @@ if (json_data.u) {
             $("a.header-menu").attr("href", "user.html");
         }
     });
-} else {
-    window.location.href = "login.html";
+}
+
+/*退出*/
+function loginOut() {
+    if (json_data) {
+        localStorage.removeItem("member");
+        alert("您成功退出登录！");
+        window.location.href = "index.html";
+    } else {
+        alert("请先登录...");
+    }
+
 }

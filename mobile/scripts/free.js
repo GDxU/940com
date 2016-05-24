@@ -84,6 +84,24 @@ $(function() {
         a = /Array/.test(d) ? r : a[0]=r;
         return a;
     }
+    // VIP会员价钱 .0
+    function toDecimal2(x) {
+        var f = parseFloat(x);
+        if (isNaN(f)) {
+            return false;
+        }
+        var f = Math.round(x*100)/100;
+        var s = f.toString();
+        var rs = s.indexOf('.');
+        if (rs < 0) {
+            rs = s.length;
+            s += '.';
+        }
+        while (s.length <= rs + 1) {
+            s += '0';
+        }
+        return s;
+    }
 
     $.ajax({
         type: 'get',
@@ -133,22 +151,76 @@ $(function() {
 
     });
 
+    // user
+    var storage = window.localStorage;
+    var json_data = JSON.parse(storage.getItem("member"));
+    console.log(json_data.u);
+
+    function formatData(r) {
+        var a = new Array();
+        var c = Object.prototype.toString.call(r);
+        r = /String/.test(c) ? eval('(' + r + ')') : r;
+        var d = Object.prototype.toString.call(r);
+        // console.log(d);   // [object Object]
+        a = /Array/.test(d) ? r : a[0] = r;
+        return a;
+    }
+    var listdata = $.param({
+        user_name: json_data.u,
+        password: json_data.password
+    });
+
+    // 用户权限控制
+    var vipViedo = {
+        init : function() {
+            this.viphtml();
+        },
+        viphtml : function() {
+            $.ajax({
+                async : false,
+                type: 'get',
+                url: 'http://www.940.com/userInfo',
+                dataType: 'jsonp',
+                processData: false,
+                data: listdata,
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                success: function(data) {
+                    var data = formatData(data);
+
+                    if (data.su == 0) {
+                        alert("会员视频请联系客服购买！");
+                        var json = {"su" : data.su};
+                        localStorage.suvVip = JSON.stringify(json);
+                    } else if (data.su == 1) {
+                        var json = {"su" : data.su};
+                        localStorage.suvVip = JSON.stringify(json);
+                    }
+
+                }
+
+            });
+        }
+
+    };
+    vipViedo.init();
+
     // VIP课程
     $.ajax({
+        async : false,
         type: 'get',
-        url: 'http://www.940.com/videoList?page=1&line=12&type=1&callback=?',
+        url: 'http://www.940.com/videoList?page=1&line=14&type=1&callback=?',
         dataType: 'jsonp',
         processData: false,
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
         success: function(data) {
 
             data = formatData(data); // 然后在ajax获取到数据后使用它
-/*            if(!(data instanceof Array))
-            {
-              //line等于1的情况
-              //处理成和line>1的情况一样的结构
-              data.list=[data.list];
-            }*/
+            // if(!(data instanceof Array))
+            // {
+            //   //line等于1的情况
+            //   //处理成和line>1的情况一样的结构
+            //   data.list=[data.list];
+            // }
 
             var list = $('.free-test2');
             if (data.count && data.count > 0) {
@@ -156,6 +228,15 @@ $(function() {
                 var content = "";
                 for (var i = 0; i < data.list.length; i++) {
                     var item = data.list[i];
+                    // 会员和非会员 su==1 ，su==0
+                    var suvipname = window.localStorage;
+                    var sui = JSON.parse(suvipname.getItem("suvVip"));
+                    if (sui.su == 0) {
+                        var vipHtml = "<a href=\"javascript:;\"><img src=\"" + item.preview + "\"><i></i></a>";
+                    } else if (sui.su == 1) {
+                        var vipHtml = "<a href=\"video4.html?id=" + item.id + "\"><img src=\"" + item.preview + "\"><i></i></a>";
+                    }
+
                     // alert( );
                     content = "";
                     if (i % 2 == 0) {
@@ -164,12 +245,13 @@ $(function() {
                         content += "<dl class=\"free-dl free-cont2\">";
                     }
 
-                    content += "<dt class=\"free-dt1\">";
-                    content += "<a href=\"javascript:;\"><img src=\"" + item.preview + "\"></a>";
-                    content += "</dt>";
+                    // content += "<dt class=\"free-dt1\">";
+                    // content += "<a href=\"video4.html?id="+item.id+"\"><img src=\"" + item.preview + "\"><i></i></a>";
+                    // content += "</dt>";
+                    content += "<dt class=\"free-dt1\">" +vipHtml+ "</dt>";
                     content += "<dd class=\"free-big\"><span>" + item.title + "</span></dd>";
                     content += "<dd class=\"free-small\">";
-                    content += "<div class=\"free-date\">发布:&nbsp" + item.time.substr(0,10) + "</div>";
+                    content += "<div class=\"free-date2\"><i>￥&nbsp</i><span>" + toDecimal2(item.price) + "</span></div>";
                     content += "<div class=\"free-watch\"><i></i><span>" + item.click_num + "</span></div>";
                     content += "</dd>";
                     content += "</dl>";

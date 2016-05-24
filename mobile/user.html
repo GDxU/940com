@@ -63,7 +63,7 @@
             </a>
         </li>
         <li>
-            <a href="###">
+            <a href="javascript:loginOut();">
                 <i class="menu-icon7"></i>
                 <span>退出登录</span>
             </a>
@@ -275,8 +275,10 @@
         </div>
     </footer>
 
-
 </div>
+
+<!-- 判断用户是否登录 -->
+<script type="text/javascript" src="scripts/js/newLogin.js"></script>
 
 <script type="text/javascript">
     ;window.onload = function(){
@@ -293,7 +295,7 @@
             }
             $('#sexVal').val(_index);
         });
-        //弹出'申请职位框'按钮弹窗
+        //弹窗 '修改登录密码'
         $('.reg').on('click', function() {
             layer.open({
                 type: 2,
@@ -304,7 +306,7 @@
                 content: 'user/passw.html'
             });
         });
-        //弹出'申请职位框'按钮弹窗
+        //弹窗 '绑定手机' + '解绑手机'
         $('.bind').on('click', function() {
             layer.open({
                 type: 2,
@@ -313,6 +315,16 @@
                 shadeClose: false,
                 title: '绑定手机',
                 content: 'user/bind.html'
+            });
+        });
+        $('.unlock').on('click', function() {
+            layer.open({
+                type: 2,
+                move: false,
+                area: ['6rem', '5.3rem'],
+                shadeClose: false,
+                title: '解绑手机',
+                content: 'user/unlock.html'
             });
         });
         // HTML5 LocalStorage 本地存储
@@ -455,12 +467,18 @@
                 var fileImageSrc = jsonimg.file_url;
             }
             // 1
+            if (($("#txtIname").val())) {
+                var nameVlue = $("#txtIname").val();
+            } else {
+                var nameVlue = $(".modify-name").val();
+            }
+            // 2
             if (($("#txtIqq").val())) {
                 var qqVlue = $("#txtIqq").val();
             } else {
                 var qqVlue = $(".modify-qq").text();
             }
-            // 2
+            // 3
             if (($("#txtIyy").val())) {
                 var yyVlue = $("#txtIyy").val();
             } else {
@@ -469,6 +487,7 @@
             console.log(fileImageSrc);
             console.log(qqVlue);
             console.log(yyVlue);
+            console.log(nameVlue);
 
             var modify = $.param({
                 user_name: json_data.u,
@@ -477,9 +496,10 @@
                 gender: $("i.selected").attr("data-s"),
                 profile: fileImageSrc,
                 address: $thisdress,
-                realname: function() {
-                    return $(".modify-name").val() ? 0 : $(".modify-name").val();
-                },
+                realname: nameVlue,
+                // realname: function() {
+                //     return $(".modify-name").val() ? 0 : $(".modify-name").val();
+                // },
                 password: json_data.password
             });
             $.ajax({
@@ -556,7 +576,6 @@
 
         /*var imgurl=$("#filename").val();*/
         $("#imgurlform").submit();
-
 
     }
 </script>

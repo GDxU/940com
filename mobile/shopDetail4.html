@@ -62,7 +62,7 @@
             </a>
         </li>
         <li>
-            <a href="###">
+            <a href="javascript:loginOut();">
                 <i class="menu-icon7"></i>
                 <span>退出登录</span>
             </a>
@@ -176,8 +176,10 @@
     </footer>
 </div>
 
-<script type="text/javascript">
+<!-- 判断用户是否登录 -->
+<script type="text/javascript" src="scripts/js/newLogin.js"></script>
 
+<script type="text/javascript">
 ;function formatData(r) {
     var a = new Array();
     var c = Object.prototype.toString.call(r);
@@ -282,7 +284,6 @@ var paramid = $.param({
         }
     });
 });
-
 </script>
 
 </body>
