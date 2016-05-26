@@ -1,0 +1,352 @@
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html, body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    width: 100%;
+
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+}
+html
+{
+
+    font-size: 50px;
+}
+ul, ol, li, dl, dt, dd
+{
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+a:hover, a:visited, a:active, a:link {
+    text-decoration: none;
+}
+ins {
+    text-decoration: none;
+}
+img {
+    border: none;
+    outline: none;
+
+    max-width: 100%;
+    height: auto;
+    width: auto9;
+    -ms-interpolation-mode: bicubic;
+}
+input,button {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+strong
+{
+    font-weight: normal;
+}
+b
+{
+    font-weight: normal;
+}
+i
+{
+    font-style: normal;
+}
+body
+{
+    background-color: #fff;
+    font-family: '方正兰亭细黑简';
+    font-size: 0.18rem;
+}
+
+/* 00000000000000000000000 */
+.main{
+    width: 100%;
+    float: left;
+}
+.reg-box{
+    margin-top: 0.64rem;
+}
+.reg-box .item
+{
+    width: calc(100% - 1.48rem);
+    width: -webkit-calc(100% - 1.48rem);
+    height: 74px;
+    line-height: 34px;
+    margin: 0 0.74rem 0;
+    position: relative;
+    z-index: 5;
+}
+.reg-box .intelligent-label
+{
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    padding-right: 10px;
+}
+.reg-box .intelligent-label b
+{
+    margin-right: 5px;
+    font-weight: normal;
+    color: red;
+}
+.reg-box .item .item-ifo
+{
+    width: 100%;
+    position: relative;
+}
+.reg-box .txt02
+{
+    width: 270px;
+    line-height: 16px;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    float: none;
+    font-size: 14px;
+    font-family: arial,'宋体';
+    color: #999;
+    overflow: hidden;
+}
+.reg-box .txt03.v_error, .reg-box .txt04.v_error
+{
+    background-color: #f2deeb;
+    color: #a80070;
+    border-color: #ff7ac0;
+}
+.reg-box .txt03:focus, .reg-box .txt04:focus
+{
+    border-color: #fc8901;
+}
+.reg-box .blank
+{
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    position: absolute;
+    left: 280px;
+    top: 11px;
+    float: none;
+    color: #7abd54;
+}
+.reg-box .close
+{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 24px;
+}
+.reg-box .focus,.reg-box .focusa,.reg-box .error
+{
+    height: 0.52rem;
+    line-height: 0.52rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 270px;
+    padding: 0 0.14rem;
+    z-index: 3;
+    font-weight: normal;
+    font-size: 0.22rem;
+    color: #f02387;
+}
+.reg-box .focus span,.reg-box .error span
+{
+    line-height: 16px;
+    display: block;
+    padding: 3px 0;
+}
+.reg-box .focus
+{
+    color: #999;
+}
+.reg-box .valid
+{
+    color: #f02387;
+}
+.reg-box .strength
+{
+    color: #999;
+    line-height: 22px;
+    padding-right: 10px;
+    clear: both;
+    float: none;
+    position: absolute;
+    top: 39px;
+    right: -9px;
+    display: none;
+}
+.reg-box .strength b
+{
+    float: left;
+    width: 108px;
+    height: 16px;
+    overflow: hidden;
+    margin-top: 5px;
+    font-weight: 400;
+}
+.reg-box .strength b i
+{
+    font-style: normal;
+    font-size: 10px;
+    width: 34px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    float: left;
+    background: #dbdbdb;
+    text-align: center;
+    margin-left: 1px;
+    color: #fff;
+}
+.reg-box .strength b i.on
+{
+    background: #ff6160;
+}
+.reg-box .btn-blue
+{
+    width: 100%;
+    height: 78px;
+    line-height: 78px;
+    font-size: 0.28rem;
+    padding: 0;
+    border-radius: 0;
+}
+.reg-box .btn-gray
+{
+    height: 64px;
+    line-height: 64px;
+    font-size: 0.24rem;
+    padding: 0 12px;
+    margin-top: 2px;
+}
+.txt03, .txt04
+{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 0.28rem;
+    color: #959595;
+    border-radius: 0;
+    padding: 0 0.15rem;
+    overflow: hidden;
+    float: none;
+    /* 去掉IOS头上input阴影 */
+    -webkit-appearance: none;
+}
+.txt04
+{
+    width: calc((100% - 1.9rem) - 2px);
+    width: -webkit-calc((100% - 1.9rem) - 2px);
+    line-height: 0.3rem;
+    font-size: 0.24rem;
+    border: 1px solid #b5b5b5;
+}
+.col-xs-12
+{
+    width: 100%;
+}
+.f-fl
+{
+    float: left!important;
+}
+.btn
+{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.hide {
+    display: none!important;
+}
+.btn-blue {
+    background-color: #fc8901;
+    color: #fff;
+}
+.f-ml5 {
+    margin-left: 10px;
+}
+.btn-gray {
+    background-color: #4FB9E0;
+    color: #fff;
+}
+.btn[disabled] {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    color: #a9a9a9;
+}
+.register-short{
+    width: calc(100% - 1.5rem);
+    width: -webkit-calc(100% - 1.5rem);
+    height: 0.18rem;
+    margin: 0 0.74rem 0;
+}
+.register-distance {
+    width: calc(100% - 1.5rem);
+    width: -webkit-calc(100% - 1.5rem);
+    height: 0.58rem;
+    margin: 0 0.74rem 0;
+}
+
+.reg-box .bind-top
+{
+    height: 78px;
+    margin-top: 0.05rem;
+}
+
+.register-controls{
+    width: 100%;
+    float: left;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: #fc8901;
+    margin-bottom: 0.78rem;
+}
+
+.register-controls .btn-long {
+    width: 100%;
+    height: 0.78rem;
+    font-size: 0.28rem;
+    padding: 0.08rem 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

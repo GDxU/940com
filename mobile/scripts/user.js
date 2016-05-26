@@ -103,15 +103,15 @@ $.ajax({
         names.html();
         // console.log(typeof(data.r));
         console.log(data.r.length);
-        if (data.r.length == 1) {
+        if (data.r.length == 0) {
             rle = "<div class='item'>" +
-                "<i class='modify-name'>" + data.r + "</i>" +
+                "<i style='color: #ccc;'>您还未填写姓名</i>" +
                 "<a data-v='name' href='javascript:' id='txtiname'>（修改）</a>" +
                 "<input id='txtIname' type='text' class='xg_txt' style='display: none;'>" +
                 "</div>";
         } else {
             rle = "<div class='item'>" +
-                "<i class='modify-name'>您还未填写姓名</i>" +
+                "<i class='modify-name'>" + data.r + "</i>" +
                 "<a data-v='name' href='javascript:' id='txtiname'>（修改）</a>" +
                 "<input id='txtIname' type='text' class='xg_txt' style='display: none;'>" +
                 "</div>";
@@ -149,7 +149,7 @@ $.ajax({
                 "<strong class='icon_nv'>女</strong>" +
                 "</div>";
         }
-        
+
         // 手机号码绑定 + 解绑
         var binds = $('.free-pane');
         var ihe = '';
@@ -157,14 +157,60 @@ $.ajax({
         // console.log(typeof(data.z));
         // console.log(data.z.length);
         if (data.z.length == 1) {
-            ihe = "<div class='item bind_phone' style=''>" +
-                "<i style='color: #999;'>还未绑定手机</i>" +
+            ihe = "<div class='item bind_phone'>" +
+                "<i style='color: #ccc;'>还未绑定手机</i>" +
                 "<a href='javascript:' class='bind'>（立即绑定）</a>" +
                 "</div>";
         } else {
-            ihe = "<div class='item un_phone' style=''>" +
+            ihe = "<div class='item un_phone'>" +
                 "<i class='yahei'>" + data.z + "</i>" +
                 "<a href='javascript:' class='unlock'>（解绑）</a>" +
+                "</div>";
+        }
+
+        // 所在地
+        var seatof = $('.free-pane');
+        var soname = '';
+        // console.log(typeof(data.a));
+        console.log(data.a.length);
+        seatof.html();
+        if (data.a.length == 0) {
+            soname = "<div class='item selectList'>" +
+                "<i style='color: #ccc;'>还未选择地区</i>" +
+                "<a data-v='szd' href='javascript:' id='txticity'>（修改）</a>" +
+                "<div id='txtIcity' class='city-layer'>" +
+                "<div class='select_ui'>" +
+                "<div class='select_arrow'></div>" +
+                "<div class='select_text_ui' style='min-width: 2.5em;'>北京</div>" +
+                "<select class='province' required='true' name='birthday_year'>" +
+                "</select>" +
+                "</div>" +
+                "<div class='select_ui'>" +
+                "<div class='select_arrow'></div>" +
+                "<div class='select_text_ui' style='min-width: 2.5em;'>西城</div>" +
+                "<select class='city' required='true' name='birthday_year'>" +
+                "</select>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+        } else {
+            soname = "<div class='item selectList'>" +
+                "<i class='modify-city'>" + data.a + "</i>" +
+                "<a data-v='szd' href='javascript:' id='txticity'>（修改）</a>" +
+                "<div id='txtIcity' class='city-layer'>" +
+                "<div class='select_ui'>" +
+                "<div class='select_arrow'></div>" +
+                "<div class='select_text_ui' style='min-width: 2.5em;'>北京</div>" +
+                "<select class='province' required='true' name='birthday_year'>" +
+                "</select>" +
+                "</div>" +
+                "<div class='select_ui'>" +
+                "<div class='select_arrow'></div>" +
+                "<div class='select_text_ui' style='min-width: 2.5em;'>西城</div>" +
+                "<select class='city' required='true' name='birthday_year'>" +
+                "</select>" +
+                "</div>" +
+                "</div>" +
                 "</div>";
         }
 
@@ -270,24 +316,7 @@ $.ajax({
             // 所在地
             "<li class='li_area'>" +
             "<span>所在地：</span>" +
-            "<div class='item selectList'>" +
-            "<i class='modify-city'>" + data.a + "</i>" +
-            "<a data-v='szd' href='javascript:' id='txticity'>（修改）</a>" +
-            "<div id='txtIcity' class='city-layer'>" +
-            "<div class='select_ui'>" +
-            "<div class='select_arrow'></div>" +
-            "<div class='select_text_ui' style='min-width: 2.5em;'>北京</div>" +
-            "<select class='province' required='true' name='birthday_year'>" +
-            "</select>" +
-            "</div>" +
-            "<div class='select_ui'>" +
-            "<div class='select_arrow'></div>" +
-            "<div class='select_text_ui' style='min-width: 2.5em;'>西城</div>" +
-            "<select class='city' required='true' name='birthday_year'>" +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
+            soname +
             "</li>" +
             // 点此更换图片
             "<li class='li_url por_li'>" +

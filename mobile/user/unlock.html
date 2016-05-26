@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+<head>
+    <!--wap-->
+    <meta charset="utf-8">
+    <!-- width取值与页面定义的宽度一致 -->
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- 百度禁止转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../user/css/unlock.css">
+    <!--js-->
+    <script type="text/javascript" src="../scripts/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../user/js/bind.js"></script>
+</head>
+
+<body>
+
+<div class="main">
+    <div class="reg-box" id="verifyCheck">
+        <form class="verifyCheck" method="post">
+            <div class="item col-xs-12 myPhone">
+                <div class="f-fl item-ifo">
+<!--                     <input type="text" class="txt03 f-r3 required mobilePhone" keycodes="tel" tabindex="2" data-error="手机号码不能为空||手机号码格式不正确" maxlength="11" id="phone" placeholder="请输入手机号码" data-valid="isNonEmpty||isPhone" /> -->
+
+                    <div class="txt03 f-r3 required mobilePhone">手 机 验 证：</div>
+                </div>
+            </div>
+
+            <div class="register-short"></div>
+
+            <div class="item col-xs-12">
+                <div class="f-fl item-ifo">
+                    <input type="text" maxlength="6" id="verifyNo" class="txt04 f-r3 f-fl required" tabindex="4" data-valid="isNonEmpty||isInt" data-error="验证码不能为空||请输入6位数字验证码" placeholder="请输入验证码" />
+                    <span class="btn btn-gray f-r3 f-ml5 f-size13" id="time_box" disabled style="width:170px;display:none;">发送验证码</span>
+                    <span class="btn btn-gray f-r3 f-ml5 f-size13" id="verifyYz" style="width:170px;">发送验证码</span>
+                    <span class="ie8 icon-close close hide" style="right:130px"></span>
+                    <label class="icon-sucessfill blank hide"></label>
+                    <label class="focus"><span></span></label>
+                    <label class="focus valid"></label>
+                </div>
+            </div>
+
+            <div class="register-distance"></div>
+
+            <div class="item col-xs-12 bind-top">
+                <div class="register-controls">
+                    <button type="submit" class="btn-long btn-purple" id="btn_part1">确认解绑</button>
+                    <!-- <button type="submit" class="btn-long btn-purple" id="submit">确认绑定</button> -->
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+$(function(){
+    function formatData(r) {
+        var a = new Array();
+        var c = Object.prototype.toString.call(r);
+        r = /String/.test(c) ? eval('(' + r +')') : r;
+        var d = Object.prototype.toString.call(r);
+        // console.log(d);   // [object Object]
+        a = /Array/.test(d) ? r : a[0]=r;
+        return a;
+    }
+    var storage = window.localStorage;
+    var json_data = JSON.parse(storage.getItem("member"));
+
+    $("#verifyYz").click(function (event) {
+        event.preventDefault();
+        var modify1 = $.param({
+            user_name: json_data.u,
+            password:json_data.password,
+            phone: $(".mobilePhone").val()
+        });
+
+        $.ajax({
+            async: false,
+            type: "get",
+            url: 'http://www.940.com/getPhoneCode',
+            dataType: 'jsonp',
+
+            jsonp: 'callback',
+            data: modify1,
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success: function(data) {
+
+                console.log(modify1);
+                data = formatData(data);
+
+                if (data.status == 1) {
+                    alert(data.tips);
+                } else if (data.status == -9) {
+                    alert(data.tips);
+                } else {
+                    alert("data.tips");
+                }
+
+                // 0000
+                var list = $('.myPhone');
+                if (data.count && data.count > 0) {
+                    list.html("");
+                    var content = "";
+                    for (var i = 0; i < data.list.length; i++) {
+                        var item = data.list[i];
+
+                        content += "<div class=\"f-fl item-ifo\">";
+                        content += "<div class=\"txt03 f-r3 required mobilePhone\">手 机 验 证：" + item.phone + "</div>";
+                        content += "</div>";
+
+                        console.log(content);
+                        // list.append(content);
+                    }
+                }
+
+
+            }
+        });
+    });
+    $("#btn_part1").click(function(){
+        if(!verifyCheck._click()) return;
+        $(".step li").eq(1).addClass("on");
+    });
+
+    // 确认解绑手机
+    var ajaxPane = $('.verifyCheck');
+    ajaxPane.bind('submit', function(event) {
+        event.preventDefault();
+        var qrphone = $.param({
+            user_name: json_data.u,
+            // phone:$(".mobilePhone").val(),
+            code: $("#verifyNo").val()
+        });
+        $.ajax({
+            async: false,
+            type: "get",
+            url: 'http://www.940.com/unBindPhone',
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            data: qrphone,
+            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+            success: function(data) {
+                /*  data = formatData(data);*/
+                console.log(qrphone);
+                /*  console.log(data);*/
+                if (data.status==1) {
+                    alert(data.tips);
+                    // window.location.href = "http://m.940.com/user.html";
+                } else if (data.status==-9) {
+                    alert(data.tips);
+                } else {
+                    alert("data.tips");
+                }
+            }
+        });
+    });
+
+});
+</script>
+</body>
+</html>
