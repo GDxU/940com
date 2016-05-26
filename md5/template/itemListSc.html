@@ -1,0 +1,12 @@
+<li ng-repeat="free in sec track by $index">
+<a href="shopDetail.html?id={{free.id}}">
+            <dl class="shop-stu">
+                <dt><img src="{{free.preview}}"></dt>
+               <dd class="shop-big"><span>{{free.title}}</span></dd>
+               <dd class="shop-small">
+                    <div class="shop-date">发表日期:&nbsp{{free.time.substr(0,10)}}</div>
+                    <div class="shop-watch"><i></i><span>{{free.clickNum}}</span></div>
+                    </dd>
+                </dl>
+            </a>
+</li>

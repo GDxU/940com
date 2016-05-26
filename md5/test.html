@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="node_modules/angular/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="ensureUnique">
+<ul>
+    {{industries.list[0].title}}
+</ul>
+
+
+<script type="text/javascript">
+    var myApp = angular.module('myApp',[]);
+    myApp.controller('ensureUnique',function ($scope,$http) {
+        $http.jsonp('http://www.940.com/videoList?page=1&line=4&type=2&callback=JSON_CALLBACK',
+                /* {languageColumn:'name_eu'},*/
+                {'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'})
+                .success(function (data) {
+                    $scope.industries = data;
+
+                });
+    });
+    //  The name of the callback should be the string JSON_CALLBACK.
+/*function getData($scope,$http){*/
+ /*   var url="http://www.940.com/videoList?page=1&line=4&type=2&callback=?";
+    $http.jsonp(url).success(function(data){
+
+        console.log(data);
+    })*/
+
+ /*   var myApp = angular.module('myApp',[]);
+  $http.jsonp("http://www.940.com/videoList?page=1&line=4&type=2&callback=?")
+  .success(function(data){
+  alert(data);
+  });
+    myApp.controller('ensureUnique',function ($scope,$http) {
+        $http.jsonp('http://www.940.com/videoList?page=1&line=4&type=2&callback=?').success(
+                function(data){
+                    $scope.list = data;
+                    alert(data);
+                })
+                .error(
+                function(data){
+                    alert("error");
+                }
+        );
+    });*/
+</script>
+
+
+
+
+
+
+<!--<script>
+    var test=angular.module('testApp',[]);
+        myUrl = "http://www.940.com/videoList?page=1&line=4&type=2&callback=?";
+        $http.jsonp(myUrl).then(function (data) {
+            alert(data);
+        });
+   /* var test=angular.module('testApp',[]);
+    test.directive("direct",function(){
+        return{
+            restrict: 'ECMA',
+            template: '<div>{{ title }}</div>'+'<div><ul><li ng-repeat="x in contents">{{ x.text }}</li></ul></div>',
+            scope:{
+                getTitle:'&',
+                getContent:'&'
+            },
+            controller:function($scope){
+                $scope.title=$scope.getTitle();    //调用无参函数
+                $scope.contents=$scope.getContent();    //调用无参函数
+            }
+        }
+    })
+            .controller("nameController",function($scope){
+                $scope.title="标题";
+
+                $scope.contents =[{text:1234},{text:5678}];
+            });*/
+</script>-->
+
+
+<div ng-controller="nameController">
+    <direct get-title="title" get-content="contents"></direct>
+</div>
+</body>
+</html>
