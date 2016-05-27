@@ -317,6 +317,7 @@
                 content: 'user/bind.html'
             });
         });
+        $('').text()
         $('.unlock').on('click', function() {
             layer.open({
                 type: 2,
@@ -324,7 +325,11 @@
                 area: ['6rem', '5.3rem'],
                 shadeClose: false,
                 title: '解绑手机',
-                content: 'user/unlock.html'
+                content: "user/unlock.html?",
+                success: function(layero, index){
+                    var body = layer.getChildFrame('body', index);
+                    body.find('.mobilePhone').append($(".un_phone .yahei").text())
+                }
             });
         });
         // HTML5 LocalStorage 本地存储

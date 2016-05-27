@@ -523,3 +523,59 @@ footer {
         margin: 0 auto;
     }
 } */
+
+
+.quick-login {
+    margin-top: .47rem;
+    border-top: 1px solid #d7d7d7;
+    position: relative;
+    padding-top: .21rem;
+
+    width: 100%;
+    float: left;
+}
+
+.quick-login h4 {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    background-color: #fff;
+    padding: .05rem .15rem;
+    color: #616161;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    font-size: 28px;
+}
+
+.quick-login a {
+    position: relative;
+    width: .42rem;
+    color: #616161;
+    display: inline-block;
+    margin: 0 .1rem;
+
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    width: .22rem;
+    height: .22rem;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(https://plogin.m.jd.com/st_new/img/iconBg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    display: block;
+}
+
+.icon-qq {
+    left: .1rem;
+    background-position: 0 -1.29rem;
+}
+
+.quick-cont{
+    width: 100%;
+}

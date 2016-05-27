@@ -1,13 +1,3 @@
-function alertInvalid() {
-
-    if (json_data) {
-        layer.msg('无效视频');
-    }else{
-        layer.msg('请先登录！');
-    }
-
-}
-
 (function() {
     // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
     document.addEventListener('DOMContentLoaded', function() {
@@ -257,18 +247,16 @@ $(function() {
                     var sui = JSON.parse(suvipname.getItem("suvVip"));
                     // console.log(sui.su);
                     if (json_data) {
-
                         if (sui.su === 0) {
                             var vipHtml = "<a href=\"javascript:alertVideo();\"><img src=\"" + item.preview + "\"><i></i></a>";
                         } else if (sui.su === 1) {
                             if (!item.videoId) {
                                 var vipHtml = "<a href=\"javascript:alertInvalid();\"><img src=\"" + item.preview + "\"><i></i></a>";
-                            }else{
+                            } else {
                                 var vipHtml = "<a href=\"video4.html?id=" + item.id + "\"><img src=\"" + item.preview + "\"><i></i></a>";
                             }
-
                         }
-                    }else if (!item.videoId) {
+                    } else if (!item.videoId) {
                             var vipHtml = "<a href=\"javascript:alertInvalid();\"><img src=\"" + item.preview + "\"><i></i></a>";
                     } else {
                         var vipHtml = "<a href=\"javascript:alertVideo();\"><img src=\"" + item.preview + "\"><i></i></a>";
@@ -306,7 +294,6 @@ $(function() {
 
 // VIP弹窗提示
 function alertVideo() {
-
     if (json_data) {
         layer.msg('会员视频请联系客服购买！');
     } else {
@@ -324,6 +311,12 @@ function alertVideo() {
         }, 2000);
         flag = false;
     }*/
-
 }
 
+function alertInvalid() {
+    if (json_data) {
+        layer.msg('无效的视频！');
+    } else {
+        layer.msg('请先登录...');
+    }
+}

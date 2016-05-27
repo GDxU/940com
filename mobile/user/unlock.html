@@ -90,7 +90,6 @@ $(function(){
             data: modify1,
             contentType: "application/x-www-form-urlencoded; charset=utf-8",
             success: function(data) {
-
                 console.log(modify1);
                 data = formatData(data);
 
@@ -102,6 +101,27 @@ $(function(){
                     alert("data.tips");
                 }
 
+                // 获取解绑手机号码
+                $.ajax({
+                    type: 'get',
+                    url: 'http://www.940.com/userInfo',
+                    dataType: 'jsonp',
+                    processData: false,
+                    data: listdata,
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function(data) {
+/*                        list.html('');
+                        var content = "";
+                        for (var i = 0; i < data.list.length; i++) {
+                            var item = data.list[i];
+                            content += "<div class=\"f-fl item-ifo\">";
+                            content += "<div class=\"txt03 f-r3 required mobilePhone\">手 机 验 证：" + item.phone + "</div>";
+                            content += "</div>";
+
+                            console.log(content);
+                        }*/
+
+
                 // 0000
                 var list = $('.myPhone');
                 if (data.count && data.count > 0) {
@@ -111,13 +131,23 @@ $(function(){
                         var item = data.list[i];
 
                         content += "<div class=\"f-fl item-ifo\">";
-                        content += "<div class=\"txt03 f-r3 required mobilePhone\">手 机 验 证：" + item.phone + "</div>";
+                        content += "<div class=\"txt03 f-r3 required mobilePhone\">手 机 验 证：" + item.z + "</div>";
                         content += "</div>";
 
                         console.log(content);
                         // list.append(content);
                     }
                 }
+
+
+
+                    }
+
+                });
+
+
+
+
 
 
             }
