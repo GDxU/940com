@@ -471,7 +471,7 @@ body
     background-color: #f5c026;
     padding: 0;
     margin-top: 0.35rem;
-    margin-bottom: 0.78rem;
+    margin-bottom: 0.38rem;
 }
 
 .login-controls i{
@@ -526,18 +526,17 @@ footer {
 
 
 .quick-login {
-    margin-top: .47rem;
-    border-top: 1px solid #d7d7d7;
     position: relative;
     padding-top: .21rem;
-
-    width: 100%;
     float: left;
+    margin: .47rem .4rem .78rem;
+    border-top: 1px solid #d7d7d7;
+    width: calc(100% - .8rem);
+    width: -webkit-calc(100% - .8rem);
 }
 
 .quick-login h4 {
     position: absolute;
-    top: -60px;
     left: 50%;
     background-color: #fff;
     padding: .05rem .15rem;
@@ -545,37 +544,34 @@ footer {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 
-    font-size: 28px;
+    font-size: 0.3rem;
+    top: -64px;
 }
 
-.quick-login a {
-    position: relative;
-    width: .42rem;
-    color: #616161;
-    display: inline-block;
-    margin: 0 .1rem;
-
+.quick-login .quick-qq{
     width: 100%;
-    text-align: center;
+    
 }
 
-.icon {
-    width: .22rem;
-    height: .22rem;
-    overflow: hidden;
-    position: absolute;
-    background-image: url(https://plogin.m.jd.com/st_new/img/iconBg.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+.quick-login .btn-qq {
+    height: 45px;
+    text-indent: -9999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 
+    background-color: #0288d1;
+    width: 45px;
     display: block;
+    margin: 0 auto;
 }
 
-.icon-qq {
-    left: .1rem;
-    background-position: 0 -1.29rem;
-}
-
-.quick-cont{
-    width: 100%;
+.quick-login .btn-qq .btn_sns_icontype {
+    background: url('https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/iconstype_wap.png');
+    background-size: auto 29px;
+    width: 39px;
+    height: 29px;
+    display: block;
+    margin: 8px auto 0;
 }

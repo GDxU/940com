@@ -1,3 +1,26 @@
+课程图片链接地址
+http://localhost:8088/course_img?account=ypl@qq.com
+参数：
+    account-->账号
+返回：{"940vip":"http://127.0.0.1:8088/upload_img/20160526224428576.jpg","jyb":"http://127.0.0.1:8088/upload_img/20160526230507761.jpg","zcb":"http://127.0.0.1:8088/upload_img/20160526224609469.jpg","status":1,"tips":"操作成功！"}
+账号是否绑定QQ
+http://localhost:8088/qq_bind?do=check&bindcode=F4662728EFC9024C0DEFB9C9B570FBED
+
+参数：
+     do-->check
+     bindcode-->返回编码
+返回：未绑定{"status":0,"tips":"该账号未绑定！"}
+      绑定{"u":"ypl@qq.com","r":"","i":"N","s":"1","q":"0","w":"","z":"*","a":"","t":"2016-05-10 15:20:47","m":"0","n":"N","k":"0","l":"0","o":"1116840","e":"0","y":"641","b":"0.0","g":"0.0","h":"0","v":"2016-05-25 10:51:12","j":"","yy":"","im":"","su":0,"tips":"获取成功！","status":"1","vi":["14651978969256265442","14651978969256265442","2121212",""]}
+
+账号与QQ绑定
+http://localhost:8088/qq_bind?do=add&bindcode=F4662728EFC9024C0DEFB9C9B570FBED&qq=291584627&pwd=123456&account=367578@qq.com
+参数：
+     do-->add
+     bindcode-->返回编码
+     qq-->qq号
+     pwd-->密码
+     account-->登录账号
+返回：{"status":1,"tips":"操作成功！"}{"status":0,"tips":"操作失败！"}
 通知查看消息
 http://localhost:8088/notice
 参数： 
@@ -24,12 +47,17 @@ http://localhost:8088/message?do=query&account=ypl@qq.com
       l--留言内容 lt--留言时间 r--回复内容  rt--回复时间
 
 课表信息
-http://localhost:8088/account_list?account=peiliang@sududa.com
+http://localhost:8088/account_list?account=ypl@qq.com
 参数：
      page页（选传，默认1）
      line一页几行（选传，默认10）
      account账号
-返回course 5---940vip 6--创业班 7--精英班 8--总裁班
+返回参数：account-当前登录账号
+          classes-所拥有的课程视频（包含940vip、cyb、jyb、zcb）,940vip下分4类（1、2、3、4）
+          里面的对象格式{\"account\":\"\",\"click\":0,\"course\":\"940vip\",\"id\":0,\"isVip\":0,\"vid\":227,\"videoId\":\"14651978969258957852\",\"videoLength\":0,\"videoName\":\"（1）淘宝开店前的基本流程\",\"videoTime\":\"2016-05-28 \"}  
+          用到的参数：click-点击数（>0代表已学） 
+                      vid-视频的id 在点击访问播放器的时候用到 
+                      videoName-视频名称
 
 图文图片上传
 http://localhost:8088/img_upload

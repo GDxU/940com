@@ -274,7 +274,6 @@
             </a>
         </div>
     </footer>
-
 </div>
 
 <!-- 判断用户是否登录 -->
@@ -317,7 +316,7 @@
                 content: 'user/bind.html'
             });
         });
-        $('').text()
+        $('').text();
         $('.unlock').on('click', function() {
             layer.open({
                 type: 2,
@@ -325,10 +324,10 @@
                 area: ['6rem', '5.3rem'],
                 shadeClose: false,
                 title: '解绑手机',
-                content: "user/unlock.html?",
-                success: function(layero, index){
+                content: 'user/unlock.html?',
+                success: function(layero, index) {
                     var body = layer.getChildFrame('body', index);
-                    body.find('.mobilePhone').append($(".un_phone .yahei").text())
+                    body.find('.mobilePhone').append($(".un_phone .yahei").text());
                 }
             });
         });

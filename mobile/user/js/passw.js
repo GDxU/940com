@@ -121,7 +121,7 @@ $(function() {
                 console.log(mpasword);
                 if (data.status == 1) {
                     alert(data.tips);
-                    // window.location.href = "http://m.940.com/user.html";
+                    // window.location.href = "http://m.940.com/login.html";
                 } else if (data.status == -9) {
                     alert(data.tips);
                 } else {
