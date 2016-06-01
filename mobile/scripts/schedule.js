@@ -153,7 +153,7 @@ $(function() {
                 </span>\
                 <span class='pane-time'>6月13日</span>\
                 <span class='pane-text'>" + dataitem[i].videoName + "</span>\
-               <a href=\"video.html?id="+dataitem[i].vid+"\">点此复习<i class='video1'></i></a>\
+               <a href=\"video.html?id="+225+"\">点此复习<i class='video1'></i></a>\
                 </div>";
                  listime.append(listtime);
 
