@@ -486,7 +486,7 @@ body
     height: 0.48rem;
     line-height: 0.48rem;
     font-size: 0.22rem;
-    color: #bfbfbf;
+    color: #717171;
     text-align: center;
     margin: 0 0.2rem;
     float: left;
@@ -529,15 +529,17 @@ body
 }
 
 .study .pane-cont{
-    height: 0.6rem;
-    line-height: 0.64rem;
+    height: 0.74rem;
+    line-height: 0.78rem;
     font-size: 0.2rem;
-    color: #959595;
+    color: #ec6517;
     padding-bottom: 0.04rem;
+
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .study .pane-clr1{
-    color: #ec6517;
+    color: #959595;
 }
 
 .study .pane-clr2{
@@ -550,11 +552,12 @@ body
 
 .study .pane-cont .pane-icon{
     width: 0.33rem;
-    height: 0.64rem;
-
+    height: 0.78rem;
+    margin-right: 0.1rem;
+    float: left;
 }
 
-.study .pane-cont .iconClr1{
+/* .study .pane-cont .iconClr1{
     background: url('../images/schedule/iconClr1.png') no-repeat center center;
     background-size: 100% 100%;
 }
@@ -577,40 +580,38 @@ body
 .study .pane-cont .iconClr5{
     background: url('../images/schedule/iconClr5.png') no-repeat center center;
     background-size: 100% 100%;
-}
+} */
 
-.study .pane-cont span .pane-round{
-    width: 0.26rem;
-    height: 0.26rem;
-    display: block;
-    margin: 0.18rem 0.04rem;
-}
+// .study .pane-cont span .pane-round{
+//     width: 0.26rem;
+//     height: 0.26rem;
+//     display: block;
+//     margin: 0.18rem 0.04rem;
+// }
 
-.study .pane-cont span .roundClr1{
-    background: url('../images/schedule/roundClr1.png') no-repeat center center;
-    background-size: 100% 100%;
-}
+// .study .pane-cont span .roundClr1{
+//     background: url('../images/schedule/roundClr1.png') no-repeat center center;
+//     background-size: 100% 100%;
+// }
 
-.study .pane-cont span .roundClr2{
-    background: url('../images/schedule/roundClr2.png') no-repeat center center;
-    background-size: 100% 100%;
-}
+// .study .pane-cont span .roundClr2{
+//     background: url('../images/schedule/roundClr2.png') no-repeat center center;
+//     background-size: 100% 100%;
+// }
 
-.study .pane-cont span .roundClr3{
-    background: url('../images/schedule/roundClr3.png') no-repeat center center;
-    background-size: 100% 100%;
-}
+// .study .pane-cont span .roundClr3{
+//     background: url('../images/schedule/roundClr3.png') no-repeat center center;
+//     background-size: 100% 100%;
+// }
 
 .study .pane-cont .pane-time{
     width: 0.84rem;
-    margin-left: 0.1rem;
     text-align: center;
 }
 
 .study .pane-cont .pane-text{
     width: calc(100% - 3.04rem);
     width: -webkit-calc(100% - 3.04rem);
-    height: 0.6rem;
     margin: 0 0.28rem;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -622,8 +623,9 @@ body
     height: 0.35rem;
     line-height: 0.35rem;
     font-size: 0.16rem;
+    color: #ec6517;
     text-indent: 16px;
-    margin: 0.14rem 0 0;
+    margin: 0.2rem 0 0;
     border: 1px solid #adadad;
     float: right;
 }

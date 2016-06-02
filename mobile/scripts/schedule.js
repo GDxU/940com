@@ -1,6 +1,6 @@
-(function() {
+(function () {
     // 等价于html.style.fontSize = windowWidth / 640 * 100 + 'px';
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var html = document.documentElement;
         var windowWidth = html.clientWidth;
         // if (windowWidth >= 540) {
@@ -10,7 +10,7 @@
     }, false);
 })();
 
-$(function() {
+$(function () {
     // 不能加高度，要不然中间区域跟随不到底部：style="padding-bottom: 1.13rem;"
     if ($("footer").length > 0) {
         $("footer").prev("div").css({
@@ -26,10 +26,10 @@ $(function() {
         'tolerance': 70,
         'touch': false     //禁用触摸滑动
     });
-    document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+    document.querySelector('.js-slideout-toggle').addEventListener('click', function () {
         slideout.toggle();
     });
-    document.querySelector('.menu').addEventListener('click', function(eve) {
+    document.querySelector('.menu').addEventListener('click', function (eve) {
         if (eve.target.nodeName === 'A') {
             slideout.close();
         }
@@ -46,7 +46,6 @@ $(function() {
     // 绑数据
     var storage = window.localStorage;
     var json_data = JSON.parse(storage.getItem("member"));
-    console.log(json_data.u);
 
     function formatData(r) {
         var a = new Array();
@@ -57,10 +56,10 @@ $(function() {
         a = /Array/.test(d) ? r : a[0] = r;
         return a;
     }
+
     var listdata = $.param({
         account: json_data.u
     });
-    console.log(listdata);
 
     $.ajax({
         type: "POST",
@@ -69,20 +68,17 @@ $(function() {
         jsonp: 'callback',
         data: listdata,
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
-        success: function(data) {
+        success: function (data) {
             // obj对象
             data = formatData(data);
 
-            var list = $(".free-pane");
+
+
+            var list = $(".study");
             list.html("");
             var pesonal = '';
-
-
-
-
-// 我的班级 + 课堂
-            pesonal += "<div class='study'>" +
-                "<ul class='study-tab'>" +
+            // 我的班级 + 课堂
+            pesonal += "<ul class='study-tab'>" +
                 "<li class='switch_one'>" +
                 "<div class='switch hit'>" +
                 "<a>940VIP班</a>" +
@@ -126,64 +122,73 @@ $(function() {
                 "<div class='pane-layer paner1'></div>" +
                 "</div>" +
                 "<div class='pane'>" +
-                "<div class='pane-layer'>222222222222222222222</div>" +
+                "<div class='pane-layer'>没有记录！</div>" +
                 "</div>" +
                 "<div class='pane'>" +
-                "<div class='pane-layer'>333333333333333333333</div>" +
+                "<div class='pane-layer'>没有记录！</div>" +
                 "</div>" +
                 "<div class='pane'>" +
-                "<div class='pane-layer'>444444444444444444444</div>" +
-                "</div>" +
+                "<div class='pane-layer'>没有记录！</div>" +
                 "</div>" +
                 "</div>";
+            var Myclass={
+                    oldReader:function(){
+                        if(vipVideo[i].click===0){
+                            this.onReader="<span class='pane-time'>未学过</span>";
+                        }else{
+                            this.onReader="<span class='pane-time2'>已学过</span>";
+                        }
+                    }
+            };
             // console.log(pesonal);
             list.append(pesonal);
 
-            var listime=$(".paner1");
+            var listime = $(".paner1");
             listime.html("");
-
-             var item = data.classes['940vip'][3];
-             var dataitem = JSON.parse(item);
-             console.log(dataitem.length);
-             for (var i = 0; i < item.length; i++) {
-                 console.log(dataitem);
-                 var listtime="<div class='pane-cont'>\
-                <span class='pane-icon iconClr1'>\
-                <i class='pane-round roundClr1'></i>\
-                </span>\
-                <span class='pane-time'>6月13日</span>\
-                <span class='pane-text'>" + dataitem[i].videoName + "</span>\
-               <a href=\"video.html?id="+225+"\">点此复习<i class='video1'></i></a>\
-                </div>";
-                 listime.append(listtime);
+            var vipVideo = [];
+            var json =data.classes['940vip'];
+            for(var attr in json){
+                Array.prototype.push.apply(vipVideo,JSON.parse(json[attr]));
+            }
+            for (var i = 0; i < vipVideo.length; i++) {
+                Myclass.oldReader();
+                var listhtml = "<div class='pane-cont'>\
+                        <span class='pane-icon'>\
+                        <i class='pane-round'></i>\
+                        </span>"+Myclass.onReader+"<span class='pane-text'>" + vipVideo[i].videoName + "</span>\
+                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video1'></i></a>\
+                        </div>";
 
 
-             }
-
-
-
-
-
-
-
+                listime.append(listhtml);
+            };
+            // 点击背景色
+            $('.switch_one li').click(function() {
+                var dindex=$(this).index()+1;
+                var listime = $(".paner1");
+                listime.html("");
+                var json =data.classes['940vip'][dindex];
+                var vipVideo=JSON.parse(json);
+                for (var i = 0; i < vipVideo.length; i++) {
+                    Myclass.oldReader();
+                    var listhtml = "<div class='pane-cont'>\
+                        <span class='pane-icon'>\
+                        <i class='pane-round'></i>\
+                        </span>"+Myclass.onReader+"<span class='pane-text'>" + vipVideo[i].videoName + "</span>\
+                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video1'></i></a>\
+                        </div>";
+                    listime.append(listhtml);
+                };
+                $(this).addClass('checkedBg').siblings().removeClass('checkedBg').end()
+                    .parents('.switch_one').hide();
+                $(".tabmark").animate({
+                    rotate: 0
+                });
+            });
 
 
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });
