@@ -13,7 +13,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>940电商学院 - 最专业的淘宝电商培训，店铺运营推广，电商培训领导者</title>
     <!--css-->
-    <link rel="stylesheet" type="text/css" href="content/themes/schedule.min.css"/>
+    <link rel="stylesheet" type="text/css" href="content/themes/schedule.css"/>
     <!--js-->
     <script type="text/javascript" src="scripts/js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="scripts/js/slideout.min.js"></script>
@@ -94,32 +94,72 @@
             </ul>
             <div class="free-pane">
                 <div class="users">
-                    <div class="school">
-                        <div class="school-title">我的班级</div>
-                        <div class="school-cont">
-                            <div class="school-left">
-                                <p class="fontDa">新手开店班</p>
-                                <p>快速拥有你的店铺，12天升钻</p>
-                                <i class="icon1"></i>
-                            </div>
-                            <div class="school-right">
-                                <p class="fontDa">淘宝美工班</p>
-                                <p>三个月把你送入设计殿堂</p>
-                                <i class="icon1"></i>
-                            </div>
+<!--                     <div class="school">
+    <div class="school-title">
+        <span class="school-font1">我的班级</span>
+        <span class="school-font2">
+            （已入学 <i ng-bind="classNum" class="ng-binding">1</i>，未报名 <i ng-bind="4-classNum" class="ng-binding">3</i>）
+        </span>
+    </div>
+    <ul class="course_ul">
+        <li class="c_1">
+            <div class="c_cont">
+                <div class="co_pic">
+                    <span ng-class="{dss_act:vip,not_act:!vip}" class="dss_act"></span>
+                    <a ng-click="mycla.vip(vip)" href="javascript:" ng-bind="vipHtml" class="ng-binding">查看学习历程</a>
+                </div>
+            </div>
+        </li>
+        <li class="c_2">
+            <div class="c_cont">
+                <div class="co_pic">
+                    <span ng-class="{dss_act:cyb,not_act:!cyb}" class="not_act"></span>
+                    <a ng-click="mycla.cyb(cyb)" href="javascript:" ng-bind="cybHtml" class="ng-binding">立即咨询</a>
+                </div>
+            </div>
+        </li>
+        <li class="c_3">
+            <div class="c_cont">
+                <div class="co_pic">
+                    <span ng-class="{dss_act:jyb,not_act:!jyb}" class="not_act"></span>
+                    <a ng-click="mycla.jyb(hyb)" href="javascript:" ng-bind="jybHtml" class="ng-binding">立即咨询</a>
+                </div>
+            </div>
+        </li>
+        <li class="c_4">
+            <div class="c_cont">
+                <div class="co_pic">
+                    <span ng-class="{dss_act:zcb,not_act:!zcb}" class="not_act"></span>
+                    <a ng-click="mycla.zcb(zcb)" href="javascript:" ng-bind="zcbHtml" class="ng-binding">立即咨询</a>
+                </div>
+            </div>
+        </li> -->
 
-                            <div class="school-left2">
-                                <p class="fontDa">高级运营班</p>
-                                <p>快速拥有你的店铺，12天升钻</p>
-                                <i class="icon2"></i>
-                            </div>
-                            <div class="school-right2">
-                                <p class="fontDa">电商精英班</p>
-                                <p>三个月把你送入设计殿堂</p>
-                                <i class="icon2"></i>
-                            </div>
-                        </div>
-                    </div>
+<!-- 旧的（老朱设计图） -->
+<!--                             <div class="school-left">
+    <p class="fontDa">新手开店班</p>
+    <p>快速拥有你的店铺，12天升钻</p>
+    <i class="icon1"></i>
+</div>
+<div class="school-right">
+    <p class="fontDa">淘宝美工班</p>
+    <p>三个月把你送入设计殿堂</p>
+    <i class="icon1"></i>
+</div>
+
+<div class="school-left2">
+    <p class="fontDa">高级运营班</p>
+    <p>快速拥有你的店铺，12天升钻</p>
+    <i class="icon2"></i>
+</div>
+<div class="school-right2">
+    <p class="fontDa">电商精英班</p>
+    <p>三个月把你送入设计殿堂</p>
+    <i class="icon2"></i>
+</div> -->
+
+<!--                         </ul>
+                    </div> -->
                 </div>
 
                 <div class="study">
@@ -293,7 +333,7 @@
 </div>
 
 <!-- 判断用户是否登录 -->
-<script src="scripts/js/newLogin.js"></script>
+<script type="text/javascript" src="scripts/js/newLogin.js"></script>
 <script defer="defer">
     // 这个windo.onload的意思是等所有的dom  也就是div渲染完成（也就是加载完准备好。）然后再执行这段代码
     window.onload = function() {
@@ -382,8 +422,6 @@
             });
 
         });
-
-
 
 
     };

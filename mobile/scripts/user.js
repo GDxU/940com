@@ -89,7 +89,7 @@ var listdata = $.param({
 // 绑数据
 $.ajax({
     type: 'get',
-    url: 'http://940.com/userInfo',
+    url: 'http://www.940.com/userInfo',
     dataType: 'jsonp',
     processData: false,
     data: listdata,

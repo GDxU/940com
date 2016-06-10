@@ -341,7 +341,7 @@ body
 }
 
 .users {
-    padding: 0.2rem 0.12rem 0.45rem;
+    padding: 0.24rem 0.12rem 0.38rem;
     background: url('../images/user/free-bg.png') no-repeat center top;
     background-size: 100%;
 }
@@ -351,23 +351,135 @@ body
  */
 .school{
     width: 100%;
-    height: 2.99rem;
+    height: 3.76rem;
 }
 
 .school-title{
     height: 0.46rem;
     line-height: 0.48rem;
-    font-size: 0.22rem;
-    color: #0297fd;
-    text-indent: 4px;
+    text-indent: 8px;
     font-weight: 600;
 }
 
-.school-cont{
-    height: 2.53rem;
+.school-title .school-font1{
+    font-size: 0.26rem;
+    color: #0297fd;
+}
+
+.school-title .school-font2{
+    font-family: '宋体';
+    font-size: 0.24rem;
+    color: gray;
+}
+
+.school-title .school-font2 i {
+    color: #FF4541;
+    font-weight: 600;
+}
+
+.course_ul{
+    height: 100%;
     background-color: #fff;
 }
 
+.course_ul a {
+    width: calc(100% / 2);
+    width: -webkit-calc(100% / 2);
+    float: left;
+    position: relative;
+    left: -1px;
+}
+
+.course_ul a .c_cont{
+    width: 2.21rem;
+    margin: 0;
+    padding: .06rem .44rem;
+}
+
+.course_ul a .co_pic span.dss_act {
+    background-position: 0 0;
+}
+
+.course_ul a.c_1 {
+    background-color: #BAE778;
+}
+
+.course_ul a.c_2 {
+    background-color: #FEBFC1;
+}
+
+.course_ul a.c_3 {
+    background-color: #FED136;
+}
+
+.course_ul a.c_4 {
+    background-color: #C0E2F5;
+}
+
+.course_ul a.c_1 .co_pic {
+    background-position: 0 .05rem;
+}
+
+.course_ul a.c_2 .co_pic {
+    background-position: -2.24rem .05rem;
+}
+
+.course_ul a.c_3 .co_pic {
+    background-position: -4.46rem .05rem;
+}
+
+.course_ul a.c_4 .co_pic {
+    background-position: -6.68rem .05rem;
+}
+
+.course_ul a div.co_pic {
+    width: 100%;
+    height: 1.52rem;
+    background-image: url("../images/schedule/course_txt.png");
+    background-repeat: no-repeat;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.course_ul a .co_pic span {
+    width: .85rem;
+    height: .35rem;
+    margin: .08rem 0 0 .25rem;
+    display: block;
+    background: url("../images/schedule/bg_but_icon.png") no-repeat;
+}
+
+.course_ul a .co_pic span.not_act {
+    background-position: 0 -.35rem;
+}
+
+.course_ul a.c_1 .co_pic i {
+    color: #39AC00;
+}
+
+.course_ul a.c_2 .co_pic i {
+    color: #B37EE8;
+}
+
+.course_ul a.c_3 .co_pic i {
+    color: #FF8A00;
+}
+
+.course_ul a.c_4 .co_pic i {
+    color: #10A5E9;
+}
+
+.course_ul a .co_pic i {
+    font-weight: 700;
+    padding: .03rem .1rem;
+    margin-top: .73rem;
+    margin-left: .25rem;
+    background-color: #fff;
+    display: inline-block;
+}
+
+// 旧的（老朱设计图）
+/*
 .school-cont .school-left, .school-cont .school-left2{
     width: calc((100% - 4px) / 2);
     width: -webkit-calc((100% - 4px) / 2);
@@ -443,6 +555,7 @@ body
     background: url('../images/schedule/school-icon2.png') no-repeat center center;
     background-size: 100% 100%;
 }
+ */
 
 /**
  * study
@@ -450,7 +563,6 @@ body
 .study{
     width: 100%;
     float: left;
-
     position: relative;
 }
 
@@ -528,32 +640,51 @@ body
     padding: 0.2rem 0.12rem 0.45rem;
 }
 
+.study .pane-chapter{
+    display: block;
+}
+
 .study .pane-cont{
-    height: 0.74rem;
-    line-height: 0.78rem;
+    height: 0.78rem;
+    line-height: 0.82rem;
     font-size: 0.2rem;
     color: #ec6517;
     padding-bottom: 0.04rem;
-
-    border-bottom: 1px solid #e5e5e5;
 }
 
 .study .pane-clr1{
-    color: #959595;
-}
-
-.study .pane-clr2{
-    color: #C8C8C8;
+    color: #787d82;
 }
 
 .study .pane-cont span{
     float: left;
 }
 
-.study .pane-cont .pane-icon{
+.study .pane-cont .pane-a{
+    color: #787d82;
+}
+
+.study .pane-cont .pane-icon1, .study .pane-cont .pane-icon2 {
     width: 0.33rem;
-    height: 0.78rem;
+    height: .83rem;
     margin-right: 0.1rem;
+    float: left;
+}
+
+.study .pane-cont .pane-icon1{
+    background: url("../images/schedule/lc.png") no-repeat center 0;
+    background-position: center -73px;
+}
+
+.study .pane-cont .pane-icon2{
+    background: url("../images/schedule/lc.png") no-repeat center 0;
+    background-position: center -20px;
+}
+
+.study .pane-cont .pane-line{
+    width: calc(100% - 0.43rem);
+    width: -webkit-calc(100% - 0.43rem);
+    border-bottom: 1px solid #e5e5e5;
     float: left;
 }
 
@@ -625,7 +756,7 @@ body
     font-size: 0.16rem;
     color: #ec6517;
     text-indent: 16px;
-    margin: 0.2rem 0 0;
+    margin: 0.22rem 0 0;
     border: 1px solid #adadad;
     float: right;
 }

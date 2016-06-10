@@ -112,7 +112,7 @@ $(function() {
         $.ajax({
           /*  async: false,*/
             type: "get",
-            url: 'http://940.com/updatePassword',
+            url: 'http://www.940.com/updatePassword',
             dataType: 'jsonp',
             jsonp: 'callback',
             data: mpasword,
