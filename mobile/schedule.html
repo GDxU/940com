@@ -423,8 +423,39 @@
 
         });
 
+        $(".pane-layer .pane-cont").each(function(){
+            $(this).find("a").click(function(e){
+                //获取a的href
+                var url=$(this).attr('data-play');
+                //通过正则获取id=后面的数字
+               /* var playurl=url.match(/id=.{3}/)[0].substr(3);*/
+                var playdata = $.param({
+                    v_id:url,
+                    account:json_data.u
+                });
+                //阻止冒泡，组织a href的默认事件
+                e.stopPropagation();
+                e.preventDefault();
+                //调用ajax请求http://www.940.com/play 接口 以便于请求时 click+1
+                $.ajax({
+                    type: "post",
+                    url: 'http://www.940.com/play',
+                    dataType:'jsonp',
+                    data:playdata,
+                    jsonp: 'callback',
+                    contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                    success: function(data) {
+                       console.log(data);
+                    }
+                });
+                //在请求接口后  再跳转页面   为了在跳转页面之前请求click+1 成功。
+               /* var  playurl=$(this).attr('href');
+                window.location.href = playurl;*/
+            });
+        });
 
     };
+
 </script>
 
 </body>

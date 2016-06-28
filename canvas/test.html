@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload=function(){
+            function canvastest(){
+                this.init();
+            }
+            //继承
+            canvastest.prototype={
+                init:function(){
+                    this.sBox();
+                    this.line();
+                    this.rectangle();
+                },
+                //方块
+                sBox:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.fillStyle="rgb(255,0,0,0)";
+                        context.fillRect(10,0,60,60);
+                    }
+                },
+
+                //画线段
+                line:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=15;
+                        context.beginPath();//新建一个路径
+                        context.moveTo(10,25);//开始位置
+                        context.lineTo(100,50);//结束位置
+                        context.strokeStyle="red";//颜色设置
+                        context.stroke();//开始画
+                    }
+                },
+
+                //矩形
+                rectangle:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=10;
+                        context.strokeStyle="blue";
+                        context.beginPath();//新建一个路径
+                        context.strokeRect(100,0,50,60);
+                    }
+                }
+
+            }
+            //新建
+            function photoSlide(options) {
+                return new canvastest(options);
+            }
+            //调用方法
+            photoSlide();
+
+        }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="450" height="60"></canvas>
+</body>
+</html>

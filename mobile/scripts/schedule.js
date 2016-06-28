@@ -10,7 +10,34 @@
     }, false);
 })();
 
+
+
+
+
+/*function videoload(e){
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: 'http://www.940.com/play',
+        dataType: 'jsonp',
+        jsonp: 'callback',
+        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+        success: function(data) {
+            console.log(data);
+        }
+    });
+
+    var  playurl=$(this).attr('href');
+    window.location.href = "playurl";
+
+}*/
 $(function() {
+
+
+
+
+
+
     // 不能加高度，要不然中间区域跟随不到底部：style="padding-bottom: 1.13rem;"
     if ($("footer").length > 0) {
         $("footer").prev("div").css({
@@ -256,7 +283,7 @@ $(function() {
                             <div class='pane-line'>\
                             <span class='pane-time'>未学过</span>\
                             <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                            <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                            <a data-play="+vipVideo[i].videoId+"  href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                             </div>\
                             </div>";
                 } else {
@@ -267,7 +294,7 @@ $(function() {
                             <div class='pane-line'>\
                             <span class='pane-time'>已学过</span>\
                             <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                            <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                            <a  data-play="+vipVideo[i].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                             </div>\
                             </div>";
                 }
@@ -294,7 +321,7 @@ $(function() {
                             <div class='pane-line'>\
                             <span class='pane-time'>未学过</span>\
                             <span class='pane-text'>" + vipVideo[f].videoName + "</span>\
-                            <a href=\"videonew.html?id=" + vipVideo[f].vid + "\">点此学习<i class='video1'></i></a>\
+                            <a  data-play="+vipVideo[f].videoId+" href=\"videonew.html?id=" + vipVideo[f].vid + "\">点此学习<i class='video1'></i></a>\
                             </div>\
                             </div>";
                 } else {
@@ -305,7 +332,7 @@ $(function() {
                             <div class='pane-line'>\
                             <span class='pane-time'>已学过</span>\
                             <span class='pane-text'>" + vipVideo[f].videoName + "</span>\
-                            <a class='pane-a' href=\"videonew.html?id=" + vipVideo[f].vid + "\">点此复习<i class='video2'></i></a>\
+                            <a data-play="+vipVideo[f].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[f].vid + "\">点此复习<i class='video2'></i></a>\
                             </div>\
                             </div>";
                 }
@@ -375,7 +402,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>未学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+"  href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                         </div>\
                                         </div>\
                                         </div>";
@@ -397,7 +424,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>已学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                         </div>\
                                         </div>\
                                         </div>";
@@ -412,7 +439,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>未学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                        <a  data-play="+vipVideo[i].videoId+" href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                         </div>\
                                         </div>";
                             } else {
@@ -423,7 +450,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>已学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                         </div>\
                                         </div>";
                             }
@@ -450,7 +477,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>未学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+"  href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                         </div>\
                                         </div>\
                                         </div>";
@@ -472,7 +499,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>已学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                        <a  data-play="+vipVideo[i].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                         </div>\
                                         </div>\
                                         </div>";
@@ -487,7 +514,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>未学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+"  href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                         </div>\
                                         </div>";
                             } else {
@@ -498,7 +525,7 @@ $(function() {
                                         <div class='pane-line'>\
                                         <span class='pane-time'>已学过</span>\
                                         <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                        <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                        <a data-play="+vipVideo[i].videoId+"  class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                         </div>\
                                         </div>";
                             }
@@ -514,7 +541,7 @@ $(function() {
                                     <div class='pane-line'>\
                                     <span class='pane-time'>未学过</span>\
                                     <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                    <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                    <a data-play="+vipVideo[i].videoId+"  href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                     </div>\
                                     </div>";
                         } else {
@@ -525,7 +552,7 @@ $(function() {
                                     <div class='pane-line'>\
                                     <span class='pane-time'>已学过</span>\
                                     <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                    <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                    <a  data-play="+vipVideo[i].videoId+" class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                     </div>\
                                     </div>";
                         }
@@ -540,7 +567,7 @@ $(function() {
                                     <div class='pane-line'>\
                                     <span class='pane-time'>未学过</span>\
                                     <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                    <a href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
+                                    <a data-play="+vipVideo[i].videoId+" href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此学习<i class='video1'></i></a>\
                                     </div>\
                                     </div>";
                         } else {
@@ -551,7 +578,7 @@ $(function() {
                                     <div class='pane-line'>\
                                     <span class='pane-time'>已学过</span>\
                                     <span class='pane-text'>" + vipVideo[i].videoName + "</span>\
-                                    <a class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
+                                    <a data-play="+vipVideo[i].videoId+"  class='pane-a' href=\"videonew.html?id=" + vipVideo[i].vid + "\">点此复习<i class='video2'></i></a>\
                                     </div>\
                                     </div>";
                         }
@@ -621,6 +648,7 @@ $(function() {
 
         }
     });
+
 
 
 });

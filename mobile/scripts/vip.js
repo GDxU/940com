@@ -230,7 +230,6 @@ $(function() {
             //   //处理成和line>1的情况一样的结构
             //   data.list=[data.list];
             // }
-
             var list = $('.free-test2');
             if (data.count && data.count > 0) {
                 list.html("");
@@ -241,15 +240,16 @@ $(function() {
 /*                    if (!item.videoId) {
                         console.log(1); //12个 1
                     }*/
-
                     // 会员和非会员 su==1 ，su==0
                     var suvipname = window.localStorage;
                     var sui = JSON.parse(suvipname.getItem("suvVip"));
                     // console.log(sui.su);
                     if (json_data) {
-                        if (sui.su === 0) {
+                        console.log(item.videoId);
+                        if (sui.su == 0) {
                             var vipHtml = "<a href=\"javascript:alertVideo();\"><img src=\"" + item.preview + "\"><i></i></a>";
-                        } else if (sui.su === 1) {
+                        } else if (sui.su == 1) {
+                            alert(1);
                             if (!item.videoId) {
                                 var vipHtml = "<a href=\"javascript:alertInvalid();\"><img src=\"" + item.preview + "\"><i></i></a>";
                             } else {
