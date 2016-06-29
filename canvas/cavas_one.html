@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload=function(){
+            function canvastest(){
+                this.init();
+            }
+            //继承
+            canvastest.prototype={
+                init:function(){
+                    this.sBox();
+                    this.line();
+                    this.rectangle();
+                    this._round();
+                    this._roundSlid();
+                    this._circleSlid();
+                    this._arcCircle();
+                    this.loading();
+                    this._circlerect();
+                    this._customGrap();
+                    this._font();
+                    this._loadImg();
+                    this._scale();
+                },
+                //方块
+                sBox:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.fillStyle="rgb(255,0,0,0)";
+                        context.fillRect(10,0,60,60);
+                    }
+                },
+
+                //画线段
+                line:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=15;
+                        context.beginPath();//新建一个路径
+                        context.moveTo(10,25);//开始位置
+                        context.lineTo(100,50);//结束位置
+                        context.strokeStyle="red";//颜色设置
+                        context.stroke();//开始画
+                    }
+                },
+
+                //矩形
+                rectangle:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=10;
+                        context.strokeStyle="blue";
+                        context.beginPath();//新建一个路径
+                        context.strokeRect(100,0,50,60);
+                    }
+                },
+                //圆弧
+                _round:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=15;
+                        context.strokeStyle="yellow";
+                        context.beginPath();
+                        context.arc(200,10,50,50,130 *Math.PI/180,true);
+                        context.stroke();
+                    }
+                },
+                 //实心圆弧
+                _roundSlid:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=10;
+                        context.fillStyle="blue";
+                        context.beginPath();
+                        context.arc(350,100,70,0,130*Math.PI/180,true);
+                        context.fill();
+                    }
+                },
+
+                //实心圆
+                _circleSlid:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.lineWidth=5;
+                        context.fillStyle="green";
+                        context.beginPath();
+                        context.arc(500,100,70,10,360*Math.PI/360,true);
+                        context.fill();
+                    }
+                },
+                //圆角
+                _arcCircle:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var context=canvas.getContext("2d");
+                        context.moveTo(800,20);
+                        context.lineTo(800,20);
+                        context.arcTo(900,400,300,500,20);
+                        context.lineTo(500,300);
+                        context.stroke();
+                    }
+                },
+                //圆角矩形
+                _circlerect:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.beginPath();
+                        ctx.moveTo(40,20);
+                        ctx.lineTo(100,20);
+                        ctx.arcTo(120,20,120,40,20);
+                        ctx.lineTo(120,70);
+                        ctx.arcTo(120,90,100,90,20);
+                        ctx.lineTo(40,90);
+                        ctx.arcTo(20,90,20,70,20);
+                        ctx.lineTo(20,40);
+                        ctx.arcTo(20,20,40,20,20);
+                        ctx.stroke();
+                    }
+
+                },
+                //加载
+                loading:function(){
+                   var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.lineWidth=5;
+                        ctx.strokeStyle='blue';
+                        ctx.beginPath();
+                        ctx.arc(1200,100,50,110, 2 * Math.PI / (100 / 160),true);
+                        ctx.stroke();
+                        ctx.lineWidth=7;
+                        ctx.beginPath();
+                        ctx.strokeStyle='#ccc';
+                        ctx.arc(1200, 100, 50,3*Math.PI/2, Math.PI*2, true);
+                        ctx.stroke();
+                    }
+                },
+                //自定义图形
+                _customGrap:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.beginPath();
+                        ctx.moveTo(100,150);
+                        ctx.bezierCurveTo(50,100,100,0,150,50);
+                        ctx.bezierCurveTo(200,0,250,100,200,150);
+                        ctx.bezierCurveTo(250,200,200,300,150,250);
+                        ctx.bezierCurveTo(100,300,50,200,100,150);
+
+                        ctx.closePath();
+                        ctx.moveTo(100,150);
+                        ctx.lineTo(150,50);
+                        ctx.lineTo(200,150);
+                        ctx.lineTo(150,250);
+                        ctx.lineTo(100,150);
+                        ctx.lineWidth=5;
+                        ctx.strokeStyle="gray";
+                        ctx.stroke();
+                    }
+                },
+                //打印字体
+                _font:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.font="30px Arial";
+                        ctx.fillText("hello world",100,500);
+                    }
+                },
+                //打印图片
+                _loadImg:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        var img=new  Image();
+                        img.src="alipay.png";
+                        img.onload=function(){
+                            //整张图片画到画布上
+                               ctx.drawImage(img,100,550);
+                            //整张图片
+                            var imgData=ctx.getImageData(100,550,72,72);
+                            ctx.putImageData(imgData,10,600);
+                            //截取图片部分
+                            ctx.putImageData(imgData,12,800,40,30,100,100)
+                        }
+                    }
+                },
+                /*变形*/
+                //放大缩小
+                _scale:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.beginPath();
+                        ctx.fillStyle="#000000";
+                        ctx.strokeRect(10,10,50,50);
+                    }
+                }
+
+            }
+            //新建
+            function photoSlide(options) {
+                return new canvastest(options);
+            }
+            //调用方法
+            photoSlide();
+
+        }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="2000" height="1000"></canvas>
+</body>
+</html>
