@@ -9,6 +9,13 @@
                 this.init();
             }
             //继承
+            var options={
+                        x:100,
+                        y:200,
+                        width:200,
+                        height:400,
+                        _style:"yellow"
+                    }
             canvastest.prototype={
                 init:function(){
                     this.sBox();
@@ -24,6 +31,8 @@
                     this._font();
                     this._loadImg();
                     this._scale();
+                    var timer=setInterval(this._rotate,1000);
+
                 },
                 //方块
                 sBox:function(){
@@ -202,10 +211,30 @@
                     if(canvas.getContext){
                         var ctx=canvas.getContext("2d");
                         ctx.beginPath();
-                        ctx.fillStyle="#000000";
-                        ctx.strokeRect(10,10,50,50);
+                        ctx.strokeStyle="#000000";
+                        ctx.strokeRect(300,700,50,50);
+
+                        ctx.scale(1.5,1);
+                        ctx.beginPath();
+                        ctx.strokeStyle="#cccccc";
+                        ctx.strokeRect(300,800,150,150);
                     }
+                },
+                 //矩形动画旋转
+                _rotate:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var ctx=canvas.getContext("2d");
+                        ctx.clearRect(0,0,100,100);
+                        ctx.fillStyle=options._style;
+                        ctx.rotate(Math.PI/180);
+                        ctx.strokeRect(options.x,options.y,options.width,options.height);
+                        ctx.fillRect(options.x,options.y,options.width,options.height)
+                    }
+
                 }
+
+
 
             }
             //新建
@@ -214,7 +243,6 @@
             }
             //调用方法
             photoSlide();
-
         }
     </script>
 </head>
