@@ -31,7 +31,8 @@
                     this._font();
                     this._loadImg();
                     this._scale();
-                    var timer=setInterval(this._rotate,1000);
+                    setInterval(this._rotate,1000);
+                    this._transform();
 
                 },
                 //方块
@@ -232,6 +233,22 @@
                         ctx.fillRect(options.x,options.y,options.width,options.height)
                     }
 
+                },
+                //动画函数
+                _transform:function(){
+                    var canvas=document.getElementById("canvas");
+                    if(canvas.getContext){
+                        var trctx=canvas.getContext("2d");
+                        trctx.beginPath();
+                        trctx.strokeStyle="#000000";
+                        trctx.strokeRect(10,900,150,100);
+
+                        trctx.transform(1,0,0,1,0,0);
+                        trctx.beginPath();
+                        trctx.strokeStyle="#cccccc";
+                        trctx.strokeRect(10,900,150,100);
+
+                    }
                 }
 
 
