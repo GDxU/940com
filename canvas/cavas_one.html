@@ -8,7 +8,7 @@
             function canvastest(){
                 this.init();
             }
-            //继承
+
             var options={
                         x:100,
                         y:200,
@@ -16,7 +16,9 @@
                         height:400,
                         _style:"yellow"
                     }
+            //继承
             canvastest.prototype={
+                constructor:canvastest,
                 init:function(){
                     this.sBox();
                     this.line();
