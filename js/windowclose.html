@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>test</title>
+    <body>
+    <script language ="javaScript">
+        <!-- 关闭浏览器 -->
+        var flag = true;
+        window.onbeforeunload = function () {
+            if (flag) {
+                var evt = window.event || arguments[0];
+                var userAgent = navigator.userAgent;
+                if (userAgent.indexOf("MSIE") > 0) {
+                    var n = window.event.screenX - window.screenLeft;
+                    var b = n > document.documentElement.scrollWidth - 20;
+                    if (b && window.event.clientY < 0 || window.event.altKey) {
+                        window.event.returnValue = ("该操作将会导致非正常退出系统(正确退出系统方式：点击退出系统按钮)，您是否确认?");
+                    }else {
+                        return ("该操作将会导致非正常退出系统(正确退出系统方式：点击退出系统按钮)，您是否确认?");
+                    }
+                }else if (userAgent.indexOf("Firefox") > 0) {
+                    return ("该操作将会导致非正常退出系统(正确退出系统方式：点击退出系统按钮)，您是否确认?");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+dengyang
+<body>
+</html>

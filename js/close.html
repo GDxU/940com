@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+    <title>test</title>
+</HEAD>
+<body>
+<script language="javascript">
+    var UnloadConfirm = {};
+    UnloadConfirm.MSG_UNLOAD = "数据尚未保存，离开后可能会导致数据丢失\n\n您确定要离开吗？";
+    UnloadConfirm.set = function(a) {
+        window.onbeforeunload = function(b) {
+            b = b || window.event;
+            b.returnValue = a;
+            return a
+        }
+    };
+    UnloadConfirm.clear = function() {
+        fckDraft.delDraftById();
+        window.onbeforeunload = function() {}
+    };
+    UnloadConfirm.set(UnloadConfirm.MSG_UNLOAD);
+</script>
+</body>
+</HTML>

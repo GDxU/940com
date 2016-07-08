@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .content
+        h1 photo
+        p 这是图片描述的地方
+        div#photos
+            div.photos
+                ul
+                    each index in photos
+                        li
+                            h2=index.name
+                            img(src='#{index.path}')
