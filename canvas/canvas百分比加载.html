@@ -6,5 +6,37 @@
 </head>
 <body>
 
+
+
+<canvas id="canvas" style="background: #000"></canvas>
+<script>
+    window.onload=function(){
+        var canvas=document.getElementById("canvas"),
+                contetx=canvas.getContext("2d"),
+                centerx=canvas.width/ 2,//canvas x中心轴
+                centery=canvas.height/ 2,//canvas y中心点
+                rad=Math.PI*2/100,
+                speed=0.1;
+
+        function text(n){
+            contetx.save();//保证字体只用到该段canvas的样式
+            contetx.strokeStyle="#49f";
+            contetx.font="40px Arial";
+            contetx.strokeText(n.toFixed(0)+"%",centerx-25,centery+10);
+            contetx.stroke();
+            contetx.restore();
+        }
+        (function loading(){
+            text(speed);
+            if(speed > 100) speed = 0;
+            speed += 0.1;
+        }());
+
+    }
+</script>
+
+
+
+
 </body>
 </html>

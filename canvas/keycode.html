@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="canvas" width="500px" height="500px"></canvas>
+<script>
+     var canvas=document.getElementById("canvas");
+
+     var uitl={
+         _keycode:function(event){
+             switch (event.keyCode){
+                 case 38:console.log("up");
+                     break;
+                 case 40:console.log("down");
+                     break;
+                 case 37:console.log("left");
+                     break;
+                 case 39:console.log("right");
+                     break;
+                 case event.keyCode:console.log(event.keyCode);
+                     break;
+             }
+         }
+     }
+    window.addEventListener("keydown",uitl._keycode,false);
+</script>
+
+
+</body>
+</html>

@@ -44,10 +44,45 @@
         srcImage:"http://cued.xunlei.com/demos/publ/img/",
         indexImage:0,
         loadFinish:0,
-        init:function(){
+        getIndex: function() {
+            var index = this.indexImage;
+            if (index < 10) {
+                index = "00" + index;
+            } else if (index < 100) {
+                index = "0" + index;
+            }
+            return index;
+        },
+        create:function(){
+            this.columnNumber=Math.floor(document.body.clientWidth/this.columnWidth);
+            var start= 0,htmlCloum="",_self=this;
+            for(start;start<this.columnNumber;start+=1){
+                htmlCloum=htmlCloum +'<span  id="waterFallColumn_'+ start +'" class="column" style="width:'+ this.columnWidth +'px;">'+
+                            function(){
+                                var html="";
+                                for(var i=0;i<5;i+=1){
 
+                                    _self.indexImage=start+_self.columnNumber*i;
+                                    var index = _self.getIndex();
+                                    html = html + '<a href="###" class="pic_a"><img src="'+ _self.srcImage + "P_" + index +'.jpg" /><strong>'+ index +'</strong></a>';
+                                    return html;
+                                }
+                            }()
+                        +'</span>';
+            }
+            htmlCloum += '<span id="waterFallDetect" class="column" style="width:'+ this.columnWidth +'px;"></span>';
+
+            this.container.innerHTML=htmlCloum;
+
+            this.detectLeft = document.getElementById("waterFallDetect").offsetLeft;
+
+            return this;
+        },
+        init:function(){
+            this.create();
         }
-    }
+    };
+    full.init();
 </script>
 
 <!--

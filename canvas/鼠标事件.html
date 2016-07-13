@@ -5,6 +5,45 @@
     <title></title>
 </head>
 <body>
+<canvas id="canvas" style="background: #000;">
+    <p>
+        你的浏览器不支持canvas
+    </p>
+</canvas>
+<script>
+    //将utils定义为windows下面的一属性  属性值为对象
+    window.utils={};
+    window.utils.mousefix=function(element){
+            var mouse={x:0,y:0};
+        element.addEventListener("mouseover",function(event){
+                var x,y=0;
+            //获取鼠标当前屏幕的位置，并作兼容处理
+               if(event.pageX||event.pageY){
+                   x=event.pageX;
+                   y=event.pageY;
+               }else{
+                   x= event.clientX+document.body.scrollLeft+document.documentElement.scrollLeft;
+                   y=event.clientY+document.body.scrollTop+document.documentElement.scrollTop;
+               }
+           x-=element.offsetLeft;
+            y-=element.offsetTop;
+            mouse.x=x;
+            mouse.y=y;
+        },false);
+        return mouse;
+    };
+
+    //获取事件
+
+
+    var  canvas=document.getElementById("canvas");
+    var mouse=utils.mousefix(canvas);
+    canvas.addEventListener("mousedown",function(event){
+            console.log("x:"+mouse.x+"y:"+mouse.y);
+    })
+    console.log(canvas);
+</script>
+
 
 </body>
 </html>
